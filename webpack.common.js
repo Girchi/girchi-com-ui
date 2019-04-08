@@ -1,11 +1,11 @@
 const path = require('path');
-
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const HtmlBeautifyPlugin = require('html-beautify-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
@@ -103,13 +103,13 @@ module.exports = {
       filename: 'bundle-[hash].css',
       chunkFilename: '[id].css'
     }),
-    new HtmlBeautifyPlugin()
+    new HtmlBeautifyPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.$': 'jquery',
+    })
   ],
-  externals: {
-    $: 'jquery',
-    jquery: 'jQuery',
-    'window.$': 'jquery',
-  },
   output: {
     filename: 'bundle-[hash].js',
     path: path.resolve(__dirname, 'dist')

@@ -1,11 +1,13 @@
 const merge = require('webpack-merge');
+const path = require('path');
 const common = require('./webpack.common.js');
-
+const glob = require('glob');
 const TerserPlugin = require('terser-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const CompressionPlugin = require('compression-webpack-plugin');
- 
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
@@ -33,6 +35,9 @@ module.exports = merge(common, {
       plugins: [imageminMozjpeg({ // lossy jpg compressor, remove for default lossless
         quality: '75'
       })]
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${path.join(__dirname, 'src')}/*.html`)
     })
   ]
 });
