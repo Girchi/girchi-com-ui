@@ -3,6 +3,6 @@
 
 ## Quick start
 
-Run `npm i` to install dependencies.
-Run `npm start` to start the development server.
-Run `npm run build` to build production version.
+* Run `npm i` to install dependencies.
+* Run `npm start` to start the development server.
+* Run `npm run build` to build production version.
