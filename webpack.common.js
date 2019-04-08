@@ -9,7 +9,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/scripts/index.js',
   module: {
     rules: [{
         test: /\.txt$/,
