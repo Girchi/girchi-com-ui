@@ -1,4 +1,5 @@
 const merge = require('webpack-merge')
+const prettier = require('prettier')
 const path = require('path')
 const common = require('./webpack.common.js')
 const glob = require('glob')
@@ -38,6 +39,32 @@ module.exports = merge(common, {
     }),
     new PurgecssPlugin({
       paths: glob.sync(`${path.join(__dirname, 'src')}/*.html`)
-    })
+    }),
+    {
+      apply (compiler) {
+        compiler.hooks.emit.tap('Prettier', (compilation) => {
+          for (const filename in compilation.assets) {
+            if (filename.indexOf('.html') === -1) {
+              continue
+            }
+            const asset = compilation.assets[filename]
+            const size = asset.size()
+            const source = asset.source()
+            const formattedSource = prettier.format(source, { parser: 'html' })
+
+            compilation.assets[filename] = {
+              source: function () {
+                return formattedSource
+              },
+              size: function () {
+                return size
+              }
+            }
+          }
+
+          return true
+        })
+      }
+    }
   ]
 })
