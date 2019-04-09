@@ -1,4 +1,3 @@
-import '../index.html';
-import '../styles/index.scss';
-// Import scripts from Bootstrap
-import './bootstrap'
+import '../index.html'
+import '../styles/index.scss'
+import 'bootstrap/js/src/index'
