@@ -9,13 +9,62 @@
 
   <body>
     <div class="container">
-      <div class="alert alert-primary" role="alert">
-        Hello world! Test for CI.
-        <br />
-        One more test.
-        <br />
-        Test for Slack notifications.
+      <div class="my-5">
+        <button class="btn btn-primary">primary</button>
+        <button class="btn btn-success">success</button>
+        <button class="btn btn-danger">danger</button>
+        <button class="btn btn-info">info</button>
+        <button class="btn btn-light">light</button>
+        <button class="btn btn-dark">dark</button>
+        <button class="btn btn-warning">warning</button>
+        <button class="btn btn-white">white</button>
+        <button class="btn btn-dark-white">dark-white</button>
+        <button class="btn btn-grey">grey</button>
+        <button class="btn btn-light-silver">light-silver</button>
+        <button class="btn btn-dark-silver">dark-silver</button>
+        <button class="btn btn-light-green">light-green</button>
       </div>
+      <div class="my-5">
+        <button class="btn btn-warning">რეგისტრაცია</button>
+        <button class="btn btn-warning btn-lg">დააფინანსე</button>
+      </div>
+      <form style="width:370px" class="my-5">
+        <div class="form-group">
+          <label class="form-label" for="exampleInputEmail1">ელ.ფოსტა</label>
+          <input
+            type="email"
+            class="form-control form-control-lg"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="მიუთითეთ ელ.ფოსტა"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="exampleInputPassword1">პაროლი</label>
+          <input
+            type="password"
+            class="form-control form-control-lg"
+            id="exampleInputPassword1"
+            placeholder="მიუთითეთ პაროლი"
+          />
+        </div>
+        <div class="form-group">
+          <span class="form-checkbox">
+            <span class="form-checkbox-input">
+              <input type="checkbox" class="form-control" id="exampleCheck1" />
+            </span>
+            <label class="form-checkbox-label" for="exampleCheck1"
+              >წავიკითხე და ვეთანხმები რეგისტრაციის წესებს და პირობებს</label
+            >
+          </span>
+        </div>
+        <button type="submit" class="btn btn-lg btn-warning btn-block">
+          რეგისტრაცია
+        </button>
+      </form>
     </div>
   </body>
 </html>
