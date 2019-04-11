@@ -70,6 +70,8 @@ $theme-colors: map-merge(
 $yiq-contrasted-threshold: 200 !default;
 
 // Buttons + Forms
+
+$input-color: $blue;
 $input-placeholder-color: $dark-silver !default;
 
 $input-border-radius: 50rem !default;
