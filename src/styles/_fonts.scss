@@ -3,15 +3,7 @@
 //
 @font-face {
   font-family: "FiraGO";
-  src: url("../fonts/FiraGO/FiraGO-Medium.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/FiraGO/FiraGO-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    /* IE6-IE8 */ url("../fonts/FiraGO/FiraGO-Medium.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../fonts/FiraGO/FiraGO-Medium.woff")
-      format("woff"),
-    /* Pretty Modern Browsers */ url("../fonts/FiraGO/FiraGO-Medium.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */
-      url("../fonts/FiraGO/FiraGO-Medium.svg#bpg_arial_capsregular")
-      format("svg"); /* Legacy iOS */
+  src: url("../fonts/FiraGO/FiraGO-Medium.woff2") format("woff2"),
+    url("../fonts/FiraGO/FiraGO-Medium.woff") format("woff"),
+    url("../fonts/FiraGO/FiraGO-Medium.ttf") format("truetype");
 }
