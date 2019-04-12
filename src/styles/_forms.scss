@@ -1,0 +1,60 @@
+//
+// Textual form controls
+//
+
+.form {
+  &-label {
+    color: $input-label-color;
+    font-size: $input-label-font-size;
+    margin: $input-label-margin-y $input-label-margin-x;
+  }
+  &-text {
+    margin-left: $form-text-margin-x;
+    margin-right: $form-text-margin-x;
+  }
+  &-checkbox {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    &-label {
+      font-size: $form-check-label-font-size;
+      line-height: $form-check-label-line-height;
+      color: $form-check-label-color;
+      cursor: pointer;
+      margin: 0;
+      padding-left: $form-check-label-padding-left;
+    }
+    &-input {
+      width: 26px;
+      height: 26px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      border: solid $input-checkbox-border-width $input-checkbox-border-color;
+      border-radius: $input-checkbox-border-radius;
+      transition: background 0.4s ease-in-out;
+      &:hover {
+        background: $dark-white;
+      }
+      .form-control {
+        opacity: 0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      }
+      &.checked {
+        &:before {
+          content: " ";
+          display: block;
+          left: 7px;
+          top: 7px;
+          background: url(../images/checkbox-checked.svg) no-repeat center;
+          position: absolute;
+          width: 11px;
+          height: 11px;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

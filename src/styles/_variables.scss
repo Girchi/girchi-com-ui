@@ -1,48 +1,49 @@
 @import "~bootstrap/scss/_functions";
-@import "~bootstrap/scss/variables";
 
 // Color system
 
-$blue: #007bff !default;
-$indigo: #6610f2 !default;
-$purple: #6f42c1 !default;
-$pink: #e83e8c !default;
-$red: #dc3545 !default;
-$orange: #fd7e14 !default;
-$yellow: #ffc107 !default;
-$green: #28a745 !default;
-$teal: #20c997 !default;
-$cyan: #17a2b8 !default;
+$light-green: #2fa837;
+$green: #327f37;
+$yellow: #ffa823;
+$silver: #d4dadf;
+$light-silver: #efeff0;
+$dark-silver: #b4bfc7;
+$grey: #919499;
+$light-grey: #ebeff2;
+$blue: #32394d;
+$dark-blue: #33353c;
+$red: #ef3233;
+$white: #ffffff;
+$dark-white: #f7f7f7;
 
 $colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $colors: map-merge(
   (
-    "blue": $blue,
-    "indigo": $indigo,
-    "purple": $purple,
-    "pink": $pink,
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
+    "light-green": $light-green,
     "green": $green,
-    "teal": $teal,
-    "cyan": $cyan,
+    "yellow": $yellow,
+    "silver": $silver,
+    "light-silver": $light-silver,
+    "dark-silver": $dark-silver,
+    "grey": $grey,
+    "light-grey": light-grey,
+    "blue": $blue,
+    "dark-blue": dark-blue,
+    "red": $red,
     "white": $white,
-    "gray": $gray-600,
-    "gray-dark": $gray-800
+    "dark-white": $dark-white
   ),
   $colors
 );
 
 $primary: $blue !default;
-$secondary: $gray-600 !default;
+$secondary: $silver !default;
 $success: $green !default;
-$info: $cyan !default;
+$info: lighten($blue, 50) !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: $gray-100 !default;
-$dark: $gray-800 !default;
+$light: $light-grey !default;
+$dark: $dark-blue !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -55,7 +56,80 @@ $theme-colors: map-merge(
     "warning": $warning,
     "danger": $danger,
     "light": $light,
-    "dark": $dark
+    "dark": $dark,
+    "white": $white,
+    "dark-white": $dark-white,
+    "grey": $grey,
+    "light-silver": $light-silver,
+    "dark-silver": $dark-silver,
+    "light-green": $light-green
   ),
   $theme-colors
 );
+
+$yiq-contrasted-threshold: 200 !default;
+
+// Buttons + Forms
+
+$input-color: $blue;
+$input-placeholder-color: $dark-silver !default;
+
+$input-border-radius: 50rem !default;
+$input-border-radius-lg: 50rem !default;
+$input-border-radius-sm: 50rem !default;
+
+// $input-font-size: $input-btn-font-size !default;
+$input-line-height: 1 !default;
+
+// $input-font-size-sm: $input-btn-font-size-sm !default;
+$input-line-height-sm: 1 !default;
+
+$input-padding-x-lg: 1.5rem !default;
+$input-font-size-lg: 0.875rem !default;
+$input-line-height-lg: 1.143 !default;
+
+$input-btn-font-size: 0.875rem !default;
+$input-btn-padding-y: 0.782rem !default;
+$input-btn-padding-x: 1.475rem !default;
+
+$btn-padding-y-sm: 0.6rem !default;
+$btn-padding-x-sm: 1.3rem !default;
+$btn-font-size-sm: 0.75rem !default;
+$btn-line-height-sm: 1 !default;
+
+$input-btn-padding-y-lg: 1rem !default;
+$input-btn-padding-x-lg: 1.583rem !default;
+$input-btn-font-size-lg: 1rem !default;
+$input-btn-line-height-lg: 1 !default;
+
+$btn-border-radius: 50rem !default;
+$btn-border-radius-lg: 50rem !default;
+$btn-border-radius-sm: 50rem !default;
+
+$input-label-font-size: 0.75rem !default;
+$input-label-color: $grey !default;
+$input-label-margin-x: $input-padding-x-lg;
+$input-label-margin-y: 0.5rem;
+
+$input-checkbox-border-color: $silver;
+$input-checkbox-border-width: 0.0625rem;
+$input-checkbox-border-radius: 0.25rem;
+
+$form-text-margin-top: 0.5rem !default;
+$form-text-margin-x: $input-padding-x-lg !default;
+
+$form-check-label-font-size: 0.75rem !default;
+$form-check-label-line-height: 1.3 !default;
+$form-check-label-color: $grey !default;
+$form-check-input-gutter: 0 !default;
+$form-check-label-padding-left: 0.5rem !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-size-lg: 0.875rem;
+
+$line-height-base: 1 !default;
+
+$font-family-firaGo: "FiraGO" !default;
+$font-family-base: $font-family-firaGo !default;
