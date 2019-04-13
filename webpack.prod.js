@@ -2,7 +2,7 @@ const merge = require('webpack-merge')
 const prettier = require('prettier')
 const path = require('path')
 const common = require('./webpack.common.js')
-const glob = require('glob')
+const glob = require('glob-all')
 const TerserPlugin = require('terser-webpack-plugin')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const imageminMozjpeg = require('imagemin-mozjpeg')
@@ -38,7 +38,10 @@ module.exports = merge(common, {
       })]
     }),
     new PurgecssPlugin({
-      paths: glob.sync(`${path.join(__dirname, 'src')}/*.html`)
+      paths: glob.sync([
+        `${path.join(__dirname, 'src')}/*.html`,
+        `${path.join(__dirname, 'src')}/**/*.js`
+      ])
     }),
     {
       apply (compiler) {

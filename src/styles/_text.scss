@@ -1,0 +1,10 @@
+//
+// Text
+//
+
+.text {
+  &-uppercase {
+    -webkit-font-feature-settings: "case";
+    font-feature-settings: "case" on;
+  }
+}
