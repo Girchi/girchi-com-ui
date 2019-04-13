@@ -1,0 +1,18 @@
+// Icons
+
+.icon {
+  &-flag {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    &-geo {
+      background: url(../images/georgia.svg) no-repeat center;
+    }
+  }
+  &-caret {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url(../images/arrow.svg) no-repeat center;
+  }
+}

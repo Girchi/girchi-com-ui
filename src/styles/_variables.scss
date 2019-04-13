@@ -68,6 +68,7 @@ $theme-colors: map-merge(
 );
 
 $yiq-contrasted-threshold: 200 !default;
+$emphasized-link-hover-darken-percentage: 3% !default;
 
 // Buttons + Forms
 
@@ -133,3 +134,23 @@ $line-height-base: 1 !default;
 
 $font-family-firaGo: "FiraGO" !default;
 $font-family-base: $font-family-firaGo !default;
+
+// Navbar brand
+//
+// Used for brand, project, or site names.
+
+$navbar-brand-font-size: 1.625rem !default;
+$navbar-light-color: $success;
+$navbar-light-hover-color: rgba($success, 1) !default;
+$navbar-light-active-color: rgba($success, 1) !default;
+$navbar-light-disabled-color: rgba($success, 1) !default;
+$navbar-padding-y: 2.25rem !default;
+
+// Borders
+$border-color: #dee2e6 !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: false !default;
