@@ -1,0 +1,11 @@
+//
+// Navbar
+//
+
+.navbar {
+  &-text {
+    &-sm {
+      font-size: $navbar-brand-sm-font-size;
+    }
+  }
+}

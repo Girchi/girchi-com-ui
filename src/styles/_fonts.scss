@@ -3,7 +3,18 @@
 //
 @font-face {
   font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 700;
   src: url("../fonts/FiraGO/FiraGO-Medium.woff2") format("woff2"),
     url("../fonts/FiraGO/FiraGO-Medium.woff") format("woff"),
     url("../fonts/FiraGO/FiraGO-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FiraGO";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FiraGORegular/FiraGO-Regular.woff2") format("woff2"),
+    url("../fonts/FiraGORegular/FiraGO-Regular.woff") format("woff"),
+    url("../fonts/FiraGORegular/FiraGO-Regular.ttf") format("truetype");
 }

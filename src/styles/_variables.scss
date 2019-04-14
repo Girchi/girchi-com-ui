@@ -74,23 +74,18 @@ $emphasized-link-hover-darken-percentage: 3% !default;
 
 $input-color: $blue;
 $input-placeholder-color: $dark-silver !default;
-
 $input-border-radius: 50rem !default;
 $input-border-radius-lg: 50rem !default;
 $input-border-radius-sm: 50rem !default;
-
 // $input-font-size: $input-btn-font-size !default;
 $input-line-height: 1 !default;
-
 // $input-font-size-sm: $input-btn-font-size-sm !default;
 $input-line-height-sm: 1 !default;
-
 $input-padding-x-lg: 1.5rem !default;
 $input-font-size-lg: 0.875rem !default;
 $input-line-height-lg: 1.143 !default;
-
 $input-btn-font-size: 0.875rem !default;
-$input-btn-padding-y: 0.782rem !default;
+$input-btn-padding-y: 0.563rem !default;
 $input-btn-padding-x: 1.475rem !default;
 
 $btn-padding-y-sm: 0.6rem !default;
@@ -128,10 +123,10 @@ $form-check-label-padding-left: 0.5rem !default;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-size-lg: 0.875rem;
-
-$line-height-base: 1 !default;
-
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 0.875 !default;
+$font-size-sm: $font-size-base * 0.75 !default;
+$line-height-base: 1.5 !default;
 $font-family-firaGo: "FiraGO" !default;
 $font-family-base: $font-family-firaGo !default;
 
@@ -140,11 +135,18 @@ $font-family-base: $font-family-firaGo !default;
 // Used for brand, project, or site names.
 
 $navbar-brand-font-size: 1.625rem !default;
+$navbar-brand-sm-font-size: 1.125rem !default;
 $navbar-light-color: $success;
+$navbar-dark-color: $grey;
+$navbar-dark-hover-color: rgba($grey, 1) !default;
+$navbar-dark-disabled-color: rgba($grey, 1) !default;
+$navbar-dark-active-color: rgba($grey, 1) !default;
 $navbar-light-hover-color: rgba($success, 1) !default;
 $navbar-light-active-color: rgba($success, 1) !default;
 $navbar-light-disabled-color: rgba($success, 1) !default;
 $navbar-padding-y: 2.25rem !default;
+$navbar-padding-x: 0 !default;
+$navbar-nav-sm-font-size: 0.75rem !default;
 
 // Borders
 $border-color: #dee2e6 !default;
