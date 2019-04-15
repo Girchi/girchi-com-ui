@@ -3,9 +3,16 @@
 //
 
 .navbar {
-  &-text {
-    &-sm {
-      font-size: $navbar-brand-sm-font-size;
+  
+  &-brand{
+    &-lg{
+      font-size:$navbar-brand-lg-font-size;
+      width: 56px;
+
+    }
+    &-sm{
+      font-size:$navbar-brand-sm-font-size;
+      width: 39px;
     }
   }
 }

@@ -1,18 +1,35 @@
 // Icons
 
-.icon {
-  &-flag {
-    width: 28px;
-    height: 28px;
-    display: inline-block;
-    &-geo {
-      background: url(../images/georgia.svg) no-repeat center;
-    }
-  }
-  &-caret {
-    width: 12px;
-    height: 12px;
-    display: inline-block;
-    background: url(../images/arrow.svg) no-repeat center;
-  }
+[class^='flaticon-']:before{
+  display: inline-block;
+font-family: "Flaticon";
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+line-height: 1;
+text-decoration: inherit;
+text-rendering: optimizeLegibility;
+text-transform: none;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-smoothing: antialiased;
 }
+ 
+ 
+.flaticon-arrow-down-sign-to-navigate:before { content: "\f100"; }
+.flaticon-smartphone:before { content: "\f101"; }
+.flaticon-envelope:before { content: "\f102"; }
+.flaticon-social-facebook-circular-button:before { content: "\f103"; }
+.flaticon-social-twitter-circular-button:before { content: "\f104"; }
+.flaticon-social-youtube-circular-button:before { content: "\f105"; }
+.flaticon-checked:before { content: "\f106"; }
+.flaticon-girchi-logo:before { content: "\f107"; }
+    
+    $font-Flaticon-arrow-down-sign-to-navigate: "\f100";
+    $font-Flaticon-smartphone: "\f101";
+    $font-Flaticon-envelope: "\f102";
+    $font-Flaticon-social-facebook-circular-button: "\f103";
+    $font-Flaticon-social-twitter-circular-button: "\f104";
+    $font-Flaticon-social-youtube-circular-button: "\f105";
+    $font-Flaticon-checked: "\f106";
+    $font-Flaticon-girchi-logo: "\f107";
