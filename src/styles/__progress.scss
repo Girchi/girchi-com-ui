@@ -1,0 +1,30 @@
+.progress {
+  position: relative;
+  .progress-bar {
+    border-top-right-radius: $progress-bar-border-radius;
+    border-bottom-right-radius: $progress-bar-border-radius;
+    &-value {
+      background: rgba(0, 0, 0, 0.25);
+      font-size: $progress-bar-value-font-size;
+      border-radius: $progress-bar-border-radius;
+      font-weight: bold;
+      padding: $progress-bar-value-padding-y $progress-bar-value-padding-x;
+      margin: 0 $progress-bar-value-margin-x;
+    }
+    &-label {
+      display: inline-flex;
+      align-items: center;
+      margin-left: auto;
+      padding-left: $progress-bar-label-padding;
+      color: $white;
+    }
+    &-total {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+}

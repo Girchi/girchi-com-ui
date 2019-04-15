@@ -137,9 +137,9 @@ $font-family-base: $font-family-firaGo !default;
 
 $navbar-brand-font-size: 1.625rem !default;
 
-$navbar-brand-lg-font-size:4.0625rem!default;
-$navbar-brand-sm-font-size:2.875rem!default;
- 
+$navbar-brand-lg-font-size: 4.0625rem !default;
+$navbar-brand-sm-font-size: 2.875rem !default;
+
 $navbar-light-color: $success;
 $navbar-dark-color: $grey;
 $navbar-dark-hover-color: rgba($grey, 1) !default;
@@ -160,3 +160,22 @@ $border-color: #dee2e6 !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret: false !default;
+
+// Progress bars
+
+$progress-bg: $dark-blue;
+$progress-border-radius: 0 !default;
+$progress-height: 3.75rem !default;
+$progress-font-size: $font-size-base * 0.8125 !default;
+$progress-box-shadow: initial !default;
+$progress-bar-bg: $light-green !default;
+// $progress-bar-bg: transparent !default;
+$progress-bar-animation-timing: initial !default;
+$progress-bar-transition: width 2s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+  padding 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) !default;
+$progress-bar-border-radius: 50rem !default;
+$progress-bar-value-font-size: 1.375rem !default;
+$progress-bar-value-padding-y: 0.219rem !default;
+$progress-bar-value-padding-x: 1rem !default;
+$progress-bar-value-margin-x: 0.6rem !default;
+$progress-bar-label-padding: 1rem !default;
