@@ -8,7 +8,7 @@
   </head>
 
   <body class="bg-light-silver">
-    <div class="progress ged-progress">
+    <div class="progress ged-progress d-none d-lg-flex">
       <div
         class="progress-bar"
         role="progressbar"
@@ -20,7 +20,9 @@
       >
         <span class="progress-bar-label">
           უკვე გაცემულია
-          <span class="progress-bar-value d-inline-flex align-items-center"> <i class="icon-ged"></i>0</span>
+          <span class="progress-bar-value d-inline-flex align-items-center">
+            <i class="icon-ged"></i>0</span
+          >
         </span>
       </div>
       <div class="progress-bar-total">
@@ -36,11 +38,24 @@
     <header class="bg-white">
       <div class="container">
         <!-- Start of nav -->
-        <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <nav
+          class="navbar navbar-expand-lg navbar-light border-bottom p-0 py-lg-4"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <a class="navbar-brand d-flex align-items-center" href="#">
-            <i class="icon-girchi-logo navbar-brand-lg mr-4"></i>
+            <i class="icon-girchi-logo navbar-brand-lg mr-lg-4"></i>
             <span
-              class="navbar-text text-success text-uppercase font-weight-bold"
+              class="navbar-text text-success text-uppercase font-weight-bold d-none d-lg-inline"
               >გირჩი</span
             >
           </a>
@@ -53,9 +68,8 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="icon-user auth-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarAuth">
             <div class="ml-auto">
               <button class="btn btn-success mr-lg-2 text-uppercase">
@@ -69,48 +83,62 @@
         </nav>
         <!-- End of nav -->
         <!-- Start of nav -->
-        <nav class="navbar navbar-expand-lg navbar-light mx-n2">
-          <!-- Start of menu -->
-          <ul class="navbar-nav text-uppercase">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >მთავარი <span class="sr-only">(current)</span></a
+        <nav class="navbar navbar-expand-lg navbar-light mx-n2 p-0 py-lg-4">
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <!-- Start of menu -->
+            <ul class="navbar-nav text-uppercase">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >მთავარი <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">სიახლეები</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">დააფინანსე</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">პროექტები</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ჩვენს შესახებ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">კონტაქტი</a>
+              </li>
+            </ul>
+            <!-- End of menu -->
+            <!-- Start of language switcher -->
+            <div class="dropdown ml-auto mr-2">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle p-1 d-flex align-items-center text-grey bg-transparent shadow-none"
+                type="button"
+                id="languageSwitcher"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">სიახლეები</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">დააფინანსე</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">პროექტები</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ჩვენს შესახებ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">კონტაქტი</a>
-            </li>
-          </ul>
-          <!-- End of menu -->
-          <!-- Start of language switcher -->
-          <div class="dropdown ml-auto mr-2">
-            <button
-              class="btn btn-outline-secondary dropdown-toggle p-1 d-flex align-items-center text-grey bg-transparent"
-              type="button"
-              id="languageSwitcher"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <img src="./images/georgia.svg" width="28" class="mr-2" alt="" />
-              ქარ
-              <i class="icon-arrow-down-sign-to-navigate mr-1 ml-3"></i>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="languageSwitcher">
-              <a class="dropdown-item" href="#">Eng</a>
-              <a class="dropdown-item" href="#">Pусский</a>
+                <img
+                  src="./images/georgia.svg"
+                  width="28"
+                  class="mr-2"
+                  alt=""
+                />
+                ქარ
+                <i class="icon-arrow-down-sign-to-navigate mr-1 ml-3 caret"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageSwitcher">
+                <a class="dropdown-item text-grey" href="#"
+                  ><img
+                    src="./images/united-kingdom.svg"
+                    width="28"
+                    class="mr-2"
+                    alt=""
+                  />
+                  Eng</a
+                >
+              </div>
             </div>
           </div>
           <!-- End of language switcher -->
@@ -157,7 +185,7 @@
 
       <div class="bg-white">
         <div class="container">
-          <nav class="navbar py-4">
+          <nav class="navbar py-3 flex-column flex-lg-row">
             <a
               class="navbar-brand d-flex align-items-center text-uppercase"
               href="#"
@@ -173,7 +201,7 @@
               >
             </a>
             <ul
-              class="navbar-list list-unstyled d-inline-flex font-size-4 ml-auto mr-lg-3 mb-0"
+              class="navbar-list list-unstyled d-inline-flex font-size-4 ml-lg-auto mr-lg-3 mb-0"
             >
               <li class="navbar-list-item">
                 <i class="icon-smartphone"></i>
@@ -214,7 +242,9 @@
       <!-- Start of footer 1st row -->
       <div class="container">
         <!-- Start of nav -->
-        <nav class="navbar navbar-expand-lg navbar-dark mx-n2 border-bottom">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark mx-n2 border-bottom d-none d-lg-flex"
+        >
           <!-- Start of menu -->
           <ul class="navbar-nav font-size-1 text-uppercase">
             <li class="nav-item">
@@ -248,7 +278,9 @@
         </nav>
         <!-- End of nav -->
         <div class="py-4">
-          <p class="mb-0 text-grey font-size-1 text-uppercase">
+          <p
+            class="mb-0 text-grey font-size-1 text-uppercase text-center text-lg-left"
+          >
             © ყველა უფლება დაცულია. გირჩი 2019.
           </p>
         </div>

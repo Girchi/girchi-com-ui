@@ -5,8 +5,12 @@
 .navbar {
   &-brand {
     &-lg {
-      font-size: $navbar-brand-lg-font-size;
-      width: 56px;
+      @media screen and (min-width: map-get($grid-breakpoints, "xs")) {
+        font-size: $navbar-brand-lg-font-size-sm;
+      }
+      @media screen and (min-width: map-get($grid-breakpoints, "lg")) {
+        font-size: $navbar-brand-lg-font-size;
+      }
     }
     &-sm {
       font-size: $navbar-brand-sm-font-size;
@@ -27,5 +31,8 @@
         margin: 0 1.25rem;
       }
     }
+  }
+  .auth-toggler-icon {
+    font-size: 1.4rem;
   }
 }

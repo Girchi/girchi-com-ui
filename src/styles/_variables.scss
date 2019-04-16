@@ -98,9 +98,9 @@ $input-btn-padding-x-lg: 1.583rem !default;
 $input-btn-font-size-lg: 1rem !default;
 $input-btn-line-height-lg: 1 !default;
 
-$btn-border-radius: 50rem !default;
-$btn-border-radius-lg: 50rem !default;
-$btn-border-radius-sm: 50rem !default;
+$btn-border-radius: 1.2rem !default;
+$btn-border-radius-lg: 1.2rem !default;
+$btn-border-radius-sm: 1.2rem !default;
 
 $input-label-font-size: 0.75rem !default;
 $input-label-color: $grey !default;
@@ -138,6 +138,7 @@ $font-family-base: $font-family-firaGo !default;
 $navbar-brand-font-size: 1.625rem !default;
 
 $navbar-brand-lg-font-size: 4.0625rem !default;
+$navbar-brand-lg-font-size-sm: 2.619rem !default;
 $navbar-brand-sm-font-size: 2.875rem !default;
 
 $navbar-light-color: $success;
@@ -151,7 +152,9 @@ $navbar-light-disabled-color: rgba($success, 1) !default;
 $navbar-padding-y: 2.25rem !default;
 $navbar-padding-x: 0 !default;
 $navbar-nav-sm-font-size: 0.75rem !default;
-
+$navbar-light-toggler-border-color: transparent !default;
+$navbar-toggler-padding-y: 0 !default;
+$navbar-toggler-padding-x: 0 !default;
 // Borders
 $border-color: #dee2e6 !default;
 
@@ -179,3 +182,13 @@ $progress-bar-value-padding-y: 0.219rem !default;
 $progress-bar-value-padding-x: 1rem !default;
 $progress-bar-value-margin-x: 0.6rem !default;
 $progress-bar-label-padding: 1rem !default;
+
+// Dropdown
+
+$dropdown-min-width: 100% !default;
+$dropdown-border-radius: $btn-border-radius !default;
+$dropdown-border-color: $secondary;
+$dropdown-padding-y: 0 !default;
+$dropdown-spacer: 0 !default;
+$dropdown-item-padding-x: 0.25rem !default;
+$dropdown-item-font-size: 0.875rem !default;
