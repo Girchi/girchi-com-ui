@@ -1,4 +1,7 @@
 {
   "extends": "standard",
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "env": {
+    "jquery": true
+}
 }

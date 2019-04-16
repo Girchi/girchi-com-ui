@@ -171,8 +171,8 @@ $progress-box-shadow: initial !default;
 $progress-bar-bg: $light-green !default;
 // $progress-bar-bg: transparent !default;
 $progress-bar-animation-timing: initial !default;
-$progress-bar-transition: width 2s cubic-bezier(0.785, 0.135, 0.15, 0.86),
-  padding 2s cubic-bezier(0.785, 0.135, 0.15, 0.86) !default;
+$progress-bar-transition: width 1.5s cubic-bezier(0.785, 0.135, 0.15, 0.86),
+  padding 1.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) !default;
 $progress-bar-border-radius: 50rem !default;
 $progress-bar-value-font-size: 1.375rem !default;
 $progress-bar-value-padding-y: 0.219rem !default;
