@@ -18,14 +18,13 @@
       padding: 0 0.4375rem;
       display: flex;
       align-items: center;
-       
-      [class^="flaticon"] {
+      [class^="icon-"] {
         color: $dark-silver;
         font-size: 36px;
       }
 
-      [class^="flaticon"]+a{
-        margin:0 1.25rem;
+      [class^="icon-"] + a {
+        margin: 0 1.25rem;
       }
     }
   }

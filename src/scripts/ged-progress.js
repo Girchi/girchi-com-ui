@@ -5,7 +5,7 @@ $(document).ready(() => {
   const renderGeDProgress = () => {
     const windowWidth = $(window).width()
     const progressBarGutter = 50
-    const gedProgress = $('.js-ged-progress')
+    const gedProgress = $('.ged-progress')
     const gedProgressBar = gedProgress.find('.progress-bar')
     const gedProgressTotal = gedProgress.find('.progress-bar-total')
     const gedProgressTotalWidth = gedProgressTotal.width() + progressBarGutter

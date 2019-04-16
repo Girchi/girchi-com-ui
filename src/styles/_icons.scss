@@ -1,59 +1,48 @@
 // Icons
 
-[class^="flaticon-"]:before {
-  display: inline-block;
-  font-family: "Flaticon";
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-rendering: optimizeLegibility;
   text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-ged:before {
-  content: "\f100";
+.icon-girchi-logo:before {
+  content: "\e900";
 }
-.flaticon-arrow-down-sign-to-navigate:before {
-  content: "\f101";
+.icon-girchi-logo-alt:before {
+  content: "\e901";
 }
-.flaticon-smartphone:before {
-  content: "\f102";
+.icon-arrow-down-sign-to-navigate:before {
+  content: "\e902";
+}
+.icon-checked:before {
+  content: "\e903";
+}
+.icon-envelope:before {
+  content: "\e904";
+}
+.icon-ged:before {
+  content: "\e905";
+}
+.icon-smartphone:before {
+  content: "\e906";
   margin: 0 -0.5rem;
 }
-.flaticon-envelope:before {
-  content: "\f103";
+.icon-social-facebook-circular-button:before {
+  content: "\e907";
 }
-.flaticon-social-facebook-circular-button:before {
-  content: "\f104";
+.icon-social-twitter-circular-button:before {
+  content: "\e908";
 }
-.flaticon-social-twitter-circular-button:before {
-  content: "\f105";
+.icon-social-youtube-circular-button:before {
+  content: "\e909";
 }
-.flaticon-social-youtube-circular-button:before {
-  content: "\f106";
-}
-.flaticon-checked:before {
-  content: "\f107";
-}
-.flaticon-girchi-logo:before {
-  content: "\f108";
-}
-.flaticon-girchi-logo-alt:before {
-  content: "\f109";
-}
-
-$font-Flaticon-ged: "\f100";
-$font-Flaticon-arrow-down-sign-to-navigate: "\f101";
-$font-Flaticon-smartphone: "\f102";
-$font-Flaticon-envelope: "\f103";
-$font-Flaticon-social-facebook-circular-button: "\f104";
-$font-Flaticon-social-twitter-circular-button: "\f105";
-$font-Flaticon-social-youtube-circular-button: "\f106";
-$font-Flaticon-checked: "\f107";
-$font-Flaticon-girchi-logo: "\f108";
-$font-Flaticon-girchi-logo-alt: "\f109";
