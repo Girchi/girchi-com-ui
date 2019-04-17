@@ -87,6 +87,10 @@ module.exports = {
       filename: 'index.html',
       template: './src/index.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'register.html',
+      template: './src/register.html'
+    }),
     new PreloadWebpackPlugin({
       rel: 'preload',
       as (entry) {

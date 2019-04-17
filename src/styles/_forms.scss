@@ -7,6 +7,7 @@
     color: $input-label-color;
     font-size: $input-label-font-size;
     margin: $input-label-margin-y $input-label-margin-x;
+    font-weight: bold;
   }
   &-text {
     margin-left: $form-text-margin-x;
@@ -24,6 +25,7 @@
       margin: 0;
       padding-left: $form-check-label-padding-left;
       width: calc(100% - #{$form-check-label-padding-left});
+      font-weight: bold;
     }
     &-input {
       width: 26px;
