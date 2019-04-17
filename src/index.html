@@ -7,69 +7,288 @@
     <title>Girchi.com - Home</title>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="my-5">
-        <button class="btn btn-primary">primary</button>
-        <button class="btn btn-success">success</button>
-        <button class="btn btn-danger">danger</button>
-        <button class="btn btn-info">info</button>
-        <button class="btn btn-light">light</button>
-        <button class="btn btn-dark">dark</button>
-        <button class="btn btn-warning">warning</button>
-        <button class="btn btn-white">white</button>
-        <button class="btn btn-dark-white">dark-white</button>
-        <button class="btn btn-grey">grey</button>
-        <button class="btn btn-light-silver">light-silver</button>
-        <button class="btn btn-dark-silver">dark-silver</button>
-        <button class="btn btn-light-green">light-green</button>
-      </div>
-      <div class="my-5">
-        <button class="btn btn-warning text-uppercase">რეგისტრაცია</button>
-        <button class="btn btn-warning btn-lg text-uppercase">
-          დააფინანსე
-        </button>
-      </div>
-      <form style="width:370px" class="my-5">
-        <div class="form-group">
-          <label class="form-label" for="exampleInputEmail1">ელ.ფოსტა</label>
-          <input
-            type="email"
-            class="form-control form-control-lg"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="მიუთითეთ ელ.ფოსტა"
-          />
-          <small id="emailHelp" class="form-text text-muted"
-            >We'll never share your email with anyone else.</small
+  <body class="bg-light-silver">
+    <!-- Start of GeD Progress -->
+    <div class="progress ged-progress d-none d-lg-flex">
+      <div
+        class="progress-bar"
+        role="progressbar"
+        style="width: 0%;"
+        aria-valuenow="60"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-used="500000"
+      >
+        <span class="progress-bar-label">
+          უკვე გაცემულია
+          <span class="progress-bar-value d-inline-flex align-items-center">
+            <i class="icon-ged"></i>0</span
           >
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="exampleInputPassword1">პაროლი</label>
-          <input
-            type="password"
-            class="form-control form-control-lg"
-            id="exampleInputPassword1"
-            placeholder="მიუთითეთ პაროლი"
-          />
-        </div>
-        <div class="form-group">
-          <span class="form-checkbox">
-            <span class="form-checkbox-input">
-              <input type="checkbox" class="form-control" id="exampleCheck1" />
-            </span>
-            <label class="form-checkbox-label" for="exampleCheck1"
-              >წავიკითხე და ვეთანხმები რეგისტრაციის წესებს და პირობებს</label
-            >
-          </span>
-        </div>
-        <button
-          type="submit"
-          class="btn btn-lg btn-warning btn-block text-uppercase"
-        >
-          რეგისტრაცია
-        </button>
-      </form>
+        </span>
+      </div>
+      <div class="progress-bar-total">
+        <span class="progress-bar-label">
+          განკუთვნილია
+          <span class="progress-bar-value d-inline-flex align-items-center">
+            <i class="icon-ged"></i>5 000 000 000</span
+          >
+        </span>
+      </div>
     </div>
+    <!-- End of GeD Progress -->
+    <!-- Start of header -->
+    <header class="bg-white">
+      <div class="container">
+        <!-- Start of nav -->
+        <nav
+          class="navbar navbar-expand-lg navbar-light border-bottom p-0 py-lg-4"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="icon-girchi-logo navbar-brand-lg mr-lg-4"></i>
+            <span
+              class="navbar-text text-success text-uppercase font-weight-bold d-none d-lg-inline"
+              >გირჩი</span
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarAuth"
+            aria-controls="navbarAuth"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-user auth-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarAuth">
+            <div class="ml-auto">
+              <button class="btn btn-success mr-lg-2 text-uppercase">
+                შესვლა
+              </button>
+              <button class="btn btn-warning text-uppercase">
+                რეგისტრაცია
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- End of nav -->
+        <!-- Start of nav -->
+        <nav class="navbar navbar-expand-lg navbar-light mx-n2 p-0 py-lg-4">
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <!-- Start of menu -->
+            <ul class="navbar-nav text-uppercase">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >მთავარი <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">სიახლეები</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">დააფინანსე</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">პროექტები</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ჩვენს შესახებ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">კონტაქტი</a>
+              </li>
+            </ul>
+            <!-- End of menu -->
+            <!-- Start of language switcher -->
+            <div class="dropdown ml-auto mr-2">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle p-1 d-flex align-items-center text-grey bg-transparent shadow-none"
+                type="button"
+                id="languageSwitcher"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="./images/georgia.svg"
+                  width="28"
+                  class="mr-2"
+                  alt=""
+                />
+                ქარ
+                <i class="icon-arrow-down-sign-to-navigate mr-1 ml-3 caret"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageSwitcher">
+                <a class="dropdown-item text-grey" href="#"
+                  ><img
+                    src="./images/united-kingdom.svg"
+                    width="28"
+                    class="mr-2"
+                    alt=""
+                  />
+                  Eng</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End of language switcher -->
+        </nav>
+        <!-- End of nav -->
+      </div>
+    </header>
+    <!-- End of header -->
+    <div class="container">
+      <div class="py-5">
+        <p>
+          გავრცელებული მოსაზრებით, Lorem Ipsum შემთხვევითი ტექსტი სულაც არაა.
+          მისი ფესვები ჯერკიდევ ჩვ. წ. აღ-მდე 45 წლის დროინდელი კლასიკური
+          ლათინური ლიტერატურიდან მოდის. ვირჯინიის შტატში მდებარე ჰემპდენ-სიდნეის
+          კოლეჯის პროფესორმა რიჩარდ მაკკლინტოკმა აიღო ერთ-ერთი ყველაზე იშვიათი
+          ლათინური სიტყვა "consectetur" Lorem Ipsum-პასაჟიდან და გადაწყვიტა
+          მოეძებნა იგი კლასიკურ ლიტერატურაში. ძიება შედეგიანი აღმოჩნდა — ტექსტი
+          Lorem Ipsum გადმოწერილი ყოფილა ციცერონის "de Finibus Bonorum et
+          Malorum"-ის 1.10.32 და 1.10.33 თავებიდან. ეს წიგნი ეთიკის თეორიის
+          ტრაქტატია, რომელიც რენესანსის პერიოდში ძალიან იყო გავრცელებული. Lorem
+          Ipsum-ის პირველი ხაზი, "Lorem ipsum dolor sit amet..." სწორედ ამ
+          წიგნის 1.10.32 თავიდანაა. მათთვის, ვისაც აინტერესებს, ქვევით
+          მოყვანილია Lorem Ipsum-ის ორიგინალი ნაწყვეტი 1500-იანი წლებიდან. ასევე
+          შეგიძლიათ ნახოთ 1.10.32 და 1.10.33 თავები ციცერონის "de Finibus
+          Bonorum et Malorum"-დან, რომელსაც თან ერთვის 1914 წელს ჰ. რექჰამის
+          შესრულებული ინგლისურენოვანი თარგმანი.
+        </p>
+        <p>
+          დღეს უკვე Lorem Ipsum-პასაჟის უამრავი ვერსია არსებობს. მათი დიდი
+          ნაწილი ხუმრობით არის შეცვლილი, ბევრი კი უბრალოდ სიტყვების შემთხვევითი
+          გენერირებით დაიწერა. ინტერნეტში არსებული გენერატორები, როგორც წესი,
+          წინასწარ განსაზღვრული ტექსტის ნაგლეჯს იმეორებენ ხოლმე, ამიტომ ეს
+          პირველი ნამდვილი გენერატორია. იგი რთული და მართებული სტრუქტურის
+          წინადადებების ასაწყობად 200-მდე ლათინური სიტყვისგან შემდგარ ლექსიკონს
+          იყენებს. შედეგად მიიღება ტექსტი, რომელიც ვიზუალურად მაქსიმალურად
+          ახლოსაა რეალურთან. გენერირებული Lorem Ipsum არასოდეს არ არის
+          გამეორებადი, შემთხვევითი სიტყვების ან ხუმრობების შემცველი.
+        </p>
+      </div>
+    </div>
+    <!-- Start of footer -->
+    <footer>
+      <!-- Start of footer 1st row -->
+
+      <div class="bg-white">
+        <div class="container">
+          <nav class="navbar py-3 flex-column flex-lg-row">
+            <a
+              class="navbar-brand d-flex align-items-center text-uppercase"
+              href="#"
+            >
+              <i
+                class="icon-girchi-logo-alt navbar-brand-sm text-success mr-3"
+              ></i>
+              <span class="text-success font-weight-bold font-size-4"
+                >გირჩი</span
+              >
+              <span class="text-warning  border-left py-1 ml-3 pl-3 font-size-4"
+                >მეტი თავისუფლება</span
+              >
+            </a>
+            <ul
+              class="navbar-list list-unstyled d-inline-flex font-size-4 ml-lg-auto mr-lg-3 mb-0"
+            >
+              <li class="navbar-list-item">
+                <i class="icon-smartphone"></i>
+                <a href="tel:+995551677772">+995 551 677 772</a>
+              </li>
+              <li class="navbar-list-item">
+                <i class="icon-envelope"></i>
+                <a href="mailto:info@girchi.com" class="text-uppercase"
+                  >info@girchi.com</a
+                >
+              </li>
+            </ul>
+
+            <ul
+              class="navbar-list list-unstyled d-inline-flex font-size-4 mb-0"
+            >
+              <li class="navbar-list-item">
+                <a href="#" target="_blank" class="text-decoration-none">
+                  <i class="icon-social-facebook-circular-button"></i
+                ></a>
+              </li>
+              <li class="navbar-list-item">
+                <a href="#" target="_blank" class="text-decoration-none">
+                  <i class="icon-social-twitter-circular-button"></i
+                ></a>
+              </li>
+              <li class="navbar-list-item">
+                <a href="#" target="_blank" class="text-decoration-none"
+                  ><i class="icon-social-youtube-circular-button"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- End of footer 1st row -->
+      <!-- Start of footer 1st row -->
+      <div class="container">
+        <!-- Start of nav -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark mx-n2 border-bottom d-none d-lg-flex"
+        >
+          <!-- Start of menu -->
+          <ul class="navbar-nav font-size-1 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="#">ლეგალიზაცია</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">თავისუფალი განათლება </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ნამდვილი თავდაცვა </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ძალაუფლება ხალხს </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ჩვენი ხედვა </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ჩვენი ამბავი </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">მთავარი პრობლემა </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">როგორი ქვეყანა გვინდა</a>
+            </li>
+          </ul>
+
+          <!-- End of menu -->
+        </nav>
+        <!-- End of nav -->
+        <div class="py-4">
+          <p
+            class="text-grey font-size-1 text-uppercase text-center text-lg-left mb-0"
+          >
+            © ყველა უფლება დაცულია. გირჩი 2019.
+          </p>
+        </div>
+      </div>
+      <!-- End of footer 1st row -->
+    </footer>
+    <!-- End of footer -->
   </body>
 </html>

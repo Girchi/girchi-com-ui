@@ -1,0 +1,38 @@
+//
+// Navbar
+//
+
+.navbar {
+  &-brand {
+    &-lg {
+      @media screen and (min-width: map-get($grid-breakpoints, "xs")) {
+        font-size: $navbar-brand-lg-font-size-sm;
+      }
+      @media screen and (min-width: map-get($grid-breakpoints, "lg")) {
+        font-size: $navbar-brand-lg-font-size;
+      }
+    }
+    &-sm {
+      font-size: $navbar-brand-sm-font-size;
+      width: 39px;
+    }
+  }
+  &-list {
+    &-item {
+      padding: 0 0.4375rem;
+      display: flex;
+      align-items: center;
+      [class^="icon-"] {
+        color: $dark-silver;
+        font-size: 36px;
+      }
+
+      [class^="icon-"] + a {
+        margin: 0 1.25rem;
+      }
+    }
+  }
+  .auth-toggler-icon {
+    font-size: 1.4rem;
+  }
+}

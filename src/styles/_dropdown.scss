@@ -1,0 +1,21 @@
+.dropdown {
+  &-menu {
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &-toggle[aria-expanded="true"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    .caret {
+      transform: rotate(180deg);
+    }
+  }
+  &-item {
+    font-size: $dropdown-item-font-size;
+    &:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+}

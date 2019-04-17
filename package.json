@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "eslint": "eslint src/ --fix",
-    "prettier": "prettier --write \"src/**/*.{scss,html}\"",
+    "prettier": "prettier --write \"./**/*.{json,scss,html}\"",
     "format": "yarn run eslint && yarn run prettier"
   },
   "license": "UNLICENSED",
@@ -38,7 +38,9 @@
     "html-webpack-plugin": "^3.2.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.4.0",
+    "imports-loader": "^0.8.0",
     "jquery": "^3.3.1",
+    "jquery.animate-number": "^0.0.14",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.11.0",
     "offline-plugin": "^5.0.6",

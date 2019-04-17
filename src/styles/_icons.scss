@@ -1,0 +1,50 @@
+// Icons
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-girchi-logo:before {
+  content: "\e901";
+}
+.icon-girchi-logo-alt:before {
+  content: "\e902";
+}
+.icon-arrow-down-sign-to-navigate:before {
+  content: "\e903";
+}
+.icon-checked:before {
+  content: "\e904";
+}
+.icon-envelope:before {
+  content: "\e905";
+}
+.icon-ged:before {
+  content: "\e906";
+}
+.icon-social-facebook-circular-button:before {
+  content: "\e907";
+}
+.icon-social-twitter-circular-button:before {
+  content: "\e908";
+}
+.icon-social-youtube-circular-button:before {
+  content: "\e909";
+}
+.icon-smartphone:before {
+  content: "\e958";
+  margin: 0 -0.5rem;
+}
+.icon-user:before {
+  content: "\e971";
+}

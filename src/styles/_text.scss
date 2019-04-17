@@ -8,3 +8,18 @@
     font-feature-settings: "case" on;
   }
 }
+
+.font-size {
+  &-1 {
+    font-size: $font-size-sm;
+  }
+  &-2 {
+    font-size: $font-size-base;
+  }
+  &-3 {
+    font-size: $font-size-lg;
+  }
+  &-4 {
+    font-size: $font-size-xl;
+  }
+}
