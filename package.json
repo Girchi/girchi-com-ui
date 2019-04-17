@@ -10,7 +10,7 @@
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "eslint": "eslint src/ --fix",
-    "prettier": "prettier --write \"src/**/*.{scss,html}\"",
+    "prettier": "prettier --write \"./**/*.{json,scss,html}\"",
     "format": "yarn run eslint && yarn run prettier"
   },
   "license": "UNLICENSED",
