@@ -21,12 +21,9 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/Icomoon/icomoon.eot?ey3peb");
-  src: url("../fonts/Icomoon/icomoon.eot?ey3peb#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Icomoon/icomoon.ttf?ey3peb") format("truetype"),
-    url("../fonts/Icomoon/icomoon.woff?ey3peb") format("woff"),
-    url("../fonts/Icomoon/icomoon.svg?ey3peb#icomoon") format("svg");
+
+  src: url("../fonts/Icomoon/icomoon.ttf?ey3peb") format("truetype"),
+    url("../fonts/Icomoon/icomoon.woff?ey3peb") format("woff");
   font-weight: normal;
   font-style: normal;
 }
