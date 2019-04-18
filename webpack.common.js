@@ -91,6 +91,10 @@ module.exports = {
       filename: 'register.html',
       template: './src/register.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'login.html',
+      template: './src/login.html'
+    }),
     new PreloadWebpackPlugin({
       rel: 'preload',
       as (entry) {
