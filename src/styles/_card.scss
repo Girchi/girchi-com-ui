@@ -1,0 +1,13 @@
+// Card
+.card {
+  &-subtitle {
+    margin-top: 0;
+  }
+  &-divider {
+    margin-left: -$card-spacer-x;
+    margin-right: -$card-spacer-x;
+  }
+  &-body {
+    box-shadow: 0px 1px 0 0 $card-body-shadow-color;
+  }
+}

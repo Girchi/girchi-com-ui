@@ -15,6 +15,7 @@ $dark-blue: #33353c;
 $red: #ef3233;
 $white: #ffffff;
 $dark-white: #f7f7f7;
+$purple: #3b5998;
 
 $colors: () !default;
 $colors: map-merge(
@@ -31,7 +32,8 @@ $colors: map-merge(
     "dark-blue": dark-blue,
     "red": $red,
     "white": $white,
-    "dark-white": $dark-white
+    "dark-white": $dark-white,
+    "purple": $purple
   ),
   $colors
 );
@@ -62,7 +64,8 @@ $theme-colors: map-merge(
     "grey": $grey,
     "light-silver": $light-silver,
     "dark-silver": $dark-silver,
-    "light-green": $light-green
+    "light-green": $light-green,
+    "purple": $purple
   ),
   $theme-colors
 );
@@ -99,7 +102,7 @@ $input-btn-font-size-lg: 1rem !default;
 $input-btn-line-height-lg: 1 !default;
 
 $btn-border-radius: 1.2rem !default;
-$btn-border-radius-lg: 1.2rem !default;
+$btn-border-radius-lg: 1.5rem !default;
 $btn-border-radius-sm: 1.2rem !default;
 
 $input-label-font-size: 0.75rem !default;
@@ -120,13 +123,16 @@ $form-check-label-color: $grey !default;
 $form-check-input-gutter: 0 !default;
 $form-check-label-padding-left: 0.5rem !default;
 
+$form-group-margin-bottom: 1.1875rem !default;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-sm: $font-size-base * 0.75 !default;
-$font-size-lg: $font-size-base * 0.875 !default;
-$font-size-xl: $font-size-base * 1.125 !default;
+$font-size-1: $font-size-base * 0.75 !default;
+$font-size-2: $font-size-base !default;
+$font-size-3: $font-size-base * 1.125 !default;
+$font-size-4: $font-size-base * 1.5 !default;
+
 $line-height-base: 1.5 !default;
 $font-family-firaGo: "FiraGO" !default;
 $font-family-base: $font-family-firaGo !default;
@@ -192,3 +198,14 @@ $dropdown-padding-y: 0 !default;
 $dropdown-spacer: 0 !default;
 $dropdown-item-padding-x: 0.25rem !default;
 $dropdown-item-font-size: 0.875rem !default;
+
+// Card
+$card-border-width: 0 !default;
+$card-border-radius: 0.5rem !default;
+$card-spacer-y: 1.06rem !default;
+$card-spacer-x: 1.875rem !default;
+$card-body-shadow-color: #ecf1f5;
+// Typography
+$headings-line-height: 1.5 !default;
+$h5-font-size: $font-size-base * 1.125 !default;
+$h6-font-size: $font-size-base * 0.875 !default;

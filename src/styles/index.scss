@@ -2,8 +2,11 @@
 @import "_variables";
 @import "~bootstrap/scss/bootstrap";
 @import "_forms";
-@import "_text";
+@import "utilities/_text";
 @import "_icons";
 @import "_navbar";
 @import "_progress";
 @import "_dropdown";
+@import "_card";
+@import "_button";
+@import "utilities/_borders";

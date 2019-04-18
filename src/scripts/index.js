@@ -1,4 +1,5 @@
 import '../index.html'
+import '../register.html'
 import '../styles/index.scss'
 import 'bootstrap/js/src/index'
 import './ged-progress'
