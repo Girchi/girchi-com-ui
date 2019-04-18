@@ -16,6 +16,7 @@ $red: #ef3233;
 $white: #ffffff;
 $dark-white: #f7f7f7;
 $purple: #3b5998;
+$xx: #ecf1f5;
 
 $colors: () !default;
 $colors: map-merge(
@@ -27,7 +28,7 @@ $colors: map-merge(
     "light-silver": $light-silver,
     "dark-silver": $dark-silver,
     "grey": $grey,
-    "light-grey": light-grey,
+    "light-grey": $light-grey,
     "blue": $blue,
     "dark-blue": dark-blue,
     "red": $red,
@@ -91,8 +92,8 @@ $input-btn-font-size: 0.875rem !default;
 $input-btn-padding-y: 0.563rem !default;
 $input-btn-padding-x: 1.475rem !default;
 
-$btn-padding-y-sm: 0.6rem !default;
-$btn-padding-x-sm: 1.3rem !default;
+$btn-padding-y-sm: 0.5rem !default;
+$btn-padding-x-sm: 1rem !default;
 $btn-font-size-sm: 0.75rem !default;
 $btn-line-height-sm: 1 !default;
 
@@ -205,6 +206,7 @@ $card-border-radius: 0.5rem !default;
 $card-spacer-y: 1.06rem !default;
 $card-spacer-x: 1.875rem !default;
 $card-body-shadow-color: #ecf1f5;
+$card-text-font-size: 0.875rem !default;
 // Typography
 $headings-line-height: 1.5 !default;
 $h5-font-size: $font-size-base * 1.125 !default;

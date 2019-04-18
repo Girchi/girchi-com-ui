@@ -10,4 +10,7 @@
   &-body {
     box-shadow: 0px 1px 0 0 $card-body-shadow-color;
   }
+  &-text {
+    font-size: $card-text-font-size;
+  }
 }
