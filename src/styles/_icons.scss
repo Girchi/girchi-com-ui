@@ -9,11 +9,35 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
+  line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-clock-circular-outline:before {
+  content: "\e90c";
+}
+.icon-play-button:before {
+  content: "\e90b";
+}
+.icon-angle-arrow-pointing-to-right:before {
+  content: "\e900";
+}
+.icon-angle-pointing-to-left:before {
+  content: "\e90a";
+}
+.icon-smartphone:before {
+  content: "\e958";
+  margin: 0 -0.5rem;
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
 .icon-girchi-logo:before {
   content: "\e901";
 }
@@ -40,11 +64,4 @@
 }
 .icon-social-youtube-circular-button:before {
   content: "\e909";
-}
-.icon-smartphone:before {
-  content: "\e958";
-  margin: 0 -0.5rem;
-}
-.icon-user:before {
-  content: "\e971";
 }
