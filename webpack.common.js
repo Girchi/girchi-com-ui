@@ -110,6 +110,10 @@ module.exports = {
       filename: 'login.html',
       template: './src/login.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'register2.html',
+      template: './src/register2.html'
+    }),
     new PreloadWebpackPlugin({
       rel: 'preload',
       as (entry) {
