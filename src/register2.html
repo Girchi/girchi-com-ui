@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Girchi.com - ავტორიზაცია</title>
+    <title>Girchi.com - რეგისტრაცია</title>
   </head>
 
   <body>
@@ -159,28 +159,86 @@
             <div class="row">
               <div class="col-xs-12 col-md-8 col-lg-6 m-auto">
                 <h5
-                  class="card-title text-center text-success font-weight-bold text-uppercase mb-0"
+                  class="card-title text-center text-success font-weight-bold text-uppercase"
                 >
-                  ავტორიზაცია
+                  რეგისტრაცია
                 </h5>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12 col-md-7 col-lg-4 m-auto">
-                <button
-                  class="btn btn-block d-flex align-items-center justify-content-center btn-with-icon btn-lg btn-purple text-uppercase my-4"
-                >
-                  <i
-                    class="icon-social-facebook-circular-button font-size-4"
-                  ></i>
-                  FACEBOOK ავტორიზაცია
-                </button>
+                <h6 class="card-subtitle text-center mb-5">
+                  აირჩიეთ პოლიტიკოსი, მიუთითეთ თქვენი წონის რამდენი %-ით უჭერთ
+                  მას მხარს და მიიღე მონაწილეობა პარტიული სიის ჩამოყალიბებაში.
+                </h6>
+                <!-- Start of success message -->
+                <!-- <div class="text-center">
+                  <span class="icon rounded bg-light text-success mb-2">
+                    <i class="icon-checked"></i>
+                  </span>
+                  <h5
+                    class="card-title  text-success font-weight-bold text-uppercase mb-0"
+                  >
+                    გიორგი ბერიძე
+                  </h5>
+                  <h6 class="card-subtitle  mb-5">
+                    წარმატებით დარეგისტრირდა
+                  </h6>
+                </div> -->
+                <!-- End of success message -->
               </div>
             </div>
             <hr class="card-divider my-0" />
             <div class="row">
               <div class="col-xs-12 col-md-7 col-lg-4 m-auto">
                 <form class="my-4">
+                  <div class="form-group">
+                    <label class="form-label" for="id-number"
+                      >პირადი ნომერი</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control form-control-lg"
+                      id="id-number"
+                      placeholder="მიუთითეთ პირადი ნომერი"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="fist-name">სახელი</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="first-name"
+                      placeholder="მიუთითეთ სახელი"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="last-name">გვარი</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="last-name"
+                      placeholder="მიუთითეთ გვარი"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="birth-date"
+                      >დაბადების თარიღი</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control form-control-lg"
+                      id="birth-date"
+                      placeholder="მიუთითეთ დაბადების თარიღი"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="phone-number"
+                      >მობილური</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="phone-number"
+                      placeholder="მიუთითეთ მობილური"
+                    />
+                  </div>
                   <div class="form-group">
                     <label class="form-label" for="email">ელ.ფოსტა</label>
                     <input
@@ -191,38 +249,28 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label class="form-label" for="password">პაროლი</label>
-                    <div class="input-with-addon">
-                      <input
-                        type="password"
-                        class="form-control form-control-lg"
-                        id="password"
-                        placeholder="მიუთითეთ პაროლი"
-                      />
-                      <div class="input-addon">
-                        <a href="#" class="btn btn-sm btn-light text-grey">
-                          აღდგენა
-                        </a>
-                      </div>
-                    </div>
+                    <label class="form-label" for="ged"
+                      >GeD-ების რაოდენობა</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control form-control-lg"
+                      id="ged"
+                      placeholder="მიუთითეთ GeD-ების რაოდენობა"
+                    />
                   </div>
-
                   <button
                     type="submit"
-                    class="btn btn-lg btn-block btn-success text-uppercase mt-4"
-                  >
-                    შესვლა
-                  </button>
-
-                  <hr class="my-5 mx-n5" />
-                  <p class="card-text text-center">
-                    არ გაქვთ ანგარიში? გაიარეთ რეგისტრაცია მარტივად
-                  </p>
-                  <a
-                    href="register.html"
                     class="btn btn-lg btn-block btn-warning text-uppercase mt-4"
                   >
                     რეგისტრაცია
+                  </button>
+                  <hr class="my-4 mx-n5" />
+                  <a
+                    href="#"
+                    class="btn btn-lg btn-block btn-success text-uppercase"
+                  >
+                    დარეგისტრირებულთა სია
                   </a>
                 </form>
               </div>

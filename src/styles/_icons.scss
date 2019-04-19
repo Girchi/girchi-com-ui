@@ -1,5 +1,17 @@
 // Icons
 
+.icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9375rem;
+  &.rounded {
+    border-radius: 2rem !important;
+  }
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
