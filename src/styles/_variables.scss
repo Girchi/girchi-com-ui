@@ -16,7 +16,6 @@ $red: #ef3233;
 $white: #ffffff;
 $dark-white: #f7f7f7;
 $purple: #3b5998;
-$xx: #ecf1f5;
 
 $colors: () !default;
 $colors: map-merge(
@@ -139,6 +138,8 @@ $font-size-4: $font-size-base * 1.5 !default;
 $font-size-5: $font-size-base * 0.875 !default;
 $font-size-6: $font-size-base * 0.8125 !default;
 $font-size-7: $font-size-base * 2.125 !default;
+$font-size-8: $font-size-base * 1.375 !default;
+$font-size-9: $font-size-base * 1.625 !default;
 
 $line-height-base: 1.5 !default;
 $font-family-firaGo: "FiraGO" !default;
@@ -256,3 +257,19 @@ $dot-background-active: $light-green !default;
 // Position
 
 $positionTypes: (top, bottom, left, right) !default;
+
+// Nav
+
+$nav-pills-border-radius: $btn-border-radius;
+$nav-pills-link-active-color: $success;
+$nav-pills-link-active-bg: $light;
+$nav-pills-link-padding-x: $btn-padding-x-sm;
+$nav-pills-link-padding-y: $btn-padding-y-sm;
+$nav-pills-link-font-size: $btn-font-size-sm;
+$nav-pills-link-line-height: $btn-line-height-sm;
+$nav-pills-link-active-border: 1px solid #dce5eb;
+$nav-pills-link-inactive-border: 1px solid transparent;
+
+// List group
+
+$list-group-border-color: $light !default;
