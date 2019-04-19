@@ -1,0 +1,15 @@
+// Nav
+
+.nav {
+  &-pills {
+    .nav-link {
+      padding: $nav-pills-link-padding-y $nav-pills-link-padding-x;
+      font-size: $nav-pills-link-font-size;
+      line-height: $nav-pills-link-line-height;
+      border: $nav-pills-link-inactive-border;
+      &.active {
+        border: $nav-pills-link-active-border;
+      }
+    }
+  }
+}
