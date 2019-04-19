@@ -13,4 +13,21 @@
   &-text {
     font-size: $card-text-font-size;
   }
+  &-header {
+    border-bottom: $card-header-border-width solid $card-header-border-color;
+  }
+  &-view-all {
+    display: flex;
+    align-items: center;
+    [class^="icon-"] {
+      display: inline-block;
+      transition: transform 0.4s;
+      margin-left: 0.5rem;
+    }
+    &:hover {
+      [class^="icon-"] {
+        transform: translateX(3px);
+      }
+    }
+  }
 }

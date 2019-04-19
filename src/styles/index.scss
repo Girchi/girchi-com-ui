@@ -1,8 +1,12 @@
 @import "_fonts";
 @import "_variables";
+@import "_functions";
 @import "~bootstrap/scss/bootstrap";
-@import "_forms";
 @import "utilities/_text";
+@import "utilities/_borders";
+@import "utilities/_position";
+@import "utilities/_overlay";
+@import "_forms";
 @import "_icons";
 @import "_navbar";
 @import "_progress";
@@ -10,4 +14,5 @@
 @import "_card";
 @import "_button";
 @import "_input-group";
-@import "utilities/_borders";
+@import "_media";
+@import "_carousel";

@@ -74,6 +74,9 @@ $theme-colors: map-merge(
 $yiq-contrasted-threshold: 200 !default;
 $emphasized-link-hover-darken-percentage: 3% !default;
 
+$body-bg: $light-silver !default;
+$body-color: $blue !default;
+
 // Buttons + Forms
 
 $input-color: $blue;
@@ -133,6 +136,9 @@ $font-size-1: $font-size-base * 0.75 !default;
 $font-size-2: $font-size-base !default;
 $font-size-3: $font-size-base * 1.125 !default;
 $font-size-4: $font-size-base * 1.5 !default;
+$font-size-5: $font-size-base * 0.875 !default;
+$font-size-6: $font-size-base * 0.8125 !default;
+$font-size-7: $font-size-base * 2.125 !default;
 
 $line-height-base: 1.5 !default;
 $font-family-firaGo: "FiraGO" !default;
@@ -163,7 +169,7 @@ $navbar-light-toggler-border-color: transparent !default;
 $navbar-toggler-padding-y: 0 !default;
 $navbar-toggler-padding-x: 0 !default;
 // Borders
-$border-color: #dee2e6 !default;
+$border-color: #ecf1f5 !default;
 
 // Options
 //
@@ -202,12 +208,51 @@ $dropdown-item-font-size: 0.875rem !default;
 
 // Card
 $card-border-width: 0 !default;
-$card-border-radius: 0.5rem !default;
+$card-border-radius: 0.3rem !default;
 $card-spacer-y: 1.06rem !default;
 $card-spacer-x: 1.875rem !default;
 $card-body-shadow-color: #ecf1f5;
 $card-text-font-size: 0.875rem !default;
+$card-cap-bg: $white;
+$card-header-border-width: 1px;
+$card-header-border-color: #ecf1f5;
 // Typography
 $headings-line-height: 1.5 !default;
 $h5-font-size: $font-size-base * 1.125 !default;
 $h6-font-size: $font-size-base * 0.875 !default;
+
+// Grid
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+) !default;
+
+// Carousel
+
+$color-base: #4dc7a0 !default;
+$color-white: $white !default;
+$color-gray: $light-grey !default;
+
+$nav-color: $color-white !default;
+$nav-color-hover: $color-white !default;
+$nav-font-size: 0.875rem !default;
+$nav-rounded: 0.1875rem !default;
+$nav-margin: 0.3125rem !default;
+$nav-padding: 0.25rem 0.4375rem !default;
+$nav-background: $color-gray !default;
+$nav-background-hover: $color-base !default;
+$nav-disabled-opacity: 0.5 !default;
+
+$dot-width: 0.625rem !default;
+$dot-height: 0.625rem !default;
+$dot-rounded: 1.875rem !default;
+$dot-margin: 0.3125rem !default;
+$dot-background: $color-gray !default;
+$dot-background-active: $light-green !default;
+
+// Position
+
+$positionTypes: (top, bottom, left, right) !default;

@@ -2751,6 +2751,11 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
+expose-loader@^0.7.5:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/expose-loader/-/expose-loader-0.7.5.tgz#e29ea2d9aeeed3254a3faa1b35f502db9f9c3f6f"
+  integrity sha512-iPowgKUZkTPX5PznYsmifVj9Bob0w2wTHVkt/eYNPSzyebkUgIedmskf/kcfEIWpiWjg3JRjnW+a17XypySMuw==
+
 express@^4.16.4:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.4.tgz#fddef61926109e24c515ea97fd2f1bdbf62df12e"
@@ -4155,14 +4160,7 @@ jpegtran-bin@^4.0.0:
     bin-wrapper "^4.0.0"
     logalot "^2.0.0"
 
-jquery.animate-number@^0.0.14:
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/jquery.animate-number/-/jquery.animate-number-0.0.14.tgz#9263bb87e3c9ac2e2fc173d16ebd607589ad3198"
-  integrity sha1-kmO7h+PJrC4vwXPRbr1gdYmtMZg=
-  dependencies:
-    jquery ">= 1.7.0"
-
-"jquery@>= 1.7.0":
+jquery@>=1.8.3:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
   integrity sha512-ggRCXln9zEqv6OqAGXFEcshF5dSBvCkzj6Gm2gzuR5fWawaX8t7cxKVkkygKODrDAzKdoYw3l/e3pm3vlT4IbQ==
@@ -5142,6 +5140,13 @@ osenv@0, osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+owl.carousel2@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/owl.carousel2/-/owl.carousel2-2.2.1.tgz#09dc5b4ae7b9b7a3d913fe4fea4c6d6cc7957f22"
+  integrity sha1-CdxbSue5t6PZE/5P6kxtbMeVfyI=
+  dependencies:
+    jquery ">=1.8.3"
 
 p-cancelable@^0.3.0:
   version "0.3.0"

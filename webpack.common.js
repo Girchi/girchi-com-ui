@@ -9,6 +9,11 @@ const webpack = require('webpack')
 module.exports = {
   mode: 'development',
   entry: './src/scripts/index.js',
+  resolve: {
+    alias: {
+      'jquery': path.resolve(path.join(__dirname, 'node_modules', 'jquery'))
+    }
+  },
   module: {
     rules: [{
       test: /\.txt$/,
@@ -78,6 +83,16 @@ module.exports = {
           presets: ['@babel/preset-env']
         }
       }
+    },
+    {
+      test: require.resolve('jquery'),
+      use: [{
+        loader: 'expose-loader',
+        options: 'jQuery'
+      }, {
+        loader: 'expose-loader',
+        options: '$'
+      }]
     }
     ]
   },
@@ -111,10 +126,12 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.$': 'jquery'
+      '$': 'jquery',
+      'jQuery': 'jquery',
+      'window.$': 'jquery',
+      'window.jQuery': 'jquery'
     })
+
   ],
   output: {
     filename: 'bundle-[hash].js',

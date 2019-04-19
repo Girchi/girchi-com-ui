@@ -1,0 +1,15 @@
+// Overlay
+
+.overlay {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, transparent 50%);
+    z-index: 1;
+  }
+}
