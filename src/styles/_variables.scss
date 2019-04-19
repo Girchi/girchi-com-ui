@@ -137,7 +137,8 @@ $font-size-2: $font-size-base !default;
 $font-size-3: $font-size-base * 1.125 !default;
 $font-size-4: $font-size-base * 1.5 !default;
 $font-size-5: $font-size-base * 0.875 !default;
-$font-size-6: $font-size-base * 0.8125;
+$font-size-6: $font-size-base * 0.8125 !default;
+$font-size-7: $font-size-base * 2.125 !default;
 
 $line-height-base: 1.5 !default;
 $font-family-firaGo: "FiraGO" !default;
@@ -251,3 +252,7 @@ $dot-rounded: 1.875rem !default;
 $dot-margin: 0.3125rem !default;
 $dot-background: $color-gray !default;
 $dot-background-active: $light-green !default;
+
+// Position
+
+$positionTypes: (top, bottom, left, right) !default;

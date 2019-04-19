@@ -40,7 +40,9 @@ module.exports = merge(common, {
     new PurgecssPlugin({
       paths: glob.sync([
         `${path.join(__dirname, 'src')}/*.html`,
-        `${path.join(__dirname, 'src')}/**/*.js`
+        `${path.join(__dirname, 'src')}/**/*.js`,
+        `${path.join(__dirname, 'node_modules/bootstrap')}/**/*.js`,
+        `${path.join(__dirname, 'node_modules/owl.carousel2')}/**/*.js`,
       ])
     }),
     {

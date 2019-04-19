@@ -1,8 +1,11 @@
 @import "_fonts";
 @import "_variables";
+@import "_functions";
 @import "~bootstrap/scss/bootstrap";
 @import "utilities/_text";
 @import "utilities/_borders";
+@import "utilities/_position";
+@import "utilities/_overlay";
 @import "_forms";
 @import "_icons";
 @import "_navbar";

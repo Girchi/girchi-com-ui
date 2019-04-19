@@ -28,4 +28,17 @@
   &-6 {
     font-size: $font-size-6;
   }
+  &-7 {
+    font-size: $font-size-7;
+  }
+}
+
+.line-height {
+  @for $i from 0 through 2 {
+    @for $d from 1 through 10 {
+      &-#{$i}-#{$d} {
+        line-height: number("#{$i}.#{$d}");
+      }
+    }
+  }
 }

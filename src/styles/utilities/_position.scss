@@ -1,0 +1,19 @@
+// Position
+
+.position {
+  @each $position in $positionTypes {
+    @for $i from 0 through 10 {
+      &-#{$position}-#{$i} {
+        #{$position}: #{$i}rem;
+      }
+    }
+  }
+}
+
+.z-index {
+  @for $i from 0 through 10 {
+    &-#{$i} {
+      z-index: #{$i};
+    }
+  }
+}
