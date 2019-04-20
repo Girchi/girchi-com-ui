@@ -256,7 +256,44 @@ $dot-background-active: $light-green !default;
 
 // Position
 
-$positionTypes: (top, bottom, left, right) !default;
+$positionSides: (top, bottom, left, right) !default;
+$positionTypes: (
+  center: (
+    xy: (
+      top: 50%,
+      left: 50%,
+      transform: translate(-50%, -50%)
+    ),
+    y: (
+      top: 50%,
+      transform: translateY(-50%)
+    ),
+    x: (
+      left: 50%,
+      transform: translateX(-50%)
+    )
+  )
+) !default;
+
+@each $side in $positionSides {
+  $childMap: ();
+  @for $i from 0 through 10 {
+    $childMap: map-merge(
+      $childMap,
+      (
+        $i: (
+          $side: #{$i}rem
+        )
+      )
+    );
+  }
+  $positionTypes: map-merge(
+    $positionTypes,
+    (
+      $side: $childMap
+    )
+  );
+}
 
 // Nav
 
@@ -273,3 +310,37 @@ $nav-pills-link-inactive-border: 1px solid transparent;
 // List group
 
 $list-group-border-color: $light !default;
+$list-group-item-padding-y: 0.72rem !default;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25
+    ),
+    2: (
+      $spacer * 0.5
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.875
+    ),
+    5: (
+      $spacer * 3
+    ),
+    6: (
+      $spacer * 3.5
+    ),
+    7: (
+      $spacer * 4
+    ),
+    8: (
+      $spacer * 4.5
+    )
+  ),
+  $spacers
+);
