@@ -4,7 +4,7 @@
   @if type-of($value) == "number" {
     @return $value;
   } @else if type-of($value) != "string" {
-    $_: log("Value for `to-number` should be a number or a string.");
+    $_: log("Value for `number` should be a number or a string.");
   }
 
   $result: 0;

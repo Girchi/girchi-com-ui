@@ -10,6 +10,9 @@
 }
 
 .font-size {
+  &-base {
+    font-size: $font-size-base;
+  }
   &-1 {
     font-size: $font-size-1;
   }
