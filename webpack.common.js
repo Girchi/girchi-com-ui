@@ -24,7 +24,8 @@ module.exports = {
       use: [{
         loader: 'html-loader',
         options: {
-          minimize: false
+          minimize: false,
+          interpolate: true
         }
       }]
     },
