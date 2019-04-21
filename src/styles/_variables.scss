@@ -173,7 +173,7 @@ $navbar-toggler-padding-y: 0 !default;
 $navbar-toggler-padding-x: 0 !default;
 // Borders
 $border-color: #ecf1f5 !default;
-
+$borderSides: (top, bottom, left, right) !default;
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.
