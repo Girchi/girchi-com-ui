@@ -156,6 +156,7 @@ $navbar-brand-font-size: 1.625rem !default;
 $navbar-brand-lg-font-size: 4.0625rem !default;
 $navbar-brand-lg-font-size-sm: 2.619rem !default;
 $navbar-brand-sm-font-size: 2.875rem !default;
+$navbar-brand-sm-font-size-sm: 2.2rem !default;
 
 $navbar-light-color: $success;
 $navbar-dark-color: $grey;
@@ -212,13 +213,15 @@ $dropdown-item-font-size: 0.875rem !default;
 // Card
 $card-border-width: 0 !default;
 $card-border-radius: 0.3rem !default;
-$card-spacer-y: 1.06rem !default;
+$card-spacer-y: 1.157rem !default;
 $card-spacer-x: 1.875rem !default;
 $card-body-shadow-color: #ecf1f5;
 $card-text-font-size: 0.875rem !default;
 $card-cap-bg: $white;
 $card-header-border-width: 1px;
 $card-header-border-color: #ecf1f5;
+
+ 
 // Typography
 $headings-line-height: 1.5 !default;
 $h5-font-size: $font-size-base * 1.125 !default;
@@ -302,12 +305,13 @@ $positionTypes: (
 $nav-pills-border-radius: $btn-border-radius;
 $nav-pills-link-active-color: $success;
 $nav-pills-link-active-bg: $light;
-$nav-pills-link-padding-x: $btn-padding-x-sm;
+$nav-pills-link-padding-x: $btn-padding-x-sm - 0.2rem;
 $nav-pills-link-padding-y: $btn-padding-y-sm;
 $nav-pills-link-font-size: $btn-font-size-sm;
 $nav-pills-link-line-height: $btn-line-height-sm;
 $nav-pills-link-active-border: 1px solid #dce5eb;
 $nav-pills-link-inactive-border: 1px solid transparent;
+ 
 
 // List group
 

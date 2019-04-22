@@ -14,7 +14,9 @@
     }
     &-sm {
       font-size: $navbar-brand-sm-font-size;
-      width: 39px;
+      @media screen and (min-width: map-get($grid-breakpoints, "xs")) {
+        font-size: $navbar-brand-sm-font-size-sm;
+      }
     }
   }
   &-list {
