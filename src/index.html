@@ -10,10 +10,10 @@
   <body>
     ${require('./partials/header.html')}
     <div class="container">
-      <div class="mt-4">
+      <div class="mt-3 mt-sm-4">
         <div class="row">
           <div class="col-md-8">
-            <div class="position-relative mb-4">
+            <div class="position-relative mb-3 mb-sm-4">
               <!-- Start of carousel -->
               <div
                 class="owl-carousel owl-theme news-carousel rounded overflow-hidden"
@@ -28,7 +28,7 @@
                       class="position-absolute position-bottom-0 pb-6 pb-lg-8 position-left-0 w-100 px-4 z-index-3 overlay-100"
                     >
                       <span
-                        class="text-grey mb-2 font-size-1 d-flex align-items-center"
+                        class="text-grey mb-2 font-size-1 d-none d-sm-flex align-items-center"
                       >
                         <i
                           class="icon-clock-circular-outline mr-1
@@ -60,7 +60,7 @@
                       class="position-absolute position-bottom-0 pb-6 pb-lg-8 position-left-0 w-100 px-4 z-index-3 overlay-100"
                     >
                       <span
-                        class="text-grey mb-2 font-size-1 d-flex align-items-center"
+                        class="text-grey mb-2 font-size-1 d-none d-sm-flex align-items-center"
                       >
                         <i
                           class="icon-clock-circular-outline mr-1
@@ -188,22 +188,25 @@
                   დააფინანსე გირჩი, მიიღე შესაბამისი რაოდენობის GeD-ები და
                   მოხვდი ლიდერბორდში
                 </p>
-                <a href="#" class="btn btn-warning btn-lg text-uppercase">
+                <a href="#" class="btn btn-warning d-none d-sm-inline btn-lg text-uppercase">
+                  დააფინანსე
+                </a>
+                <a href="#" class="btn btn-warning  d-inline d-sm-none btn-md text-uppercase">
                   დააფინანსე
                 </a>
               </div>
             </div>
             <!-- End of banner -->
             <!-- Start of card -->
-            <div class="card mt-4 font-size-3">
+            <div class="card mt-3 mt-sm-4 font-size-3">
               <div
-                class="card-header font-size-3 text-uppercase font-weight-bold d-flex"
+                class="card-header font-size-3 text-uppercase font-weight-bold d-flex px-3 px-sm-4"
               >
-                ტოპ დამფინანსებლები
+                ტოპ პარტნიორები
 
                 <a
                   href="#"
-                  class="ml-auto card-view-all font-weight-normal text-grey text-decoration-none"
+                  class="ml-auto card-view-all font-weight-normal text-grey text-decoration-none text-nowrap"
                   >სრული სია
                   <i class="icon-arrow-right2 text-dark-silver"></i>
                 </a>
@@ -270,7 +273,7 @@
                       <li
                         class="list-group-item d-flex align-items-center px-0"
                       >
-                        <span class="font-size-7 text-dark-silver mr-3">1</span>
+                        <span class="font-size-7 text-dark-silver mr-2 mr-sm-3">1</span>
                         <div class="d-flex w-100 align-items-center">
                           <a
                             href="#"
@@ -283,7 +286,7 @@
                             />
                           </a>
                           <h6
-                            class="text-uppercase line-height-1-2 font-size-base mb-0 mx-3"
+                            class="text-uppercase line-height-1-2 font-size-3 font-size-sm-base mb-0 mx-2 mx-sm-3"
                           >
                             <a href="#" class="text-decoration-none">
                               ირაკლი
@@ -293,15 +296,46 @@
                             </a>
                           </h6>
                           <span
-                            class="text-success font-size-5 font-weight-bold ml-auto"
+                            class="text-success font-size-4 font-size-sm-5 font-weight-bold ml-auto"
                             >5 300 ₾</span
                           >
                         </div>
                       </li>
                       <li
+                      class="list-group-item d-flex align-items-center px-0"
+                    >
+                      <span class="font-size-7 text-dark-silver mr-2 mr-sm-3">2</span>
+                      <div class="d-flex w-100 align-items-center">
+                        <a
+                          href="#"
+                          class="rounded-circle overflow-hidden d-inline-block"
+                        >
+                          <img
+                            src="./images/i.metreveli.jpg"
+                            class="rounded"
+                            alt="..."
+                          />
+                        </a>
+                        <h6
+                          class="text-uppercase line-height-1-2 font-size-3 font-size-sm-base mb-0 mx-2 mx-sm-3"
+                        >
+                          <a href="#" class="text-decoration-none">
+                            ირაკლი
+                            <span class="d-block font-weight-bold"
+                              >მეტრეველი</span
+                            >
+                          </a>
+                        </h6>
+                        <span
+                          class="text-success font-size-4 font-size-sm-5 font-weight-bold ml-auto"
+                          >5 300 ₾</span
+                        >
+                      </div>
+                    </li>
+                    <li
                         class="list-group-item d-flex align-items-center px-0"
                       >
-                        <span class="font-size-7 text-dark-silver mr-3">2</span>
+                        <span class="font-size-7 text-dark-silver mr-2 mr-sm-3">3</span>
                         <div class="d-flex w-100 align-items-center">
                           <a
                             href="#"
@@ -314,69 +348,7 @@
                             />
                           </a>
                           <h6
-                            class="text-uppercase line-height-1-2 font-size-base mb-0 mx-3"
-                          >
-                            <a href="#" class="text-decoration-none">
-                              დავით
-                              <span class="d-block font-weight-bold"
-                                >კვაჭანტირაძე</span
-                              >
-                            </a>
-                          </h6>
-                          <span
-                            class="text-success font-size-5 font-weight-bold ml-auto"
-                            >5 300 ₾</span
-                          >
-                        </div>
-                      </li>
-                      <li
-                        class="list-group-item d-flex align-items-center px-0"
-                      >
-                        <span class="font-size-7 text-dark-silver mr-3">3</span>
-                        <div class="d-flex w-100 align-items-center">
-                          <a
-                            href="#"
-                            class="rounded-circle overflow-hidden d-inline-block"
-                          >
-                            <img
-                              src="./images/i.metreveli.jpg"
-                              class="rounded"
-                              alt="..."
-                            />
-                          </a>
-                          <h6
-                            class="text-uppercase line-height-1-2 font-size-base mb-0 mx-3"
-                          >
-                            <a href="#" class="text-decoration-none">
-                              ირაკლი
-                              <span class="d-block font-weight-bold"
-                                >მეტრეველი</span
-                              >
-                            </a>
-                          </h6>
-                          <span
-                            class="text-success font-size-5 font-weight-bold ml-auto"
-                            >5 300 ₾</span
-                          >
-                        </div>
-                      </li>
-                      <li
-                        class="list-group-item d-flex align-items-center px-0"
-                      >
-                        <span class="font-size-7 text-dark-silver mr-3">4</span>
-                        <div class="d-flex w-100 align-items-center">
-                          <a
-                            href="#"
-                            class="rounded-circle overflow-hidden d-inline-block"
-                          >
-                            <img
-                              src="./images/i.metreveli.jpg"
-                              class="rounded"
-                              alt="..."
-                            />
-                          </a>
-                          <h6
-                            class="text-uppercase line-height-1-2 font-size-base mb-0 mx-3"
+                            class="text-uppercase line-height-1-2 font-size-3 font-size-sm-base mb-0 mx-2 mx-sm-3"
                           >
                             <a href="#" class="text-decoration-none">
                               ირაკლი
@@ -386,7 +358,7 @@
                             </a>
                           </h6>
                           <span
-                            class="text-success font-size-5 font-weight-bold ml-auto"
+                            class="text-success font-size-4 font-size-sm-5 font-weight-bold ml-auto"
                             >5 300 ₾</span
                           >
                         </div>
@@ -394,7 +366,7 @@
                       <li
                         class="list-group-item d-flex align-items-center px-0"
                       >
-                        <span class="font-size-7 text-dark-silver mr-3">5</span>
+                        <span class="font-size-7 text-dark-silver mr-2 mr-sm-3">4</span>
                         <div class="d-flex w-100 align-items-center">
                           <a
                             href="#"
@@ -407,7 +379,7 @@
                             />
                           </a>
                           <h6
-                            class="text-uppercase line-height-1-2 font-size-base mb-0 mx-3"
+                            class="text-uppercase line-height-1-2 font-size-3 font-size-sm-base mb-0 mx-2 mx-sm-3"
                           >
                             <a href="#" class="text-decoration-none">
                               ირაკლი
@@ -417,7 +389,38 @@
                             </a>
                           </h6>
                           <span
-                            class="text-success font-size-5 font-weight-bold ml-auto"
+                            class="text-success font-size-4 font-size-sm-5 font-weight-bold ml-auto"
+                            >5 300 ₾</span
+                          >
+                        </div>
+                      </li>
+                      <li
+                        class="list-group-item d-flex align-items-center px-0"
+                      >
+                        <span class="font-size-7 text-dark-silver mr-2 mr-sm-3">5</span>
+                        <div class="d-flex w-100 align-items-center">
+                          <a
+                            href="#"
+                            class="rounded-circle overflow-hidden d-inline-block"
+                          >
+                            <img
+                              src="./images/i.metreveli.jpg"
+                              class="rounded"
+                              alt="..."
+                            />
+                          </a>
+                          <h6
+                            class="text-uppercase line-height-1-2 font-size-3 font-size-sm-base mb-0 mx-2 mx-sm-3"
+                          >
+                            <a href="#" class="text-decoration-none">
+                              ირაკლი
+                              <span class="d-block font-weight-bold"
+                                >მეტრეველი</span
+                              >
+                            </a>
+                          </h6>
+                          <span
+                            class="text-success font-size-4 font-size-sm-5 font-weight-bold ml-auto"
                             >5 300 ₾</span
                           >
                         </div>
@@ -456,16 +459,16 @@
         </div>
       </div>
 
-      <div class="py-4">
+      <div class="my-3 my-sm-4">
         <!-- Start of card -->
-        <div class="card mb-4 font-size-3">
+        <div class="card mb-3 mb-sm-4 font-size-3">
           <div
-            class="card-header font-size-3 text-uppercase font-weight-bold d-flex"
+            class="card-header font-size-3 text-uppercase font-weight-bold d-flex px-3 px-sm-4"
           >
             ვიდეო ბლოგი
             <a
               href="#"
-              class="ml-auto card-view-all font-weight-normal text-grey text-decoration-none"
+              class="ml-auto card-view-all font-weight-normal text-grey text-decoration-none text-nowrap"
               >ყველა ვიდეო <i class="icon-arrow-right2 text-dark-silver"></i>
             </a>
           </div>
@@ -721,12 +724,12 @@
         <!-- Start of card -->
         <div class="card mb-4">
           <div
-            class="card-header font-size-3 text-uppercase font-weight-bold d-flex"
+            class="card-header font-size-3 text-uppercase font-weight-bold d-flex px-3 px-sm-4"
           >
             პოლიტიკოსთა რეიტინგი
             <a
               href="#"
-              class="ml-auto card-view-all font-weight-normal text-grey text-decoration-none"
+              class="ml-auto card-view-all font-weight-normal text-grey text-decoration-none text-nowrap"
               >სრული სია <i class="icon-arrow-right2 text-dark-silver"></i
             ></a>
           </div>
