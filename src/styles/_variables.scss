@@ -155,12 +155,12 @@ $navbar-brand-font-size: 1.625rem !default;
 
 $navbar-brand-lg-font-size: 4.0625rem !default;
 $navbar-brand-lg-font-size-sm: 2.619rem !default;
-$navbar-brand-sm-font-size: 2.875rem !default;
+$navbar-brand-sm-font-size: 2.8rem !default;
 $navbar-brand-sm-font-size-sm: 2.2rem !default;
 
 $navbar-light-color: $success;
 $navbar-dark-color: $grey;
-$navbar-dark-hover-color: rgba($grey, 1) !default;
+$navbar-dark-hover-color: $primary !default;
 $navbar-dark-disabled-color: rgba($grey, 1) !default;
 $navbar-dark-active-color: rgba($grey, 1) !default;
 $navbar-light-hover-color: rgba($success, 1) !default;
@@ -221,7 +221,6 @@ $card-cap-bg: $white;
 $card-header-border-width: 1px;
 $card-header-border-color: #ecf1f5;
 
- 
 // Typography
 $headings-line-height: 1.5 !default;
 $h5-font-size: $font-size-base * 1.125 !default;
@@ -311,12 +310,11 @@ $nav-pills-link-font-size: $btn-font-size-sm;
 $nav-pills-link-line-height: $btn-line-height-sm;
 $nav-pills-link-active-border: 1px solid #dce5eb;
 $nav-pills-link-inactive-border: 1px solid transparent;
- 
 
 // List group
 
 $list-group-border-color: $light !default;
-$list-group-item-padding-y: 0.72rem !default;
+$list-group-item-padding-y: 0.8rem !default;
 
 // Spacing
 $spacer: 1rem !default;
