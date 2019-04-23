@@ -7,6 +7,16 @@
     -webkit-font-feature-settings: "case";
     font-feature-settings: "case" on;
   }
+  &-hover {
+    @each $color, $value in $theme-colors {
+      &-#{$color} {
+        transition: color 0.4s ease-in-out;
+        &:hover {
+          color: $value;
+        }
+      }
+    }
+  }
 }
 
 .font-size {
