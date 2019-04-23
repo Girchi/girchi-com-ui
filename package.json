@@ -9,9 +9,12 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "eslint": "eslint src/ --fix",
-    "prettier": "prettier --write \"./**/*.{json,scss,html}\"",
-    "format": "yarn run eslint && yarn run prettier"
+    "eslint:test": "eslint src",
+    "eslint:fix": "eslint src --fix",
+    "prettier:test": "prettier --check \"./**/*.{json,scss,html}\"",
+    "prettier:fix": "prettier --write \"./**/*.{json,scss,html}\"",
+    "test": "yarn run eslint:test && yarn run prettier:test",
+    "fix": "yarn run eslint:fix && yarn run prettier:fix"
   },
   "license": "UNLICENSED",
   "dependencies": {
