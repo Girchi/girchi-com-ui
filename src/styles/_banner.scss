@@ -1,0 +1,64 @@
+// Banner
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+      &#{$infix} {
+        &-default {
+          &:before {
+            content: "";
+            padding-top: 60%;
+            display: block;
+            min-height: 220px;
+          }
+        }
+        &-wide {
+          &:before {
+            content: "";
+            padding-top: 40%;
+            display: block;
+            min-height: 220px;
+          }
+        }
+      }
+    }
+  }
+
+  &-bg {
+    &-y {
+      &-top {
+        background-position-y: top;
+      }
+      &-center {
+        background-position-y: center;
+      }
+      &-bottom {
+        background-position-y: bottom;
+      }
+    }
+    &-x {
+      &-right {
+        background-position-x: right;
+      }
+      &-center {
+        background-position-x: center;
+      }
+      &-left {
+        background-position-x: left;
+      }
+    }
+    &-donate {
+      background-image: url(../images/donate-bg.jpg);
+    }
+    &-defense {
+      background-image: url(../images/defense.jpg);
+    }
+    &-education {
+      background-image: url(../images/education.jpg);
+    }
+  }
+}
