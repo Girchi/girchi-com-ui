@@ -1,6 +1,11 @@
 <p align="center"><img src="https://girchi.ge/mes/static/img/logo-t-1.png" width="130"></p>
 <p align="center">Girchi.com UI</p>
 
+<p align="center">
+  <a title="CircleCI" href="https://circleci.com/gh/Girchi/girchi-com-ui"><img src="https://circleci.com/gh/Girchi/girchi-com-ui.svg?style=svg"></a>
+  <a title="Netlify Status" href="https://app.netlify.com/sites/girchi-com-ui/deploys"><img src="https://api.netlify.com/api/v1/badges/6667d695-0b1f-4c1f-9998-c87222ef44c3/deploy-status"></a>
+</p>
+
 ## Quick start
 
 * Run `yarn` to install dependencies.
