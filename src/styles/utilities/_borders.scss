@@ -4,6 +4,16 @@
   &-dashed {
     border-style: dashed !important;
   }
+  &-hover {
+    @each $color, $value in $theme-colors {
+      &-#{$color} {
+        transition: border 0.4s ease-in-out;
+        &:hover {
+          border: 1px solid $value !important;
+        }
+      }
+    }
+  }
   @each $breakpoint in map-keys($grid-breakpoints) {
     @include media-breakpoint-up($breakpoint) {
       $infix: breakpoint-infix($breakpoint, $grid-breakpoints);

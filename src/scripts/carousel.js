@@ -83,4 +83,23 @@ $(document).ready(function () {
   $('.rating-of-politicians-carousel-prev').on('click', () => {
     ratingOfPoliticiansCarousel.trigger('prev.owl.carousel')
   })
+
+  // Project carousel
+  const projectsCarousel = $('.projects-carousel').owlCarousel({
+    margin: 0,
+    items: 1,
+    dots: true,
+    touchDrag: true,
+    mouseDrag: false,
+    autoplay: true,
+    animateOut: 'fadeOut',
+    dotsContainer: $('.projects-carousel-dots'),
+    autoHeight: true
+  })
+  $('.projects-carousel-next').on('click', () => {
+    projectsCarousel.trigger('next.owl.carousel')
+  })
+  $('.projects-carousel-prev').on('click', () => {
+    projectsCarousel.trigger('prev.owl.carousel')
+  })
 })
