@@ -1,0 +1,39 @@
+.page-link {
+  width: 29px;
+  height: 29px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @include border-radius(50rem);
+  margin: 0 0.2rem;
+  transition: color 0.4s ease-in-out, border 0.4s ease-in-out;
+}
+.page-item {
+  &:first-child {
+    .page-link {
+      @include border-radius(50rem);
+    }
+  }
+  &:last-child {
+    .page-link {
+      @include border-radius(50rem);
+    }
+  }
+
+  &.active .page-link {
+    z-index: 1;
+    color: $pagination-active-color;
+    background-color: $pagination-active-bg;
+    border-color: $pagination-active-border-color;
+  }
+
+  // &.disabled .page-link {
+  //   color: $pagination-disabled-color;
+  //   pointer-events: none;
+  //   // Opinionated: remove the "hand" cursor set previously for .page-link
+  //   cursor: auto;
+  //   background-color: $pagination-disabled-bg;
+  //   border-color: $pagination-disabled-border-color;
+  // }
+}

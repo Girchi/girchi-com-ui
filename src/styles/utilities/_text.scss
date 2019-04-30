@@ -12,7 +12,7 @@
       &-#{$color} {
         transition: color 0.4s ease-in-out;
         &:hover {
-          color: $value;
+          color: $value !important;
         }
       }
     }

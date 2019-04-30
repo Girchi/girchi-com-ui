@@ -12,4 +12,36 @@
       }
     }
   }
+  &-vertical {
+    a[aria-expanded] {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      &:after {
+        content: "\e903";
+        color: $dark-silver;
+        font-family: icomoon;
+        font-size: 0.6rem;
+      }
+    }
+    a[aria-expanded="false"] {
+      &:focus {
+        background-color: $white;
+      }
+      &:active {
+        background-color: $list-group-hover-bg;
+      }
+    }
+    a[aria-expanded="true"] {
+      background-color: $list-group-hover-bg;
+      &:after {
+        transform: rotate(180deg);
+      }
+    }
+
+    .collapse,
+    .collapsing {
+      background-color: $list-group-hover-bg !important;
+    }
+  }
 }
