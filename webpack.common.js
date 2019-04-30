@@ -1,10 +1,10 @@
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
-const webpack = require('webpack')
+const Webpack = require('webpack')
+const { HtmlWebpackCombinePlugin } = require('./webpack.plugin')
 
 module.exports = {
   mode: 'development',
@@ -99,21 +99,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './src/index.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'register.html',
-      template: './src/register.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'login.html',
-      template: './src/login.html'
-    }),
-    new HtmlWebpackPlugin({
-      filename: 'register2.html',
-      template: './src/register2.html'
+    new HtmlWebpackCombinePlugin({
+      pages: ['index.html', 'register.html', 'login.html', 'register2.html', 'news.html'],
+      path: './src'
     }),
     new PreloadWebpackPlugin({
       rel: 'preload',
@@ -130,7 +118,7 @@ module.exports = {
       filename: 'bundle-[hash].css',
       chunkFilename: '[id].css'
     }),
-    new webpack.ProvidePlugin({
+    new Webpack.ProvidePlugin({
       '$': 'jquery',
       'jQuery': 'jquery',
       'window.$': 'jquery',
