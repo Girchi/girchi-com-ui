@@ -26,6 +26,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-quote-down:before {
+  content: "\e90d";
+}
+.icon-quote-up:before {
+  content: "\e90e";
+}
+.icon-menu-three-horizontal-lines-symbol:before {
+  content: "\e90f";
+}
 .icon-clock-circular-outline:before {
   content: "\e90c";
 }
@@ -37,16 +46,6 @@
 }
 .icon-angle-pointing-to-left:before {
   content: "\e90a";
-}
-.icon-smartphone:before {
-  content: "\e958";
-  margin: 0 -0.5rem;
-}
-.icon-user:before {
-  content: "\e971";
-}
-.icon-arrow-right2:before {
-  content: "\ea3c";
 }
 .icon-girchi-logo:before {
   content: "\e901";
@@ -74,4 +73,14 @@
 }
 .icon-social-youtube-circular-button:before {
   content: "\e909";
+}
+.icon-smartphone:before {
+  content: "\e958";
+  margin: 0 -0.5rem;
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }
