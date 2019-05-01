@@ -15,6 +15,13 @@
   }
   &-header {
     border-bottom: $card-header-border-width solid $card-header-border-color;
+    .navbar-toggler {
+      line-height: 0.95;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
   }
   &-view-all {
     display: flex;
