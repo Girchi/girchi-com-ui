@@ -49,3 +49,36 @@
     }
   }
 }
+
+blockquote,
+q {
+  display: block;
+  border: 1px solid $silver;
+  border-radius: $card-border-radius;
+  padding: 1.375rem 3rem;
+  color: $green;
+  font-feature-settings: "case" on;
+  font-weight: bold;
+  @extend .font-size-base;
+  margin: 1rem 0;
+
+  position: relative;
+  &:after,
+  &:before {
+    display: inline;
+    font-family: "icomoon" !important;
+    font-size: 1.0625rem;
+    position: absolute;
+    color: #d9e0e5;
+  }
+  &:before {
+    content: "\e90e";
+    left: 1rem;
+    top: 1.3rem;
+  }
+  &:after {
+    content: "\e90d";
+    right: 1rem;
+    bottom: 1.3rem;
+  }
+}

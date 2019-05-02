@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-print:before {
+  content: "\e910";
+}
 .icon-quote-down:before {
   content: "\e90d";
 }

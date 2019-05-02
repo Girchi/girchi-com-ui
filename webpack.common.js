@@ -100,7 +100,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackCombinePlugin({
-      pages: ['index.html', 'register.html', 'login.html', 'register2.html', 'news.html'],
+      pages: ['index.html', 'register.html', 'login.html', 'register2.html', 'news.html', 'news-details.html'],
       path: './src'
     }),
     new PreloadWebpackPlugin({
