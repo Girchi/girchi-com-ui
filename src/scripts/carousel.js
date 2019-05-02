@@ -102,4 +102,33 @@ $(document).ready(function () {
   $('.projects-carousel-prev').on('click', () => {
     projectsCarousel.trigger('prev.owl.carousel')
   })
+
+  // Related news carousel
+  const relatedNewsCarousel = $('.related-news-carousel').owlCarousel({
+    margin: 10,
+    dotsContainer: $('.related-news-carousel-dots'),
+    touchDrag: true,
+    mouseDrag: false,
+    responsive: {
+      0: {
+        items: 1,
+        slideBy: 1
+      },
+      480: {
+        items: 2,
+        slideBy: 1
+      },
+      768: {
+        items: 3,
+        slideBy: 1
+      }
+
+    }
+  })
+  $('.related-news-carousel-next').on('click', () => {
+    relatedNewsCarousel.trigger('next.owl.carousel')
+  })
+  $('.related-news-carousel-prev').on('click', () => {
+    relatedNewsCarousel.trigger('prev.owl.carousel')
+  })
 })
