@@ -4160,22 +4160,22 @@ jpegtran-bin@^4.0.0:
     bin-wrapper "^4.0.0"
     logalot "^2.0.0"
 
-jquery-shares@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/jquery-shares/-/jquery-shares-1.0.4.tgz#54332c89f65010cf7edd6a563ebd18ba68fa6c84"
-  integrity sha1-VDMsifZQEM9+3WpWPr0Yumj6bIQ=
+jquery-socialshare@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/jquery-socialshare/-/jquery-socialshare-1.0.3.tgz#f30bcb016d51b3fcf08a826fa3eef82533775cbe"
+  integrity sha1-8wvLAW1Rs/zwioJvo+74JTN3XL4=
   dependencies:
-    jquery "3.2.0"
-
-jquery@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.0.tgz#3bdbba66e1eee0785532dddadb0e0d2521ca584b"
-  integrity sha1-O9u6ZuHu4HhVMt3a2w4NJSHKWEs=
+    jquery ">=1.9.1"
 
 jquery@>=1.8.3:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf"
   integrity sha512-ggRCXln9zEqv6OqAGXFEcshF5dSBvCkzj6Gm2gzuR5fWawaX8t7cxKVkkygKODrDAzKdoYw3l/e3pm3vlT4IbQ==
+
+jquery@>=1.9.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
 
 jquery@^3.3.1:
   version "3.3.1"
