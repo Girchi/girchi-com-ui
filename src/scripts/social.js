@@ -1,5 +1,5 @@
-import 'jquery-shares'
+import 'jquery-socialshare'
 
 $(document).ready(function () {
-  $('.share').shares()
+  $('.share').jqss()
 })
