@@ -18,6 +18,8 @@ $dark-white: #f7f7f7;
 $purple: #3b5998;
 $light-blue: #1aafe7;
 
+$green-gradient: linear-gradient(42deg, $light-green, $green);
+
 $colors: () !default;
 $colors: map-merge(
   (
