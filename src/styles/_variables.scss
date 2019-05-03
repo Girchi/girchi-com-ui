@@ -319,8 +319,14 @@ $nav-pills-link-inactive-border: 1px solid transparent;
 $list-group-border-color: $light !default;
 $list-group-item-padding-y: 0.8rem !default;
 
-$list-group-hover-bg: $dark-white !default;
+$list-group-hover-bg: transparent !default;
+$list-group-action-hover-color: $success !default;
 
+$list-group-action-active-color: $success !default;
+$list-group-action-active-bg: transparent !default;
+
+$list-group-active-color: $success !default;
+$list-group-active-bg: transparent !default;
 // Spacing
 $spacer: 1rem !default;
 $spacers: () !default;
