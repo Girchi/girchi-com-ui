@@ -39,7 +39,7 @@
       $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
       @each $name, $value in $fontSizes {
         @for $i from 0 through 2 {
-          @for $d from 1 through 10 {
+          @for $d from 0 through 10 {
             &#{$infix}-#{$i}-#{$d} {
               line-height: number("#{$i}.#{$d}");
             }
