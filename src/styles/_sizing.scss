@@ -1,0 +1,12 @@
+// Viewport additional helpers
+
+@each $prop, $abbrev in (width: w, height: h) {
+  @each $size, $length in $sizes {
+    .max-px-#{$size} {
+      max-#{$prop}: #{$size}px !important;
+    }
+    .max-#{$abbrev}-#{$size} {
+      max-#{$prop}: #{$size}px !important;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+select.select {
+  display: none;
+}
+.bootstrap-select {
+  .dropdown-menu {
+    transform: initial !important;
+    max-width: 100%;
+    border-radius: $btn-border-radius-lg !important;
+    box-shadow: 0px 0.1875rem 1rem 0 rgba(0, 0, 0, 0.05);
+    border: 0;
+    .text {
+      border-top: 1px solid $border-color;
+      display: block !important;
+      margin: 0 10px;
+      padding: 5px 0;
+      &:after {
+        font-family: icomoon !important;
+        content: "\e913";
+        display: inline-block;
+        width: 1.8rem;
+        height: 1.8rem;
+        background-color: #ecf1f5;
+        border-radius: 50rem;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.2rem;
+        line-height: 2.3;
+        color: #999;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        display: none;
+      }
+    }
+
+    .bs-searchbox {
+      padding: 0;
+    }
+    .form-control {
+      border: 0;
+      box-shadow: initial;
+      border-radius: 0;
+      padding: 1.5625rem;
+      font-size: 1rem;
+      font-weight: 600;
+      font-style: normal;
+      font-stretch: normal;
+      color: $success;
+    }
+  }
+
+  .dropdown-item {
+    border-radius: 0;
+    padding: 0;
+    &.active,
+    &:active {
+      .text {
+        border-color: transparent;
+      }
+    }
+    &:not(.active):not(:active) {
+      .text {
+        &:hover:after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    padding: 4.9px;
+  }
+  .bs-placeholder {
+    padding-top: 1.15rem !important;
+    padding-bottom: 1.15rem !important;
+    .filter-option-inner {
+      &-inner {
+        padding-left: 4rem;
+        font-size: 0.75rem;
+        font-weight: bold;
+        line-height: 1.4;
+        &:before {
+          font-family: icomoon !important;
+          content: "\e913";
+          display: inline-block;
+          width: 2.5rem;
+          height: 2.5rem;
+          background-color: #ecf1f5;
+          border-radius: 50rem;
+          text-align: center;
+          position: absolute;
+          top: 0.4375rem;
+          left: 0.5rem;
+          line-height: 2.8;
+          color: #999;
+          font-size: 0.875rem;
+          letter-spacing: -1.5px;
+        }
+      }
+    }
+  }
+  .no-results {
+    margin: 0 !important;
+    padding: 10px !important;
+    text-align: center;
+    font-size: 0.825rem;
+  }
+}

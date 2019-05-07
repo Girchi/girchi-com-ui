@@ -152,6 +152,25 @@ $line-height-base: 1.5 !default;
 $font-family-firaGo: "FiraGO" !default;
 $font-family-base: $font-family-firaGo !default;
 
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    10: 10%,
+    15: 15%,
+    25: 25%,
+    35: 35%,
+    40: 40%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    210: 210%,
+    auto: auto
+  ),
+  $sizes
+);
+
 // Navbar brand
 //
 // Used for brand, project, or site names.
