@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-delete:before {
+  content: "\e911";
+}
 .icon-print:before {
   content: "\e910";
 }
