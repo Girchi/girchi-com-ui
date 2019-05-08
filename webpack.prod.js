@@ -44,7 +44,7 @@ module.exports = merge(common, {
         `${path.join(__dirname, 'src')}/**/*.js`,
         `${path.join(__dirname, 'node_modules/bootstrap')}/**/*.js`,
         `${path.join(__dirname, 'node_modules/owl.carousel2')}/**/*.js`,
-        `${path.join(__dirname, 'node_modules/bootstrap-select')}/**/*.js`
+        `${path.join(__dirname, 'node_modules/bootstrap-select/js')}/*.js`
       ])
     }),
     new PrettierPlugin()
