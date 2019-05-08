@@ -29,14 +29,16 @@
   }
 }
 
-.rounded-top-0 {
-  border-top-left-radius: 0 !important;
-  border-top-right-radius: 0 !important;
-}
-
-.rounded-bottom-0 {
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @each $s in $borderSides {
+      .rounded-#{$s}#{$infix}-0 {
+        border-#{$s}-left-radius: 0 !important;
+        border-#{$s}-right-radius: 0 !important;
+      }
+    }
+  }
 }
 
 .rounded-oval {
