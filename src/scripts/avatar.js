@@ -39,6 +39,7 @@ if (avatarTrigger.length) {
   })
 
   avatarInput.on('change', e => {
+    // eslint-disable-next-line no-undef
     const image = new Image()
     image.src = createObjectURL(e.target.files[0])
     image.onload = function (e) {
