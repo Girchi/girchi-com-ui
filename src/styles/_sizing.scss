@@ -7,7 +7,7 @@
         .max-px#{$infix}-#{$size} {
           max-#{$prop}: #{$size}px !important;
         }
-        .max-#{$abbrev}-#{$size} {
+        .max-#{$abbrev}#{$infix}-#{$size} {
           max-#{$prop}: #{$size}px !important;
         }
       }
