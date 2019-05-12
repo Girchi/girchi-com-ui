@@ -26,6 +26,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-tick-inside-circle:before {
+  content: "\e914";
+}
+.icon-error:before {
+  content: "\e915";
+}
 .icon-close:before {
   content: "\e912";
 }
