@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Girchi.com - გახდი პარტნიორი</title>
+  </head>
+
+  <body>
+    ${require('./partials/header.html')}
+    <div class="bg-gradient overflow-hidden">
+      <div class="container">
+        <!-- Start of head -->
+        <div class="text-center py-4 py-sm-5">
+          <h5 class="text-white text-uppercase font-weight-bold font-size-5">
+            გახდი პარტნიორი
+          </h5>
+          <p class="text-white font-size-3 mb-0">
+            დააფინანსე გირჩი, მიიღე შესაბამისი რაოდენობის GeD-ები და მოხვდი
+            ლიდერბორდში
+          </p>
+        </div>
+        <!-- End of head -->
+        <!-- Start of card -->
+        <div class="card mb-4 mb-sm-8">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 col-lg-6">
+                <div
+                  class="px-md-8  px-lg-4 px-xl-8 py-3  py-2 py-md-3  py-xl-4"
+                >
+                  <ul
+                    class="nav nav-tabs nav-justified"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active text-uppercase py-3"
+                        id="single-donation-tab"
+                        data-toggle="tab"
+                        href="#single-donation"
+                        role="tab"
+                        aria-controls="single-donation"
+                        aria-selected="true"
+                        >ერთჯერადი</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase py-3"
+                        id="multiple-donation-tab"
+                        data-toggle="tab"
+                        href="#multiple-donation"
+                        role="tab"
+                        aria-controls="multiple-donation"
+                        aria-selected="false"
+                        >მრავალჯერადი</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="single-donation"
+                      role="tabpanel"
+                      aria-labelledby="single-donation-tab"
+                    >
+                      <form action="">
+                        <p
+                          class="d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-center justify-content-md-between my-2 my-sm-4"
+                        >
+                          <img
+                            src="./images/payment-methods/tbc-logo-ka-ge.svg"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="17"
+                          />
+                          <img
+                            src="./images/payment-methods/bog-geo-horizontal.png"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="17"
+                          />
+                          <img
+                            src="./images/payment-methods/liberty-geo.svg"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="12"
+                          />
+                          <img
+                            src="./images/payment-methods/visa.png"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="12"
+                          />
+                          <img
+                            src="./images/payment-methods/mc.svg"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="17"
+                          />
+                        </p>
+                        <hr class="border-dashed border-secondary" />
+                        <div class="d-flex flex-wrap flex-sm-nowrap">
+                          <div class="form-group w-100 w-md-50 pr-sm-2">
+                            <label class="form-label" for="amount">თანხა</label>
+                            <input
+                              type="number"
+                              class="form-control form-control-lg"
+                              id="amount"
+                              placeholder="მიუთითეთ თანხა"
+                            />
+                          </div>
+                          <div class="form-group w-100 w-md-50">
+                            <label class="form-label">თქვენ ჩაგერიცხებათ</label>
+                            <div
+                              class="text-success font-size-5 d-flex pl-3 pt-2"
+                            >
+                              <i class="icon-ged"></i>
+                              <span class="ml-1">15 000</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="description"
+                            >დაფინანსების მიზანი</label
+                          >
+                          <div class="form-control form-control-lg">
+                            <select name="description" id="description">
+                              <option value="">აირჩიეთ</option>
+                              <option value="1">მიზანი 1</option>
+                              <option value="2">მიზანი 2</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn btn-lg btn-block btn-warning text-uppercase mt-4"
+                        >
+                          დაფინანსება
+                        </button>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="multiple-donation"
+                      role="tabpanel"
+                      aria-labelledby="multiple-donation-tab"
+                    >
+                      <form action="">
+                        <p
+                          class="d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-center justify-content-md-between my-2 my-sm-4"
+                        >
+                          <img
+                            src="./images/payment-methods/tbc-logo-ka-ge.svg"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="17"
+                          />
+                          <img
+                            src="./images/payment-methods/bog-geo-horizontal.png"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="17"
+                          />
+                          <img
+                            src="./images/payment-methods/liberty-geo.svg"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="12"
+                          />
+                          <img
+                            src="./images/payment-methods/visa.png"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="12"
+                          />
+                          <img
+                            src="./images/payment-methods/mc.svg"
+                            alt=""
+                            class="mt-2 mt-sm-0 mr-3 mr-sm-0"
+                            height="17"
+                          />
+                        </p>
+                        <hr class="border-dashed border-secondary" />
+                        <div class="d-flex flex-wrap flex-sm-nowrap">
+                          <div
+                            class="form-group form-group w-100 w-md-50 pr-sm-2"
+                          >
+                            <label class="form-label" for="amount">თანხა</label>
+                            <input
+                              type="number"
+                              class="form-control form-control-lg"
+                              id="amount"
+                              placeholder="მიუთითეთ თანხა"
+                            />
+                          </div>
+                          <div class="form-group w-100 w-md-50">
+                            <label class="form-label">თქვენ ჩაგერიცხებათ</label>
+                            <div
+                              class="text-success font-size-5 d-flex pl-3 pt-2"
+                            >
+                              <i class="icon-ged"></i>
+                              <span class="ml-1">15 000</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-wrap flex-sm-nowrap">
+                          <div class="form-group w-100 w-md-50 pr-sm-2">
+                            <label class="form-label" for="period"
+                              >პერიოდულობა</label
+                            >
+                            <div class="form-control form-control-lg">
+                              <select name="period" id="period">
+                                <option value="">აირჩიეთ</option>
+                                <option value="3">3 თვე</option>
+                                <option value="2">6 თვე</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group w-100 w-md-50  pl-sm-2">
+                            <label class="form-label" id="date"
+                              >გადახდის თარიღი</label
+                            >
+                            <input
+                              type="number"
+                              class="form-control form-control-lg"
+                              id="date"
+                              placeholder="თარიღი"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="form-label" for="description"
+                            >დაფინანსების მიზანი</label
+                          >
+                          <div class="form-control form-control-lg">
+                            <select name="description" id="description">
+                              <option value="">აირჩიეთ</option>
+                              <option value="1">მიზანი 1</option>
+                              <option value="2">მიზანი 2</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button
+                          type="submit"
+                          class="btn btn-lg btn-block btn-warning text-uppercase mt-4"
+                        >
+                          დაფინანსება
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6">
+                <div class="px-md-8 px-lg-3 px-xl-5 py-2 py-md-3  py-xl-4">
+                  <h6 class="text-uppercase text-success font-weight-bold my-3">
+                    მიიღე თანხის შესაბამისი GeD-ები
+                  </h6>
+                  <p class="font-size-2 text-grey">
+                    ყოველი შემოწირულობის გაკეთების დროს, სისტემა შესაბამის
+                    ლარებს გადააკონვერტირებს იმ დღით არსებული კურსით დოლარში და
+                    მიღებულ რიცხვი თქვენ დაგერიცხებათ როგორც GeD-ს.
+                  </p>
+                  <h6
+                    class="text-uppercase text-success font-weight-bold mt-4 mb-3"
+                  >
+                    განსაზღვრე შემოწირულობის მიზანი
+                  </h6>
+                  <p class="font-size-2 text-grey">
+                    ეს არააუცილებელი ველია, თუმცა, თქვენ გაქვთ შესაძლებლობა, რომ
+                    წინასწარ შექმნილი სიიდან აირჩიოთ სად წავიდეს თქვენს მიერ
+                    შემოწირული თანხა (“თარგმანების პროექტისთვის”, “სკოლისთვის”,
+                    “ლეგალიზაციის კამპანიისთვის” და ა.შ.)
+                  </p>
+                  <h6
+                    class="text-uppercase text-success font-weight-bold mt-4 mb-3"
+                  >
+                    შექმენი ავტომატური გადარიცხვა
+                  </h6>
+                  <p class="font-size-2 text-grey">
+                    პირველ ჯერზე, თქვენ შეგყავთ თქვენი საბანკო ბარათის
+                    მონაცემები, ხოლო შემდეგ, შევსებული ფორმის მიხედვით, სისტემა
+                    ავტომატურად აკეთებს ტრანზაქციებს შესაბამისი თანხის და
+                    პერიოდულობის გათვალისწინებით. მაგალითად ყოველ თვე 50 ლარი.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of card -->
+      </div>
+    </div>
+    ${require('./partials/footer.html')}
+  </body>
+</html>
