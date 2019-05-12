@@ -286,6 +286,17 @@ $dot-margin: 0.3125rem !default;
 $dot-background: $color-gray !default;
 $dot-background-active: $light-green !default;
 
+// Navs
+
+$nav-tabs-border-color: $border-color !default;
+$nav-tabs-border-width: 1px !default;
+$nav-tabs-border-radius: 0 !default;
+$nav-tabs-link-hover-border-color: transparent !default;
+$nav-tabs-link-active-color: $success !default;
+$nav-tabs-link-color: $grey !default;
+$nav-tabs-link-active-bg: transparent !default;
+$nav-tabs-link-active-border-color: transparent !default;
+
 // Position
 
 $positionSides: (top, bottom, left, right) !default;

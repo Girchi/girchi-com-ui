@@ -9,6 +9,17 @@
     margin: $input-label-margin-y $input-label-margin-x;
     font-weight: bold;
   }
+  &-control {
+    select {
+      background: transparent;
+      border: none;
+      width: 100%;
+      outline: none;
+      &:not(.selected) {
+        color: $dark-silver;
+      }
+    }
+  }
   &-text {
     margin-left: $form-text-margin-x;
     margin-right: $form-text-margin-x;
