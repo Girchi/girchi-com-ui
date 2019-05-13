@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-email:before {
+  content: "\e916";
+}
 .icon-tick-inside-circle:before {
   content: "\e914";
 }
