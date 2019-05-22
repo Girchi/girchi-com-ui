@@ -26,4 +26,25 @@ $(document).ready(() => {
       }
     }
   }).scroll() // invoke scroll-handler on page-load
+
+  // Search
+  const navbarSearchBtn = $('.navbar-search-btn ')
+  const navbarSearchInput = $('.navbar-search-input ')
+  navbarSearchBtn.on('click', e => {
+    e.preventDefault()
+    if (navbarSearchInput.is(':visible')) {
+      navbarSearchInput
+        .removeClass('border-secondary')
+        .addClass('border-white')
+        .removeClass('w-lg-500')
+        .fadeOut()
+    } else {
+      navbarSearchInput
+        .fadeIn()
+        .removeClass('border-white')
+        .addClass('border-secondary')
+        .addClass('w-lg-500')
+      navbarSearchInput.find('input').focus()
+    }
+  })
 })
