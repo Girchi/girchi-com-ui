@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search:before {
+  content: "\e917";
+}
 .icon-email:before {
   content: "\e916";
 }
