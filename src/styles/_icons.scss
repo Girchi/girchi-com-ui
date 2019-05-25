@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-logout:before {
+  content: "\e918";
+}
 .icon-search:before {
   content: "\e917";
 }
