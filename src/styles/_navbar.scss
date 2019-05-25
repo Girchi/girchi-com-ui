@@ -75,7 +75,7 @@
   left: 0;
   width: 100%;
   transition: top 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  z-index: 50;
+  z-index: 1061;
   &-wrapper {
     @media screen and (min-width: map-get($grid-breakpoints, "lg")) {
       min-height: 5.25rem;
