@@ -227,7 +227,7 @@
                     </div>
                     <div class="col-lg-5">
                       <div class="px-0 px-sm-8 pl-xl-0 pr-xl-4 mt-4 my-lg-0">
-                        <div class="form-group mb-2">
+                        <div class="form-group is-invalid mb-2">
                           <label class="form-label" for="first-name"
                             >სახელი</label
                           >
@@ -237,8 +237,12 @@
                             id="first-name"
                             placeholder="მიუთითეთ სახელი"
                           />
+                          <span
+                            class="validation-message"
+                            data-content="სახლის მითითება სავალდებულოა"
+                          ></span>
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group is-valid mb-2">
                           <label class="form-label" for="last-name"
                             >გვარი</label
                           >
@@ -248,8 +252,9 @@
                             id="last-name"
                             placeholder="მიუთითეთ გვარი"
                           />
+                          <span class="validation-message"></span>
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group is-invalid mb-2">
                           <label class="form-label" for="id-number"
                             >პირადი ნომერი</label
                           >
@@ -259,8 +264,13 @@
                             id="id-number"
                             placeholder="მიუთითეთ პირადი ნომერი"
                           />
+                          <span
+                            class="validation-message"
+                            data-content="პირადი ნომერი უნდა
+                            შედგებოდეს 11 ციფრისგან"
+                          ></span>
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group is-invalid mb-2">
                           <label class="form-label" for="email">ელ.ფოსტა</label>
                           <input
                             type="email"
@@ -268,6 +278,10 @@
                             id="email"
                             placeholder="მიუთითეთ ელ.ფოსტა"
                           />
+                          <span
+                            class="validation-message"
+                            data-content="ელ.ფოსტის მითითება სავალდებულოა"
+                          ></span>
                         </div>
                         <div class="form-group mb-2">
                           <label class="form-label" for="address"

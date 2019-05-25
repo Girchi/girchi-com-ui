@@ -3,6 +3,60 @@
 //
 
 .form {
+  &-group {
+    &.is-invalid {
+      position: relative;
+      .form-control {
+        border-color: $danger;
+        padding-right: 2.5rem;
+        &.form-control-lg {
+          & + .validation-message {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: $light-silver;
+            border-radius: 1rem;
+            top: calc(100% - 35px);
+            left: calc(100% - 35px);
+            font-family: icomoon !important;
+            speak: none;
+            font-style: normal;
+            @extend .icon-close;
+            font-size: 0.6rem;
+            color: $danger;
+            padding: 0.2rem 0.3rem;
+          }
+        }
+      }
+    }
+    &.is-valid {
+      position: relative;
+      .form-control {
+        border-color: $green;
+        padding-right: 2.5rem;
+        &.form-control-lg {
+          & + .validation-message {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: $light-silver;
+            border-radius: 1rem;
+            top: calc(100% - 35px);
+            left: calc(100% - 35px);
+            font-family: icomoon !important;
+            speak: none;
+            font-style: normal;
+            @extend .icon-checked;
+            font-size: 0.6rem;
+            color: $green;
+            padding: 0.2rem 0.3rem;
+          }
+        }
+      }
+    }
+  }
   &-label {
     color: $input-label-color;
     font-size: $input-label-font-size;
