@@ -17,7 +17,7 @@
             height: 20px;
             background: $light-silver;
             border-radius: 1rem;
-            top: calc(100% - 35px);
+            top: 50px;
             left: calc(100% - 35px);
             font-family: icomoon !important;
             speak: none;
@@ -43,7 +43,7 @@
             height: 20px;
             background: $light-silver;
             border-radius: 1rem;
-            top: calc(100% - 35px);
+            top: 50px;
             left: calc(100% - 35px);
             font-family: icomoon !important;
             speak: none;
@@ -129,4 +129,10 @@
 
 .outline-none {
   outline: none !important;
+}
+
+textarea {
+  &.form-control {
+    border-radius: 1rem !important;
+  }
 }

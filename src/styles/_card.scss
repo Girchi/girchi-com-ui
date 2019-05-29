@@ -1,5 +1,12 @@
 // Card
 .card {
+  &-map {
+    height: 270px;
+    width: 100%;
+    @media screen and (min-width: map-get($grid-breakpoints, "md")) {
+      height: 450px;
+    }
+  }
   &-subtitle {
     margin-top: 0;
   }
