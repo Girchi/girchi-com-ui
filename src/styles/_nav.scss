@@ -1,6 +1,49 @@
 // Nav
 
 .nav {
+  &-item {
+    &.collapsed {
+      .nav-link {
+        i {
+          display: inline-block;
+          transform: rotate(180deg);
+        }
+      }
+      .nav-dropdown {
+        display: block;
+      }
+    }
+  }
+  &-dropdown {
+    display: none;
+    min-width: 180px;
+    background: rgba(249, 248, 248, 0.6);
+    list-style-type: none;
+    padding: 0px;
+    @media screen and (min-width: map-get($grid-breakpoints, "lg")) {
+      position: absolute;
+      z-index: 5;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+      background: #fff;
+    }
+    &-item {
+      &.active {
+        .nav-dropdown-link {
+          color: $success;
+        }
+      }
+    }
+    &-link {
+      font-size: map-get($fontSizes, 3);
+      display: block;
+      text-decoration: none !important;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background: $dark-white;
+        color: $success;
+      }
+    }
+  }
   &-pills {
     .nav-link {
       padding: $nav-pills-link-padding-y $nav-pills-link-padding-x;
