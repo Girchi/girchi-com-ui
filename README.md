@@ -1,4 +1,4 @@
-<p align="center"><img src="https://girchi.ge/mes/static/img/logo-t-1.png" width="130"></p>
+<p align="center"><img src="./src/images/girchi-logo.svg" width="130"></p>
 <p align="center">Girchi.com UI</p>
 
 <p align="center">
