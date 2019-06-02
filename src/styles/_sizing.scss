@@ -10,6 +10,9 @@
         .max-#{$abbrev}#{$infix}-#{$size} {
           max-#{$prop}: #{$size}px !important;
         }
+        .min-#{$abbrev}#{$infix}-#{$size} {
+          min-#{$prop}: #{$size}px !important;
+        }
       }
     }
   }
