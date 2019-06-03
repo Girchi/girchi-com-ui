@@ -5,33 +5,39 @@ import 'owl.carousel2'
 
 $(document).ready(function () {
   // Video blog carousel
-  const videoCarousel = $('.video-carousel').owlCarousel({
-    margin: 10,
-    dotsContainer: $('.video-carousel-dots'),
-    responsive: {
-      0: {
-        items: 2,
-        slideBy: 2
-      },
-      480: {
-        items: 2,
-        slideBy: 2
-      },
-      768: {
-        items: 2,
-        slideBy: 2
-      },
-      992: {
-        items: 5,
-        slideBy: 5
+
+  const contentCarouselsContainers = $('.content-carousel')
+
+  contentCarouselsContainers.map((index, contentCarouselContainer) => {
+    const $contentCarouselContainer = $(contentCarouselContainer)
+    const owlCarousel = $contentCarouselContainer.find('.owl-carousel').owlCarousel({
+      margin: 10,
+      dotsContainer: $contentCarouselContainer.find('.carousel-dots'),
+      responsive: {
+        0: {
+          items: 2,
+          slideBy: 2
+        },
+        480: {
+          items: 2,
+          slideBy: 2
+        },
+        768: {
+          items: 2,
+          slideBy: 2
+        },
+        992: {
+          items: 5,
+          slideBy: 5
+        }
       }
-    }
-  })
-  $('.video-carousel-next').on('click', () => {
-    videoCarousel.trigger('next.owl.carousel')
-  })
-  $('.video-carousel-prev').on('click', () => {
-    videoCarousel.trigger('prev.owl.carousel')
+    })
+    $contentCarouselContainer.find('.carousel-next').on('click', () => {
+      owlCarousel.trigger('next.owl.carousel')
+    })
+    $contentCarouselContainer.find('.carousel-prev').on('click', () => {
+      owlCarousel.trigger('prev.owl.carousel')
+    })
   })
 
   // News carousel
