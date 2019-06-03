@@ -63,8 +63,8 @@ $(document).ready(() => {
             value="${id}"
           />
           <input
-            type="text"
-            class="form-control border form-control-lg py-3 px-1 px-sm-4 ml-2 d-inline-block mr-0 font-size-4 font-weight-bold text-center max-px-sm-100 max-px-75"
+            type="number"
+            class="form-control form-control-spin-none border form-control-lg py-3 px-1 px-sm-4 ml-2 d-inline-block mr-0 font-size-4 font-weight-bold text-center max-px-sm-100 max-px-75"
             placeholder="0"
             min="0"
             name="list[${index}][percentage]"
@@ -116,7 +116,7 @@ $(document).ready(() => {
     // refresh select
     $(this).selectpicker('refresh')
     // Add list item
-    listGroupEl.prepend(listItemTemplate(itemsCount, percentage, politician))
+    $(listItemTemplate(itemsCount, percentage, politician)).insertBefore(listGroupEl.find('li:last-child'))
     // recalculate available percentage value
     calcAvailablePercentage()
   })
