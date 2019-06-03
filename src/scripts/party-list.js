@@ -10,7 +10,6 @@ $(document).ready(() => {
       const value = $(el).find('input.form-control').val()
       total += (value.length ? parseFloat(value) : 0)
     })
-
     usedPercentage = total
     availablePercentageEl.text(`${total > 100 ? 0 : 100 - total}%`)
     if (total >= 100) {
@@ -116,7 +115,7 @@ $(document).ready(() => {
     // refresh select
     $(this).selectpicker('refresh')
     // Add list item
-    $(listItemTemplate(itemsCount, percentage, politician)).insertBefore(listGroupEl.find('li:last-child'))
+    listGroupEl.find('.list-group-item.last ').before(listItemTemplate(itemsCount, percentage, politician))
     // recalculate available percentage value
     calcAvailablePercentage()
   })
