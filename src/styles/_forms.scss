@@ -64,6 +64,15 @@
     font-weight: bold;
   }
   &-control {
+    &-spin-none {
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    }
     select {
       background: transparent;
       border: none;
