@@ -3,6 +3,11 @@
 //
 
 .text {
+  &-with-permalink {
+    a {
+      color: $success;
+    }
+  }
   &-uppercase {
     -webkit-font-feature-settings: "case";
     font-feature-settings: "case" on;
