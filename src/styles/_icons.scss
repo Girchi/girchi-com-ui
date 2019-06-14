@@ -26,6 +26,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-teacher:before {
+  content: "\e91a";
+}
+.icon-pencil-case:before {
+  content: "\e91b";
+}
+.icon-student:before {
+  content: "\e91c";
+}
+.icon-calendar:before {
+  content: "\e91d";
+}
+.icon-clock:before {
+  content: "\e91e";
+}
 .icon-pin:before {
   content: "\e919";
 }

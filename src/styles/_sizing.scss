@@ -13,6 +13,9 @@
         .min-#{$abbrev}#{$infix}-#{$size} {
           min-#{$prop}: #{$size}px !important;
         }
+        .#{$abbrev}#{$infix}-#{$size}-px {
+          #{$prop}: #{$size}px !important;
+        }
       }
     }
   }
