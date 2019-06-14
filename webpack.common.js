@@ -115,7 +115,8 @@ module.exports = {
         'our-vision.html',
         'our-team.html',
         'board.html',
-        'contact.html'
+        'contact.html',
+        'girchi-school.html'
       ],
       path: './src'
     }),

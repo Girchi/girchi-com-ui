@@ -1,0 +1,66 @@
+.timeline {
+  &-track {
+    width: calc(75% + 45px);
+    margin-left: calc(12.5% - 22.5px);
+    height: 20px;
+    position: relative;
+    display: block;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      background: rgba(#000000, 0.2);
+      display: block;
+      width: 100%;
+      z-index: 1;
+      border-radius: 50rem;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      background: rgba(#000000, 0.1);
+      display: block;
+      width: 90vw;
+      max-width: 95vw;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+      border-radius: 50rem;
+    }
+  }
+  &-tile {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 12px;
+      border-radius: 50px;
+      height: 12px;
+      background-color: $orange;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -16px;
+      z-index: 3;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 1px;
+      height: 20px;
+      background-color: $orange;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 3px;
+      z-index: 3;
+    }
+    &-label {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

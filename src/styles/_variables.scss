@@ -3,7 +3,9 @@
 // Color system
 
 $light-green: #2fa837;
+$dark-green: #318b37;
 $green: #327f37;
+$hospital-green: #93e599;
 $yellow: #ffa823;
 $silver: #d4dadf;
 $light-silver: #efeff0;
@@ -17,13 +19,15 @@ $white: #ffffff;
 $dark-white: #f7f7f7;
 $purple: #3b5998;
 $light-blue: #1aafe7;
-
+$black: #000;
 $green-gradient: linear-gradient(42deg, $light-green, $green);
 
 $colors: () !default;
 $colors: map-merge(
   (
     "light-green": $light-green,
+    "hospital-green": $hospital-green,
+    "dark-green": $dark-green,
     "green": $green,
     "yellow": $yellow,
     "silver": $silver,
@@ -37,7 +41,8 @@ $colors: map-merge(
     "red": $red,
     "white": $white,
     "dark-white": $dark-white,
-    "purple": $purple
+    "purple": $purple,
+    "black": $black
   ),
   $colors
 );
@@ -64,13 +69,17 @@ $theme-colors: map-merge(
     "light": $light,
     "dark": $dark,
     "white": $white,
+    "yellow": $yellow,
     "dark-white": $dark-white,
     "grey": $grey,
     "light-silver": $light-silver,
     "dark-silver": $dark-silver,
     "light-green": $light-green,
+    "dark-green": $dark-green,
+    "hospital-green": $hospital-green,
     "purple": $purple,
-    "light-blue": $light-blue
+    "light-blue": $light-blue,
+    "black": $black
   ),
   $theme-colors
 );
@@ -160,14 +169,17 @@ $sizes: map-merge(
   (
     10: 10%,
     15: 15%,
+    20: 20%,
     25: 25%,
     30: 30%,
     35: 35%,
     40: 40%,
     50: 50%,
+    60: 60%,
     75: 75%,
     90: 90%,
     100: 100%,
+    150: 150%,
     180: 180%,
     200: 200%,
     210: 210%,
