@@ -24,6 +24,8 @@
               class="ml-auto py-3 py-lg-0 border-top border-top-lg-0 text-center"
             >
               <button
+                data-toggle="modal"
+                data-target="#pupilRegistration"
                 class="btn btn-warning mr-1 text-uppercase btn-block d-md-inline-block w-100 max-w-md-210 w-lg-auto mt-md-0"
               >
                 ბავშვის რეგისტრაცია
@@ -481,5 +483,162 @@
       </section>
     </div>
     ${require('./partials/footer.html')}
+    <!-- Pupil Registration Modal -->
+    <div
+      class="modal fade"
+      id="pupilRegistration"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="pupilRegistration"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6
+              class="modal-title font-size-base text-success text-uppercase font-weight-bold"
+            >
+              ბავშვის რეგისტრაცია
+            </h6>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i
+                aria-hidden="true"
+                class="icon-close font-size-3 text-dark-silver"
+              ></i>
+            </button>
+          </div>
+          <div class="modal-body px-5">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label class="form-label" for="parent-fname"
+                      >მშობლის სახელი</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="parent-fname"
+                      placeholder="მიუთითეთ მშობლის სახელი"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label class="form-label" for="parent-lname"
+                      >მშობლის გვარი</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="parent-lname"
+                      placeholder="მიუთითეთ მშობლის გვარი"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label class="form-label" for="email">ელ. ფოსტა</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="email"
+                      placeholder="მიუთითეთ ელ. ფოსტა"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label class="form-label" for="phone">ტელეფონი</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="phone"
+                      placeholder="მიუთითეთ ტელეფონი"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label class="form-label" for="district">რაიონი</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="district"
+                      placeholder="მიუთითეთ რაიონი"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label class="form-label" for="number-of-pupils"
+                      >მოსწავლეების რაოდენობა</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control form-control-lg"
+                      id="number-of-pupils"
+                      placeholder="მიუთითეთ მოსწავლეების რაოდენობა"
+                    />
+                  </div>
+                </div>
+              </div>
+              <hr class="border-dashed border-secondary" />
+              <h6
+                class="font-size-3 text-success text-uppercase font-weight-bold text-center py-2"
+              >
+                მიუთითეთ რა დროით გსურთ ბავშვმა იაროს გირჩის სკოლაში
+              </h6>
+
+              <div class="px-3">
+                <input
+                  class="time-range-picker w-100"
+                  type="text"
+                  data-slider-ticks="[9,10,11,12,13,14,15,16,17,18,19,20,21]"
+                  data-slider-ticks-labels='["9 სთ","10 სთ","11 სთ","12 სთ","13 სთ","14 სთ","15 სთ","16 სთ","17 სთ","18 სთ","19 სთ","20 სთ","21 სთ"]'
+                  data-slider-min="9"
+                  data-slider-max="21"
+                  data-slider-step="1"
+                  data-slider-price="50"
+                  data-slider-unit="სთ"
+                  data-slider-value="[9,13]"
+                />
+              </div>
+              <div class="text-center">
+                <div class="d-inline-flex flex-column py-3">
+                  <label class="text-uppercase text-grey m-0"
+                    >სავარაუდო ფასი თვეში:</label
+                  >
+                  <span class="font-size-5 text-success font-weight-bold">
+                      <span class="monthly-price">0</span> ₾</span
+                      >
+                  </span>
+                     
+                </div>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  class="btn btn-lg w-250-px btn-warning text-uppercase my-3"
+                >
+                  რეგისტრაცია
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
