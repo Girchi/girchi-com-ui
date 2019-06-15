@@ -442,3 +442,11 @@ $popover-bg: #f9fafb !default;
 $popover-box-shadow: 0px 4px 7px 0 rgba(0, 0, 0, 0.1) !default;
 $popover-border-color: $silver !default;
 $popover-border-radius: 2px !default;
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-modal-backdrop: 1062 !default;
+$zindex-modal: 1063 !default;
