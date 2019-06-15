@@ -1,0 +1,114 @@
+.slider {
+  &.slider-horizontal {
+    width: 100% !important;
+    margin-bottom: 25px !important;
+    margin-top: 40px !important;
+  }
+  &-tick {
+    background: $yellow !important;
+    width: 12px !important;
+    height: 12px !important;
+    top: 9px;
+    margin-left: -5px !important;
+    &-label {
+      padding-bottom: 24px;
+      padding-top: initial !important;
+      font-size: 0.75rem;
+      font-feature-settings: "case" on;
+      color: $success;
+      font-weight: bold;
+      pointer-events: none;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 10px;
+        top: 18px;
+        background-color: $yellow;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+      }
+      &-container {
+        margin-top: -30px !important;
+      }
+    }
+  }
+  &-track {
+    background: #ecf1f5 !important;
+    box-shadow: none !important;
+    height: 20px !important;
+    border-radius: 5rem !important;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      display: block;
+      background: #ecf1f5 !important;
+      margin-left: -10px;
+      border-radius: 5rem !important;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 20px;
+      right: 0;
+      top: 0;
+      display: block;
+      background: #ecf1f5 !important;
+      margin-right: -12px;
+      border-radius: 5rem !important;
+    }
+  }
+  .tick-slider-selection {
+    background: $success !important;
+    border-radius: 5rem !important;
+    z-index: 2;
+    text-align: center;
+    color: $white;
+    font-feature-settings: "case" on;
+    font-size: 0.75rem;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 32px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      display: block;
+      background: $success !important;
+      margin-left: -16px;
+      border-top-left-radius: 5rem !important;
+      border-bottom-left-radius: 5rem !important;
+      z-index: 1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 20px;
+      right: 0;
+      top: 0;
+      display: block;
+      background: $success !important;
+      margin-right: -18px;
+      border-top-right-radius: 5rem !important;
+      border-bottom-right-radius: 5rem !important;
+      z-index: 1;
+    }
+  }
+  &-handle {
+    width: 28px !important;
+    height: 16px !important;
+    background: $yellow !important;
+    top: 7px !important;
+    margin-left: -13px !important;
+    z-index: 2;
+  }
+}
