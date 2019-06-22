@@ -12,6 +12,25 @@
   }
 }
 
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .position {
+      &#{$infix} {
+        &-absolute {
+          position: absolute;
+        }
+        &-fixed {
+          position: fixed;
+        }
+        &-static {
+          position: static;
+        }
+      }
+    }
+  }
+}
+
 .z-index {
   @for $i from 0 through 10 {
     &-#{$i} {
