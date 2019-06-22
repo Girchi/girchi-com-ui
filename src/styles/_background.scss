@@ -41,6 +41,9 @@
       url(../images/school/7.png) calc(100% + 100px) 30% / 250px auto no-repeat,
       url(../images/school/8.png) calc(100% + 250px) 50% / 500px auto no-repeat;
   }
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    background: transparent;
+  }
 }
 .bg-subjects {
   background: url(../images/school/section-bg.png) center center / 100%;

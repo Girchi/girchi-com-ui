@@ -1,4 +1,30 @@
 .timeline {
+  &-list {
+    display: flex;
+    &-item {
+      @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+        margin-left: -16px;
+        &:first-child {
+          .timeline-tile {
+            margin-top: 40px !important;
+          }
+        }
+        &:last-child {
+          .timeline-tile-label {
+            top: initial;
+            bottom: -30px;
+          }
+          .timeline-tile {
+            margin-bottom: 30px !important;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+      flex-direction: column;
+      width: calc(100% - 20px);
+    }
+  }
   &-track {
     width: calc(75% + 45px);
     margin-left: calc(12.5% - 22.5px);
@@ -28,6 +54,18 @@
       z-index: 0;
       border-radius: 50rem;
     }
+    @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+      width: 20px;
+      height: auto;
+      margin-left: 0;
+      &:before,
+      &:after {
+        height: 100%;
+        width: 20px;
+        left: 0;
+        transform: initial;
+      }
+    }
   }
   &-tile {
     position: relative;
@@ -43,6 +81,11 @@
       transform: translateX(-50%);
       top: -16px;
       z-index: 3;
+      @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+        left: 0;
+        top: 11px;
+        transform: initial;
+      }
     }
     &:after {
       content: "";
@@ -55,12 +98,31 @@
       transform: translateX(-50%);
       top: 3px;
       z-index: 3;
+      @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+        left: 20px;
+        top: 17px;
+        transform: initial;
+        width: 20px;
+        height: 1px;
+      }
     }
     &-label {
       position: absolute;
       top: -50px;
       left: 50%;
       transform: translateX(-50%);
+      @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+        left: 55px;
+        top: -40px;
+        transform: initial;
+      }
     }
+    @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+      padding-right: 20px !important;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, "lg")) {
+    display: flex;
   }
 }
