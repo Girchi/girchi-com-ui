@@ -8,7 +8,9 @@ $(document).ready(() => {
     let total = 0
     $.each($('.pl-group-item'), (index, el) => {
       const value = $(el).find('input.form-control').val()
-      total += (value.length ? parseFloat(value) : 0)
+      if (value >= 0 && !value.includes('-')) {
+        total += (value.length ? parseFloat(value) : 0)
+      }
     })
     usedPercentage = total
     availablePercentageEl.text(`${total > 100 ? 0 : 100 - total}%`)
@@ -123,16 +125,28 @@ $(document).ready(() => {
   // prevent enter more then max value
 
   $('input[id="percent"]').on('input', function (e) {
-    const value = e.target.value.length ? parseFloat(e.target.value) : 0
-    if (usedPercentage + value > 100) {
-      $(this).val(100 - usedPercentage)
+    let value = e.target.value.includes('-') || e.target.value === '' ? -1 : e.target.value
+    value = parseFloat(value)
+
+    if (value >= 0) {
+      if (usedPercentage + value > 100) {
+        $(this).val(100 - usedPercentage)
+      }
+    } else {
+      $(this).val(0)
     }
   })
   $('body').delegate('.pl-group-item .form-control', 'input', function (e) {
     calcAvailablePercentage()
-    const value = e.target.value.length ? parseFloat(e.target.value) : 0
-    if (usedPercentage > 100) {
-      $(this).val(value - (usedPercentage - 100))
+    let value = e.target.value.includes('-') || e.target.value === '' ? -1 : e.target.value
+    value = parseFloat(value)
+
+    if (value >= 0) {
+      if (usedPercentage > 100) {
+        $(this).val(value - (usedPercentage - 100))
+      }
+    } else {
+      $(this).val(0)
     }
   })
   // show available percentage on focus
