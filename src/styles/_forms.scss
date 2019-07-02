@@ -4,6 +4,19 @@
 
 .form {
   &-group {
+    .iti {
+      display: block;
+      border-radius: $input-border-radius-lg;
+      .form-control {
+        padding-right: $input-padding-x-lg;
+        padding-left: 4.375rem;
+      }
+      &__selected-flag {
+        padding-left: $input-padding-x-lg;
+        background-color: transparent !important;
+        outline: none;
+      }
+    }
     &.is-invalid {
       position: relative;
       .form-control {
