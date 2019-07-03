@@ -1,4 +1,5 @@
 import intlTelInput from 'intl-tel-input'
+import utils from "intl-tel-input/build/js/utils.js"
 import 'intl-tel-input/build/css/intlTelInput.css'
 
 var countryData = window.intlTelInputGlobals.getCountryData()
@@ -14,5 +15,5 @@ intlTelInput(document.querySelector('[type="phone"]'), {
   autoPlaceholder: 'aggressive',
   preferredCountries: [],
   initialCountry: 'ge',
-  utilsScript: '/node_modules/intl-tel-input/build/js/utils.js?1560794689211'
+  utilsScript: utils
 })
