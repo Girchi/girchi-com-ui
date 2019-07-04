@@ -10,7 +10,7 @@ for (var i = 0; i < countryData.length; i++) {
   country.name = country.name.replace(/.+\((.+)\)/, '$1')
 }
 
-intlTelInput(document.querySelector('[type="phone"]'), {
+intlTelInput(document.querySelector('#phone'), {
   hiddenInput: 'full_phone',
   autoPlaceholder: 'aggressive',
   preferredCountries: [],
