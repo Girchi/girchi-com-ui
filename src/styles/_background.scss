@@ -1,5 +1,6 @@
 @each $color, $value in $theme-colors {
   .bg-hover-#{$color} {
+    transition: all 0.4s ease-in-out;
     &:hover {
       background-color: $value !important;
     }

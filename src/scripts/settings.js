@@ -1,5 +1,5 @@
 import intlTelInput from 'intl-tel-input'
-import utils from "intl-tel-input/build/js/utils.js"
+import utils from 'intl-tel-input/build/js/utils.js'
 import 'intl-tel-input/build/css/intlTelInput.css'
 
 var countryData = window.intlTelInputGlobals.getCountryData()
@@ -10,10 +10,13 @@ for (var i = 0; i < countryData.length; i++) {
   country.name = country.name.replace(/.+\((.+)\)/, '$1')
 }
 
-intlTelInput(document.querySelector('#phone'), {
-  hiddenInput: 'full_phone',
-  autoPlaceholder: 'aggressive',
-  preferredCountries: [],
-  initialCountry: 'ge',
-  utilsScript: utils
-})
+if (input) {
+  intlTelInput(input, {
+    hiddenInput: 'full_phone',
+    autoPlaceholder: 'aggressive',
+    preferredCountries: [],
+    initialCountry: 'ge',
+    utilsScript: utils
+  })
+}
+
