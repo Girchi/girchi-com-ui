@@ -19,4 +19,3 @@ if (input) {
     utilsScript: utils
   })
 }
-
