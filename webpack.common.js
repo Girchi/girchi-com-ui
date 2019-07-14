@@ -117,7 +117,8 @@ module.exports = {
         'board.html',
         'contact.html',
         'girchi-school.html',
-        'girchi-party-list.html'
+        'girchi-party-list.html',
+        'politicians-page.html'
       ],
       path: './src'
     }),
