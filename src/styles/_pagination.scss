@@ -37,3 +37,26 @@
   //   border-color: $pagination-disabled-border-color;
   // }
 }
+
+.pagination {
+  &-green {
+    .page-link {
+      border-color: transparent;
+      background: transparent;
+      color: $lighter-green;
+      &:hover {
+        color: $white;
+        border-color: $white !important;
+      }
+    }
+    .page-item {
+      color: $lighter-green;
+      &.active {
+        .page-link {
+          color: $white;
+          border-color: $white !important;
+        }
+      }
+    }
+  }
+}
