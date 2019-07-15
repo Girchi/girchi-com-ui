@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/_functions";
 
 // Color system
-
+$lighter-green: #85e78c;
 $light-green: #2fa837;
 $dark-green: #318b37;
 $green: #327f37;
@@ -26,6 +26,7 @@ $colors: () !default;
 $colors: map-merge(
   (
     "light-green": $light-green,
+    "lighter-green": $lighter-green,
     "hospital-green": $hospital-green,
     "dark-green": $dark-green,
     "green": $green,
@@ -75,6 +76,7 @@ $theme-colors: map-merge(
     "light-silver": $light-silver,
     "dark-silver": $dark-silver,
     "light-green": $light-green,
+    "lighter-green": $lighter-green,
     "dark-green": $dark-green,
     "hospital-green": $hospital-green,
     "purple": $purple,
