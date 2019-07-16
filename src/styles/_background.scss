@@ -60,3 +60,8 @@
     pointer-events: none;
   }
 }
+
+.bg-green-newsfeed {
+  background: url(../images/green-newsfeed-bg-1.png) 100% 5% / 150px no-repeat,
+    url(../images/green-newsfeed-bg-2.png) 0% 90% / 80px no-repeat;
+}

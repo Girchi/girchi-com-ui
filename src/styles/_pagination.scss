@@ -39,6 +39,14 @@
 }
 
 .pagination {
+  &-arrow {
+    &.disabled {
+      opacity: 1;
+      * {
+        opacity: 0.5;
+      }
+    }
+  }
   &-green {
     .page-link {
       border-color: transparent;
