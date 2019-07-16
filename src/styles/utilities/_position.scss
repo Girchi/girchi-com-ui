@@ -5,7 +5,12 @@
     @each $position, $properties in $positions {
       &-#{$side}-#{$position} {
         @each $property, $value in $properties {
-          #{$property}: $value;
+          #{$property}: #{$value}rem;
+        }
+      }
+      &-#{$side}-#{$position}-px {
+        @each $property, $value in $properties {
+          #{$property}: #{$value}px;
         }
       }
     }
