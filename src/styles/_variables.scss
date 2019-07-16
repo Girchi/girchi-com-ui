@@ -347,11 +347,15 @@ $positionTypes: (
       $childMap,
       (
         $i: (
-          $side: #{$i}
+          $side: #{$i}rem
         ),
+        #{$i}-px:
+          (
+            $side: #{$i}px
+          ),
         n#{$i}:
           (
-            $side: -#{$i}
+            $side: -#{$i}rem
           )
       )
     );
