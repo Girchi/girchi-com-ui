@@ -52,7 +52,12 @@
 .rounded-oval {
   border-radius: 3.125rem;
 }
-
+.rounded-top-right {
+  border-top-right-radius: $border-radius !important;
+}
+.rounded-top-left {
+  border-top-left-radius: $border-radius !important;
+}
 .rounded-circle {
   border-radius: 150px !important;
 }

@@ -118,7 +118,8 @@ module.exports = {
         'contact.html',
         'girchi-school.html',
         'girchi-party-list.html',
-        'politicians-page.html'
+        'politicians-page.html',
+        'politicians-bio.html'
       ],
       path: './src'
     }),
