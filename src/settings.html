@@ -296,7 +296,7 @@
                             placeholder="მიუთითეთ მისამართი"
                           />
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group is-invalid mb-2">
                           <label class="form-label" for="phone"
                             >ტელეფონის ნომერი</label
                           >
@@ -306,6 +306,10 @@
                             class="form-control form-control-lg"
                             id="phone"
                           />
+                          <span
+                            class="validation-message"
+                            data-content="ტელეფონის ნომერი სავალდებულოა."
+                          ></span>
                         </div>
                         <button
                           type="submit"
