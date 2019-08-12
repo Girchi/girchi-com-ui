@@ -10,7 +10,9 @@
   }
   &-with-permalink {
     a {
-      color: $success;
+      color: $success !important;
+      font-weight: bold !important;
+      text-decoration: underline !important;
     }
   }
   &-uppercase {

@@ -21,6 +21,7 @@ $purple: #3b5998;
 $light-blue: #1aafe7;
 $black: #000;
 $green-gradient: linear-gradient(42deg, $light-green, $green);
+$warning-gradient: linear-gradient(42deg, #ffae33, #f8a01a);
 
 $colors: () !default;
 $colors: map-merge(

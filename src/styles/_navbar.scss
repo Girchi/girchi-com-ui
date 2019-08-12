@@ -106,5 +106,9 @@
   &.sticky {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     top: 0;
+    .nav-link {
+      font-size: 0.8125rem;
+      white-space: nowrap;
+    }
   }
 }

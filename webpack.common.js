@@ -11,90 +11,100 @@ module.exports = {
   entry: './src/scripts/index.js',
   resolve: {
     alias: {
-      'jquery': path.resolve(path.join(__dirname, 'node_modules', 'jquery'))
+      jquery: path.resolve(path.join(__dirname, 'node_modules', 'jquery'))
     }
   },
   module: {
-    rules: [{
-      test: /\.txt$/,
-      use: 'raw-loader'
-    },
-    {
-      test: /\.html$/,
-      use: [{
-        loader: 'html-loader',
-        options: {
-          minimize: false,
-          interpolate: true
-        }
-      }]
-    },
-    {
-      test: /\.(jpe?g|png|gif|svg)$/,
-      use: [{
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: 'images/',
-          publicPath: 'images/'
-        }
-      }]
-    },
-    {
-      test: /\.(woff|woff2|ttf|otf|eot)$/,
-      use: [{
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: 'fonts/',
-          publicPath: 'fonts/'
-        }
-      }]
-    },
-    {
-      test: /\.(sa|sc|c)ss$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        {
-          loader: 'css-loader',
-          options: {
-            sourceMap: true
+    rules: [
+      {
+        test: /\.txt$/,
+        use: 'raw-loader'
+      },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: false,
+              interpolate: true
+            }
           }
-        },
-        {
-          loader: 'postcss-loader',
-          options: {
-            sourceMap: true
+        ]
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/',
+              publicPath: 'images/'
+            }
           }
-        },
-        {
-          loader: 'sass-loader',
+        ]
+      },
+      {
+        test: /\.(woff|woff2|ttf|otf|eot)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/',
+              publicPath: 'fonts/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
           options: {
-            sourceMap: true
+            presets: ['@babel/preset-env']
           }
         }
-      ]
-    },
-    {
-      test: /\.js$/,
-      exclude: /(node_modules)/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
-        }
+      },
+      {
+        test: require.resolve('jquery'),
+        use: [
+          {
+            loader: 'expose-loader',
+            options: 'jQuery'
+          },
+          {
+            loader: 'expose-loader',
+            options: '$'
+          }
+        ]
       }
-    },
-    {
-      test: require.resolve('jquery'),
-      use: [{
-        loader: 'expose-loader',
-        options: 'jQuery'
-      }, {
-        loader: 'expose-loader',
-        options: '$'
-      }]
-    }
     ]
   },
   plugins: [
@@ -119,14 +129,16 @@ module.exports = {
         'girchi-school.html',
         'girchi-party-list.html',
         'politicians-page.html',
-        'politicians-bio.html'
+        'politicians-bio.html',
+        'transactions-history.html',
+        'automatic-payments.html'
       ],
       path: './src'
     }),
     new PreloadWebpackPlugin({
       rel: 'preload',
       as (entry) {
-        if (/\.(woff|woff2|ttf|otf)$/.test(entry)) return 'font'
+        if (/\.(woff|woff2|ttf|otf)$/.test(entry)) return 'font';
       },
       fileWhitelist: [/\.(woff|woff2|ttf|otf)$/],
       include: 'allAssets'
@@ -139,12 +151,11 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new Webpack.ProvidePlugin({
-      '$': 'jquery',
-      'jQuery': 'jquery',
+      $: 'jquery',
+      jQuery: 'jquery',
       'window.$': 'jquery',
       'window.jQuery': 'jquery'
     })
-
   ],
   output: {
     filename: 'bundle-[hash].js',

@@ -19,6 +19,25 @@
     }
     &.is-invalid {
       position: relative;
+      .iti {
+        & + .validation-message {
+          position: absolute;
+          display: block;
+          width: 20px;
+          height: 20px;
+          background: $light-silver;
+          border-radius: 1rem;
+          top: 50px;
+          left: calc(100% - 35px);
+          font-family: icomoon !important;
+          speak: none;
+          font-style: normal;
+          @extend .icon-close;
+          font-size: 0.6rem;
+          color: $danger;
+          padding: 0.2rem 0.3rem;
+        }
+      }
       .form-control {
         border-color: $danger;
         padding-right: 2.5rem;

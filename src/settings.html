@@ -81,6 +81,14 @@
                       <!-- Start of list group item -->
                       <a
                         class="py-3 px-3 px-md-4 d-block list-group-item list-group-item-action text-uppercase font-size-3"
+                        href="girchi-party-list.html"
+                      >
+                        გირჩის პარტიული სია
+                      </a>
+                      <!-- End of list group item -->
+                      <!-- Start of list group item -->
+                      <a
+                        class="py-3 px-3 px-md-4 d-block list-group-item list-group-item-action text-uppercase font-size-3"
                         href="party-list.html"
                       >
                         ჩემი პარტიული სია
@@ -89,7 +97,23 @@
                       <!-- Start of list group item -->
                       <a
                         class="py-3 px-3 px-md-4 d-block list-group-item list-group-item-action text-uppercase font-size-3"
-                        href="#nav-item-1"
+                        href="transactions-history.html"
+                      >
+                        გადახდების ისტორია
+                      </a>
+                      <!-- End of list group item -->
+                      <!-- Start of list group item -->
+                      <a
+                        class="py-3 px-3 px-md-4 d-block list-group-item list-group-item-action text-uppercase font-size-3"
+                        href="automatic-payments.html"
+                      >
+                        ავტომატური გადახდები
+                      </a>
+                      <!-- End of list group item -->
+                      <!-- Start of list group item -->
+                      <a
+                        class="py-3 px-3 px-md-4 d-block list-group-item list-group-item-action text-uppercase font-size-3"
+                        href="donate.html"
                       >
                         დააფინანსე გირჩი
                       </a>
@@ -126,7 +150,7 @@
             <!-- End of card -->
           </div>
           <div class="col-md-12 col-lg-9">
-            <div class="banner banner-bg-gradient mb-3 mb-lg-4 p-3 rounded">
+            <div class="banner banner-bg-gradient-green mb-3 mb-lg-4 p-3 rounded">
               <div
                 class="m-1 m-xl-3 d-flex flex-column flex-md-row  align-items-start align-items-md-center"
               >
@@ -296,7 +320,7 @@
                             placeholder="მიუთითეთ მისამართი"
                           />
                         </div>
-                        <div class="form-group mb-2">
+                        <div class="form-group is-invalid mb-2">
                           <label class="form-label" for="phone"
                             >ტელეფონის ნომერი</label
                           >
@@ -306,6 +330,10 @@
                             class="form-control form-control-lg"
                             id="phone"
                           />
+                          <span
+                            class="validation-message"
+                            data-content="ტელეფონის ნომერი სავალდებულოა."
+                          ></span>
                         </div>
                         <div class="d-none">
                           <div class="custom-file">
