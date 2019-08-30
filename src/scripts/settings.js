@@ -3,7 +3,7 @@ import utils from "intl-tel-input/build/js/utils.js";
 import "intl-tel-input/build/css/intlTelInput.css";
 
 let countryData = window.intlTelInputGlobals.getCountryData();
-let input = document.querySelector("#phone");
+let input = document.querySelector(".int-phone");
 const popoverinput = $(input).closest("validation-message");
 
 popoverinput.popover({
