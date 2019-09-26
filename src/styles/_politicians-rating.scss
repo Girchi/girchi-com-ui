@@ -1,0 +1,17 @@
+.politicians-rating {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+  @for $i from 4 to 6 {
+    &-#{$i} {
+      .politicians-rating-item {
+        margin: 0.5rem;
+        width: calc(100% / #{$i} - 1rem);
+        @media screen and (min-width: map-get($grid-breakpoints, "xl")) {
+          margin: 1rem;
+          width: calc(100% / #{$i} - 2rem);
+        }
+      }
+    }
+  }
+}
