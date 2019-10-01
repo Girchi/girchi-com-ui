@@ -18,6 +18,7 @@ $red: #ef3233;
 $white: #ffffff;
 $dark-white: #f7f7f7;
 $purple: #3b5998;
+$dark-purple: #0077b5;
 $light-blue: #1aafe7;
 $black: #000;
 $green-gradient: linear-gradient(42deg, $light-green, $green);
@@ -44,6 +45,7 @@ $colors: map-merge(
     "white": $white,
     "dark-white": $dark-white,
     "purple": $purple,
+    "dark-purple": $dark-purple,
     "black": $black
   ),
   $colors
@@ -81,6 +83,7 @@ $theme-colors: map-merge(
     "dark-green": $dark-green,
     "hospital-green": $hospital-green,
     "purple": $purple,
+    "dark-purple": $dark-purple,
     "light-blue": $light-blue,
     "black": $black
   ),

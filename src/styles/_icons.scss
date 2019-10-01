@@ -26,6 +26,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-linkedin:before {
+  content: "\e921";
+}
+.icon-star:before {
+  content: "\e920";
+}
+.icon-pencil:before {
+  content: "\e90b";
+}
 .icon-teacher:before {
   content: "\e91a";
 }
@@ -83,9 +92,6 @@
 .icon-clock-circular-outline:before {
   content: "\e90c";
 }
-.icon-play-button:before {
-  content: "\e90b";
-}
 .icon-angle-arrow-pointing-to-right:before {
   content: "\e900";
 }
@@ -128,4 +134,13 @@
 }
 .icon-arrow-right2:before {
   content: "\ea3c";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+.icon-pause2:before {
+  content: "\ea1d";
+}
+.icon-play-button:before {
+  content: "\e91f";
 }
