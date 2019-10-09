@@ -103,7 +103,6 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
   })
   // Remove last slider from slider wrapper
   $('#removeLastChild').on('click', function () {
-    updatePrice()
     if ($('#sliders-wrapper .slider-element').last().length) {
       let currentSliderId = $('#sliders-wrapper .slider-element input').last().attr('data-slider-id')
       $(`[name="start-time[${currentSliderId}]"]`).parent().remove()
@@ -111,6 +110,7 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
       $('#sliders-wrapper .slider-element').last().remove()
       sliderId--
       initSliders()
+      updatePrice()
     }
   })
   function initSliders () {
