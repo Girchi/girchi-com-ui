@@ -4,7 +4,6 @@ import 'bootstrap-slider/src/sass/bootstrap-slider.scss'
 import { round } from './helpers'
 
 $('#pupilRegistration').on('shown.bs.modal', function (e) {
-  $(`[name="[start-time][1]"]`)
   const unit = $('.time-range-picker').attr('data-slider-unit')
   const price = parseFloat($('.time-range-picker').attr('data-slider-price')) / 12
   const labels = JSON.parse($('.time-range-picker').attr('data-slider-ticks-labels'))
@@ -65,7 +64,7 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
                     >
                     <select
                       class="form-control form-control-lg start-time"
-                      name="[start-time][${sliderId}]"
+                      name="start-time[${sliderId}]"
                       placeholder="მიუთითეთ დაწყების დრო"
                       data-slider = ${sliderId}
                     >
@@ -79,7 +78,7 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
                     >
                     <select
                       class="form-control form-control-lg end-time"
-                      name="[end-time][${sliderId}]"
+                      name="end-time[${sliderId}]"
                       placeholder="მიუთითეთ დამთავრების დრო"
                       data-slider = ${sliderId}
                     >
@@ -91,12 +90,12 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
       let value = ticks[i]
       let label = e
       if (value <= 17) {
-        $(`[name="[start-time][${sliderId}]"]`).append(`<option value="${value}">${label}</option>`)
+        $(`[name="start-time[${sliderId}]"]`).append(`<option value="${value}">${label}</option>`)
       }
       if (value >= 13) {
-        $(`[name="[end-time][${sliderId}]"]`).append(`<option value="${value}">${label}</option>`)
+        $(`[name="end-time[${sliderId}]"]`).append(`<option value="${value}">${label}</option>`)
       }
-      $(`[name="[end-time][${sliderId}]"]`).val(13)
+      $(`[name="end-time[${sliderId}]"]`).val(13)
     })
     initSliders()
     sliderId++
@@ -107,8 +106,8 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
     updatePrice()
     if ($('#sliders-wrapper .slider-element').last().length) {
       let currentSliderId = $('#sliders-wrapper .slider-element input').last().attr('data-slider-id')
-      $(`[name="[start-time][${currentSliderId}]"]`).parent().remove()
-      $(`[name="[end-time][${currentSliderId}]"]`).parent().remove()
+      $(`[name="start-time[${currentSliderId}]"]`).parent().remove()
+      $(`[name="end-time[${currentSliderId}]"]`).parent().remove()
       $('#sliders-wrapper .slider-element').last().remove()
       sliderId--
       initSliders()
@@ -131,8 +130,8 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
             $(slider).slider('setValue', e.value.oldValue)
           }
           $(slider).prev('.slider-horizontal').find('.tick-slider-selection').text(`${diff} ${unit}`)
-          $(`[name="[start-time][${currentSliderId}]"]`).val(start)
-          $(`[name="[end-time][${currentSliderId}]"]`).val(end)
+          $(`[name="start-time[${currentSliderId}]"]`).val(start)
+          $(`[name="end-time[${currentSliderId}]"]`).val(end)
           updatePrice()
         })
 
@@ -143,8 +142,8 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
         const diff = Math.abs(defaultValue[0] - defaultValue[1])
         $(slider).prev('.slider-horizontal').find('.tick-slider-selection').text(`${diff} ${unit}`)
         // update form control
-        $(`[name="[start-time][${currentSliderId}]"]`).val(defaultValue[0])
-        $(`[name="[end-time][${currentSliderId}]"]`).val(defaultValue[1])
+        $(`[name="start-time[${currentSliderId}]"]`).val(defaultValue[0])
+        $(`[name="end-time[${currentSliderId}]"]`).val(defaultValue[1])
       }
     })
   }
@@ -153,7 +152,7 @@ $('#pupilRegistration').on('shown.bs.modal', function (e) {
     $('.start-time').each(function (key, select) {
       const currentSliderId = $(select).attr('data-slider')
       const startTime = $(select).val()
-      const endTime = $(`[name="[end-time][${currentSliderId}]"]`).val()
+      const endTime = $(`[name="end-time[${currentSliderId}]"]`).val()
       const diff = Math.abs(startTime - endTime)
       wholePrice += round(diff * price, 0)
       monthlyPrice.text(wholePrice)
