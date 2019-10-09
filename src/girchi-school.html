@@ -650,17 +650,17 @@
               >
                 მიუთითეთ რა დროით გსურთ ბავშვმა იაროს გირჩის სკოლაში
               </h6>
-              <div class="row d-lg-none">
+              <div class="row d-lg-none" id="child-select-wrapper">
                 <div class="col-12 col-lg-6">
                   <div class="form-group">
                     <label class="form-label" for="start-time"
                       >დაწყების დრო</label
                     >
                     <select
-                      class="form-control form-control-lg"
-                      id="start-time"
-                      name="start-time"
+                      class="form-control form-control-lg start-time"
+                      name="[start-time][1]"
                       placeholder="მიუთითეთ დაწყების დრო"
+                      data-slider = 1
                     >
                     </select>
                   </div>
@@ -671,16 +671,17 @@
                       >დამთავრების დრო</label
                     >
                     <select
-                      class="form-control form-control-lg"
-                      id="end-time"
-                      name="end-time"
+                      class="form-control form-control-lg end-time"
+                      name="[end-time][1]"
                       placeholder="მიუთითეთ დამთავრების დრო"
+                      data-slider = 1
                     >
                     </select>
                   </div>
                 </div>
               </div>
-              <div class="px-3 d-none d-lg-block">
+              <div id="sliders-wrapper">
+              <div class="px-3 d-none d-lg-block slider-element">
                 <input
                   class="time-range-picker w-100"
                   type="text"
@@ -692,7 +693,17 @@
                   data-slider-price="1000"
                   data-slider-unit="სთ"
                   data-slider-value="[9,13]"
-                />
+                  data-slider-id = "1"
+                />  
+              </div>
+              </div>
+              <div class="text-center font-size-6 ">
+                <a class="text-decoration-none text-success" id="addNewChild">
+                  <i class="icon-plus"></i>
+                </a>
+                <a class="text-decoration-none text-warning" id="removeLastChild">
+                  <i class="icon-delete"></i>
+                </a>
               </div>
               <div class="text-center">
                 <div class="d-inline-flex flex-column py-3">
