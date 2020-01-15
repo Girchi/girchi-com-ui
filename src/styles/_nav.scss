@@ -115,6 +115,9 @@
   &-tabs {
     .nav-link {
       color: $nav-tabs-link-color;
+      &.nav-inner.active {
+        box-shadow: inset 0 -4px #fc9800;
+      }
       &.active {
         box-shadow: inset 0 -4px $success;
       }
