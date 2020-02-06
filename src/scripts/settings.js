@@ -27,18 +27,18 @@ if (input) {
     initialCountry: 'ge',
     utilsScript: utils
   })
-}
 
-input.addEventListener('blur', function () {
-  if (input.value.trim()) {
-    if (iti.isValidNumber()) {
-      input.closest('.form-group').classList.add('is-valid')
-      input.closest('.form-group').classList.remove('is-invalid')
-      popoverinput.popover('hide')
-    } else {
-      input.closest('.form-group').classList.add('is-invalid')
-      input.closest('.form-group').classList.remove('is-valid')
-      popoverinput.popover('show')
+  input.addEventListener('blur', function () {
+    if (input.value.trim()) {
+      if (iti.isValidNumber()) {
+        input.closest('.form-group').classList.add('is-valid')
+        input.closest('.form-group').classList.remove('is-invalid')
+        popoverinput.popover('hide')
+      } else {
+        input.closest('.form-group').classList.add('is-invalid')
+        input.closest('.form-group').classList.remove('is-valid')
+        popoverinput.popover('show')
+      }
     }
-  }
-})
+  })
+}
