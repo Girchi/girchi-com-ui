@@ -23,6 +23,8 @@ $(document).ready(() => {
     }
     selectEl.selectpicker('refresh')
   }
+
+  calcAvailablePercentage();
   const listGroupEl = $('.pl-group')
   // Generate list item template
   const listItemTemplate = (index, percentage, { avatar, firstName, lastName, position, id }) => `
