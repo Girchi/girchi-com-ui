@@ -30,17 +30,19 @@
 
         span {
             background-color: $red;
+            display: inline-block;
+            text-align: center;
+            line-height: 23px;
+            width: 23px;
             font-size: 10px;
-            padding: 5px;
             border-radius: 50%;
             color: $white;
-            vertical-align: top;
-            margin-left: -15px;
+            margin-left: -17px;
         }
 
         img {
             display: inline-block;
-            width: 20px;
+            width: 23px;
             margin-top: 20px;
         }
     }
@@ -170,13 +172,12 @@
 .notifications-amount {
     background-color: $red;
     font-size: 10px;
-    padding: 5px;
     border-radius: 50%;
-    color: $white;
-    vertical-align: top;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: $white;  
+    display: inline-block;
+    text-align: center;
+    line-height: 23px;
+    width: 23px;
 }
 
 // notifitions on full page
