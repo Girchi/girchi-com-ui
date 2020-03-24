@@ -50,8 +50,8 @@
     &__notifi-box {
         position: absolute;
         top: 60px;
-        left: calc(-78vw);
-        width: 98vw;
+        left: calc(-77vw);
+        width: 99vw;
         background-color: $white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
         z-index: 30;
@@ -175,7 +175,7 @@
     border-radius: 50%;
     color: $white;  
     display: inline-block;
-    text-align: center;
+    text-align: center; 
     line-height: 23px;
     width: 23px;
 }
