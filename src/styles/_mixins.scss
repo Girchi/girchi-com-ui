@@ -1,7 +1,11 @@
 // Media queries
 @mixin mq($break) {
-    @if $break == 'xxsmall' {
-        @media screen and (min-width: $xsm) {
+    @if $break == 'xxxsmall' {
+        @media screen and (min-width: $xxxsm) {
+            @content;
+        }
+    } @else if $break == 'xxsmall' {
+        @media screen and (min-width: $xxsm) {
             @content;
         }
     } @else if $break == 'xsmall' {
@@ -12,7 +16,7 @@
         @media screen and (min-width: $sm) {
             @content;
         }
-    } @else if $break == 'medium' {
+    }@else if $break == 'medium' {
         @media screen and (min-width: $md) {
             @content;
         }
