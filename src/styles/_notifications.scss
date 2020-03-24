@@ -55,15 +55,18 @@
         background-color: $white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
         z-index: 30;
-            @include mq('xxsmall') {
+            @include mq('xxxsmall') {
                 left: calc(-76.5vw);
             }
-            @include mq('xsmall') {
+            @include mq('xxsmall') {
                 left: calc(-77vw);
+            }
+            @include mq('xsmall') {
+                left: calc(-78.2vw);
             }
             @include mq('small') {
                 width: auto;
-                left: -290px;
+                left: -286px;
             }
             @include mq('medium') {
                 left: -260px;
@@ -135,6 +138,9 @@
                 width: 220px;
                 height: 20px;
                 overflow: hidden;
+                @include mq('xxsmall') {
+                    width: 280px;
+                }
                 @include mq('small') {
                     width: 250px;
                 }
