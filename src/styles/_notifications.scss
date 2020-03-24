@@ -1,0 +1,258 @@
+// notification 
+.notifications {
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    position: absolute;
+    top: 5px;
+    right: 10.5%;
+    z-index: 10000;
+    @include mq('medium') {
+        top: 20px;
+    }
+
+    @include mq('large') {
+        position: relative;
+        top: 5px;
+        right: -71.5%;
+    }
+
+    @include mq('xlarge') {
+        top: 0;
+        right: -76.5%;
+    }
+
+
+    &__icon {
+        cursor: pointer;
+        margin-top: -11px;
+        line-height: 60px;
+
+        span {
+            background-color: $red;
+            font-size: 10px;
+            padding: 5px;
+            border-radius: 50%;
+            color: $white;
+            vertical-align: top;
+            margin-left: -15px;
+        }
+
+        img {
+            display: inline-block;
+            width: 20px;
+            margin-top: 20px;
+        }
+    }
+
+    &__notifi-box {
+        position: absolute;
+        top: 60px;
+        left: calc(-78vw);
+        width: 98vw;
+        background-color: $white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+        z-index: 30;
+            @include mq('small') {
+                width: auto;
+                left: -290px;
+            }
+            @include mq('medium') {
+                left: -260px;
+            }
+
+        &::before {
+        content: '';
+            border: 10px solid transparent;
+            border-top: 0;
+            border-bottom-color: $white;
+            position: absolute;
+            right: calc(16vw);
+            top: -10px;
+                @include mq('small') {
+                    right: 53px;
+                }
+                @include mq('medium') {
+                    right: 80px;
+                }
+
+        }
+
+        & h2 {
+        font-size: 14px;
+        padding: 10px;
+        border-bottom: 1px solid $light-grey;
+        }
+
+        &__item {
+
+        a {
+            display: flex;
+            border-bottom: 1px solid #eee;
+            padding: 15px 10px;
+            margin: 0;
+            cursor: pointer;
+            text-decoration: none;
+
+        }
+
+        &:hover {
+            background-color: $light-grey;
+        }
+
+        &__img {
+            position: relative;
+            width: 42px;
+            height: 42px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 10px;
+                @include mq('small') {
+                    width: 50px;
+                    height: 50px;
+                }
+
+            img {
+                width: 100%;
+                height: auto;
+                background-color: $red;
+            }
+        }
+
+        &__text{
+
+            h4, p {
+                font-size: 12px;
+                margin: 0;
+                width: 220px;
+                height: 20px;
+                overflow: hidden;
+                @include mq('small') {
+                    width: 250px;
+                }
+            }
+
+            h4 {
+                font-weight: 600;
+                font-size: 13px;
+            }
+
+            .notify-time {
+                font-size: 11px;
+                display: block;
+            }
+
+            &:last-child {
+                font-size: 14px;
+                color: $grey;
+                margin: 0 auto;
+                padding: 20px;
+            }
+        }
+
+        &__corner-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+
+            div {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $silver;
+            }
+        }
+    }
+}
+}
+
+.notifications-amount {
+    background-color: $red;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    color: $white;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// notifitions on full page
+.notifications-full-page {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+
+    &:hover {
+        text-decoration: none;
+        background-color: $light-grey;
+    }
+
+    &__img {
+            position: relative;
+            width: 42px;
+            height: 42px;
+            overflow: hidden;
+            border-radius: 50%;
+
+            img {
+            width: 100%;
+            height: auto;
+            background-color: $red;
+            }
+    }
+
+    &__text{
+        margin-right: 15px;
+
+        h4, p {
+            font-size: 12px;
+            margin: 0;
+            width: 95%;
+            height: 20px;
+            overflow: hidden;
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .notify-time {
+            font-size: 11px;
+            display: block;
+        }
+
+        &:last-child {
+            font-size: 14px;
+            color: $grey;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    }
+
+    &__corner-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $silver;
+        }
+    }
+}
+
+.notifications-to-see {
+    background-color: $dark-white;
+
+    .notifications-full-page__corner-circle {
+        div {
+            background-color: $green;
+        }
+    }
+}
