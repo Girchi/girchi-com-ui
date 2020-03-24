@@ -131,13 +131,14 @@ module.exports = {
         'politicians-page.html',
         'politicians-bio.html',
         'transactions-history.html',
-        'automatic-payments.html'
+        'automatic-payments.html',
+        'notifications.html'
       ],
       path: './src'
     }),
     new PreloadWebpackPlugin({
       rel: 'preload',
-      as (entry) {
+      as(entry) {
         if (/\.(woff|woff2|ttf|otf)$/.test(entry)) return 'font';
       },
       fileWhitelist: [/\.(woff|woff2|ttf|otf)$/],
