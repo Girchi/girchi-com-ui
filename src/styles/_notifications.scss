@@ -50,11 +50,17 @@
     &__notifi-box {
         position: absolute;
         top: 60px;
-        left: calc(-77vw);
+        left: calc(-75vw);
         width: 99vw;
         background-color: $white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, .19);
         z-index: 30;
+            @include mq('xxsmall') {
+                left: calc(-76.5vw);
+            }
+            @include mq('xsmall') {
+                left: calc(-77vw);
+            }
             @include mq('small') {
                 width: auto;
                 left: -290px;

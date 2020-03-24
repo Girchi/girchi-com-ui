@@ -492,7 +492,9 @@ $table-accent-bg: $dark-white !default;
 $table-hover-bg: $dark-white !default;
 
 // Breakpoints
-$sm: '450px';
+$xxsm: '360px';
+$xsm: '375px';
+$sm: '410px';
 $md: '768px';
 $lg: '992px';
 $xlg: '1200px';
