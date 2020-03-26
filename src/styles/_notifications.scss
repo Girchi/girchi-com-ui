@@ -1,12 +1,9 @@
 // notification 
 .notifications {
-    justify-content: center;
-    align-items: center;
     height: 63px;
     position: absolute;
     top: 5px;
     right: 10.5%;
-    z-index: 10000;
     @include mq('medium') {
         top: 20px;
     }
@@ -14,12 +11,12 @@
     @include mq('large') {
         position: relative;
         top: 5px;
-        right: -71.5%;
+        right: -70.5%;
     }
 
     @include mq('xlarge') {
         top: 0;
-        right: -76.5%;
+        right: -76%;
     }
 
 
