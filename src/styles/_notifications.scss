@@ -161,12 +161,23 @@
             }
         }
 
+        &__empty-notification-bar {
+            font-size: 14px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            min-width: 100%;
+            @include mq('small') {
+                width: 363px;
+            }
+        }
+
         &__corner-circle {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 30px;
-
+ 
             div {
             width: 8px;
             height: 8px;
