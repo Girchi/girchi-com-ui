@@ -30,6 +30,12 @@
   margin: 0 -0.5rem;
 }
 
+.icon-eye-hide:before {
+  content: "\e925";
+}
+.icon-eye-show:before {
+  content: "\e926";
+}
 .icon-bell:before {
   content: "\e923";
 }
@@ -159,7 +165,7 @@
 
 // Badge
 
-.badge {
+.icon-badge {
   width: 29px;
   height: 29px;
   display: inline-block;
@@ -168,6 +174,11 @@
   margin: 2px;
   line-height: 1;
   cursor: pointer;
+
+  &-lg {
+    width: 50px;
+    height: 50px;
+  }
 
   &:empty {
     display: inline-block;
