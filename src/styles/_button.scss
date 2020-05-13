@@ -1,6 +1,37 @@
 // Button
 
 .btn {
+  &-table-action {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none !important;
+    color: $silver;
+    border: 1px solid $silver;
+    border-radius: 50px;
+    width: 41px;
+    height: 41px;
+    font-size: 22px;
+    display: inline-flex;
+    line-height: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 2.5px;
+    transition: all 0.4s ease-in-out;
+
+    i {
+      color: darken($color: $silver, $amount: 10);
+      transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+      border-color: $green;
+      i {
+        color: $green;
+      }
+    }
+  }
   &-with-icon {
     [class^="icon"] {
       margin-top: -0.312rem;

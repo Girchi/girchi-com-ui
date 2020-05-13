@@ -1,7 +1,7 @@
 select.select {
   display: none;
 }
-.bootstrap-select {
+.bootstrap-select:not(.form-control) {
   .dropdown-menu {
     transform: initial !important;
     max-width: 100%;
@@ -105,5 +105,110 @@ select.select {
     padding: 10px !important;
     text-align: center;
     font-size: 0.825rem;
+  }
+}
+
+.bootstrap-select.form-control {
+  .dropdown-toggle {
+    outline: none !important;
+    border: 1px solid $silver;
+    box-shadow: none !important;
+    padding: 0.563rem 1.1rem;
+    &:after {
+      content: "\e903";
+      font-family: icomoon !important;
+      speak: none;
+      font-style: normal;
+      font-size: 12px;
+      font-size: 0.75rem !important;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      display: inline-block;
+      -webkit-font-smoothing: antialiased;
+      padding-top: 2px;
+      color: $silver;
+    }
+  }
+
+  &.show {
+    .dropdown-toggle {
+      &:after {
+        content: "\e903";
+        transform: rotate(-180deg);
+        padding-top: 0px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+
+  .dropdown-item {
+    background: transparent !important;
+    border-radius: initial;
+    outline: none !important;
+
+    display: flex;
+    align-items: flex-start;
+
+    .text {
+      margin-right: 5px !important;
+      white-space: initial;
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .check-mark {
+      position: static !important;
+      border: 1px solid $silver;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin: 0 10px;
+      &:before {
+        padding: 1px;
+        padding: 1.5px;
+      }
+      &:after {
+        display: none !important;
+      }
+    }
+
+    &:not(.selected) {
+      .text {
+        color: $grey;
+      }
+      .check-mark {
+        &:before {
+          content: " ";
+          display: inline-block;
+        }
+      }
+    }
+
+    &.selected {
+      .text {
+        color: $success;
+      }
+      .check-mark {
+        color: $success;
+        &:before {
+          content: "\e904";
+          display: inline-block;
+          font-family: icomoon !important;
+          speak: none;
+          font-style: normal;
+          font-size: 0.65rem !important;
+          font-weight: bold;
+          font-variant: normal;
+          text-transform: none;
+          display: inline-block;
+          -webkit-font-smoothing: antialiased;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    padding: 10px 0px;
   }
 }

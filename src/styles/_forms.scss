@@ -165,6 +165,21 @@
         }
       }
     }
+
+    &-sm {
+      line-height: 0;
+      margin-top: 5px;
+
+      .form-checkbox-input {
+        width: 16px;
+        height: 16px;
+
+        &.checked:before {
+          left: 2px;
+          top: 2px;
+        }
+      }
+    }
   }
 }
 

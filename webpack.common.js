@@ -132,14 +132,15 @@ module.exports = {
         'politicians-bio.html',
         'transactions-history.html',
         'automatic-payments.html',
-        'notifications.html'
+        'notifications.html',
+        'users.html'
       ],
       path: './src'
     }),
     new PreloadWebpackPlugin({
       rel: 'preload',
-      as(entry) {
-        if (/\.(woff|woff2|ttf|otf)$/.test(entry)) return 'font';
+      as (entry) {
+        if (/\.(woff|woff2|ttf|otf)$/.test(entry)) return 'font'
       },
       fileWhitelist: [/\.(woff|woff2|ttf|otf)$/],
       include: 'allAssets'

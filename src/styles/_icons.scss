@@ -26,6 +26,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-smartphone:before {
+  margin: 0 -0.5rem;
+}
+
+.icon-bell:before {
+  content: "\e923";
+}
+.icon-sms:before {
+  content: "\e924";
+}
+.icon-instagram:before {
+  content: "\e922";
+}
+.icon-linkedin:before {
+  content: "\e921";
+}
+.icon-star:before {
+  content: "\e920";
+}
+.icon-pencil:before {
+  content: "\e90b";
+}
 .icon-teacher:before {
   content: "\e91a";
 }
@@ -83,9 +105,6 @@
 .icon-clock-circular-outline:before {
   content: "\e90c";
 }
-.icon-play-button:before {
-  content: "\e90b";
-}
 .icon-angle-arrow-pointing-to-right:before {
   content: "\e900";
 }
@@ -121,7 +140,6 @@
 }
 .icon-smartphone:before {
   content: "\e958";
-  margin: 0 -0.5rem;
 }
 .icon-user:before {
   content: "\e971";
@@ -129,16 +147,59 @@
 .icon-arrow-right2:before {
   content: "\ea3c";
 }
-.icon-instagram:before {
-  content: "\ea92";
+.icon-play3:before {
+  content: "\ea1c";
 }
-.instagram-hover:hover:before {
-  color: #bc2a8d;
+.icon-pause2:before {
+  content: "\ea1d";
 }
-.icon-viber:before {
+.icon-play-button:before {
   content: "\e91f";
 }
-.viber-hover:hover:before{
-  color: #665cac;
-}
 
+// Badge
+
+.badge {
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  background-size: 100% auto !important;
+  background-position: center !important;
+  margin: 2px;
+  line-height: 1;
+  cursor: pointer;
+
+  &:empty {
+    display: inline-block;
+  }
+  &-partner {
+    background: url(../images/badge-partner.svg);
+  }
+  &-partner-disabled {
+    background: url(../images/badge-partner-disabled.svg);
+  }
+  &-partner-multiple-disabled {
+    background: url(../images/badge-partner-multiple-disabled.svg);
+  }
+  &-partner-multiple {
+    background: url(../images/badge-partner-multiple.svg);
+  }
+  &-politician-disabled {
+    background: url(../images/badge-politician-disabled.svg);
+  }
+  &-politician {
+    background: url(../images/badge-politician.svg);
+  }
+  &-user-disabled {
+    background: url(../images/badge-user-disabled.svg);
+  }
+  &-user {
+    background: url(../images/badge-user.svg);
+  }
+  &-weed-disabled {
+    background: url(../images/badge-weed-disabled.svg);
+  }
+  &-weed {
+    background: url(../images/badge-weed.svg);
+  }
+}

@@ -2,7 +2,9 @@ import 'bootstrap-select'
 import 'bootstrap-select/sass/bootstrap-select.scss'
 
 $('.select').selectpicker({
-  showContent: true
+  showContent: true,
+  dropupAuto: false,
+  size: 5
 })
 
 $('.form-control select').on('change', (e) => {

@@ -1,0 +1,73 @@
+.filter-chips {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: $dark-white;
+  border-radius: 4px;
+  margin: 0 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.filter-chip {
+  border: 1px solid $green;
+  color: $green;
+  border-radius: 50px;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  margin: 2.5px 0;
+  display: inline-flex;
+  align-items: center;
+  outline: none !important;
+  white-space: nowrap;
+
+  &:after {
+    content: "\e912";
+    font-family: "icomoon" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 8px;
+    margin-left: 5px;
+  }
+}
+.filter-selected-chips {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .filter-chip {
+      margin-right: 5px;
+    }
+  }
+  &-label {
+    font-size: 13px;
+    color: $grey;
+    margin: 2.5px 0;
+    margin-right: 10px;
+  }
+}
