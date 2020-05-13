@@ -1,12 +1,13 @@
 @import "_fonts";
 @import "_variables";
-@import 'mixins';
+@import "mixins";
 @import "_functions";
 @import "~bootstrap/scss/bootstrap";
 @import "utilities/_text";
 @import "utilities/_borders";
 @import "utilities/_position";
 @import "utilities/_overlay";
+@import "utilities/_spacing.scss";
 @import "_forms";
 @import "_icons";
 @import "_navbar";
@@ -28,3 +29,6 @@
 @import "_slider";
 @import "_politicians-rating";
 @import "_notifications";
+@import "_list";
+@import "_table";
+@import "_filter-chips";

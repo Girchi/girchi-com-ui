@@ -1,0 +1,10 @@
+.list {
+  &-avatars-sm {
+    li {
+      margin-left: -15px;
+      a:not([data-toggle="modal"]) {
+        border: 2px solid #fff;
+      }
+    }
+  }
+}

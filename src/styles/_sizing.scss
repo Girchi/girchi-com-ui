@@ -1,4 +1,5 @@
 // Viewport additional helpers
+
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -16,16 +17,7 @@
         .#{$abbrev}#{$infix}-#{$size}-px {
           #{$prop}: #{$size}px !important;
         }
-      }
-    }
-  }
-}
 
-@each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-    @each $prop, $abbrev in (width: w, height: h) {
-      @each $size, $length in $sizes {
         .#{$abbrev}#{$infix}-#{$size} {
           #{$prop}: $length !important;
         }

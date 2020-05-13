@@ -44,7 +44,7 @@ $colors: map-merge(
     "white": $white,
     "dark-white": $dark-white,
     "purple": $purple,
-    "black": $black
+    "black": $black,
   ),
   $colors
 );
@@ -82,7 +82,7 @@ $theme-colors: map-merge(
     "hospital-green": $hospital-green,
     "purple": $purple,
     "light-blue": $light-blue,
-    "black": $black
+    "black": $black,
   ),
   $theme-colors
 );
@@ -158,7 +158,7 @@ $fontSizes: (
   6: $font-size-base * 1.5,
   7: $font-size-base * 1.625,
   8: $font-size-base * 2.125,
-  9: $font-size-base * 3.125
+  9: $font-size-base * 3.125,
 );
 
 $line-height-base: 1.5 !default;
@@ -195,7 +195,7 @@ $sizes: map-merge(
     240: 240%,
     250: 250%,
     500: 500%,
-    auto: auto
+    auto: auto,
   ),
   $sizes
 );
@@ -286,7 +286,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1170px
+  xl: 1170px,
 ) !default;
 
 // Carousel
@@ -332,17 +332,17 @@ $positionTypes: (
     xy: (
       top: 50%,
       left: 50%,
-      transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%),
     ),
     y: (
       top: 50%,
-      transform: translateY(-50%)
+      transform: translateY(-50%),
     ),
     x: (
       left: 50%,
-      transform: translateX(-50%)
-    )
-  )
+      transform: translateX(-50%),
+    ),
+  ),
 ) !default;
 
 @each $side in $positionSides {
@@ -352,23 +352,23 @@ $positionTypes: (
       $childMap,
       (
         $i: (
-          $side: #{$i}rem
+          $side: #{$i}rem,
         ),
         #{$i}-px:
           (
-            $side: #{$i}px
+            $side: #{$i}px,
           ),
         n#{$i}:
           (
-            $side: -#{$i}rem
-          )
+            $side: -#{$i}rem,
+          ),
       )
     );
   }
   $positionTypes: map-merge(
     $positionTypes,
     (
-      $side: $childMap
+      $side: $childMap,
     )
   );
 }
@@ -406,45 +406,45 @@ $spacers: map-merge(
   (
     0: 0,
     1: (
-      $spacer * 0.25
+      $spacer * 0.25,
     ),
     2: (
-      $spacer * 0.5
+      $spacer * 0.5,
     ),
     3: $spacer,
     4: (
-      $spacer * 1.875
+      $spacer * 1.875,
     ),
     5: (
-      $spacer * 3
+      $spacer * 3,
     ),
     6: (
-      $spacer * 3.5
+      $spacer * 3.5,
     ),
     7: (
-      $spacer * 4
+      $spacer * 4,
     ),
     8: (
-      $spacer * 4.5
+      $spacer * 4.5,
     ),
     9: (
-      $spacer * 5
+      $spacer * 5,
     ),
     10: (
-      $spacer * 5.5
+      $spacer * 5.5,
     ),
     11: (
-      $spacer * 6
+      $spacer * 6,
     ),
     12: (
-      $spacer * 6.5
+      $spacer * 6.5,
     ),
     13: (
-      $spacer * 7
+      $spacer * 7,
     ),
     14: (
-      $spacer * 7.5
-    )
+      $spacer * 7.5,
+    ),
   ),
   $spacers
 );
@@ -492,10 +492,10 @@ $table-accent-bg: $dark-white !default;
 $table-hover-bg: $dark-white !default;
 
 // Breakpoints
-$xxxsm: '360px';
-$xxsm: '375px';
-$xsm: '410px';
-$sm: '450px';
-$md: '768px';
-$lg: '992px';
-$xlg: '1200px';
+$xxxsm: "360px";
+$xxsm: "375px";
+$xsm: "410px";
+$sm: "450px";
+$md: "768px";
+$lg: "992px";
+$xlg: "1200px";
