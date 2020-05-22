@@ -1,6 +1,13 @@
 // Button
 
 .btn {
+  &-icon {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: initial !important;
+    line-height: 1;
+  }
   &-table-action {
     border: 0;
     background: transparent;

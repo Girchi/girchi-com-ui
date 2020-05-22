@@ -1,3 +1,5 @@
+import 'bootstrap-tagsinput'
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 
@@ -8,5 +10,9 @@ $(function () {
       ? parseFloat($(this).attr('data-rate'))
       : 0
     outputEl.text(value * rate)
+  })
+
+  $('input[data-role="tagsinput"]').tagsinput({
+    freeInput: false
   })
 })
