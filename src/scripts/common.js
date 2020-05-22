@@ -1,3 +1,5 @@
+import 'bootstrap-tagsinput'
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 
@@ -62,4 +64,8 @@ $(function () {
           .removeClass('checked')
       }
     })
+
+  $('input[data-role="tagsinput"]').tagsinput({
+    freeInput: false
+  })
 })

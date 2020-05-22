@@ -290,3 +290,83 @@ select.select {
     }
   }
 }
+
+.select2__tree {
+  list-style-type: none;
+  padding: 0px;
+
+  &-item {
+    background: transparent;
+    label {
+      cursor: pointer;
+      display: block;
+      padding: 2px 5px;
+      transition: all 0.4s ease-in-out;
+      margin: 0;
+      font-size: 14px;
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+
+      .select2-checkbox {
+        border: 1px solid #d4dadf;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 5px;
+        position: relative;
+      }
+
+      input {
+        display: none;
+
+        &:checked + .select2-checkbox {
+          &:before {
+            content: "\e904";
+            font-family: icomoon !important;
+            speak: none;
+            font-style: normal;
+            font-size: 0.65rem !important;
+            font-weight: 700;
+            font-variant: normal;
+            text-transform: none;
+            display: inline-block;
+            -webkit-font-smoothing: antialiased;
+            position: absolute;
+            top: 0;
+            left: 2px;
+            color: $success;
+          }
+
+          & + .select2__tree-text {
+            color: $success;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: #ecf1f5;
+      }
+    }
+  }
+
+  &-children {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 20px;
+  }
+}
+
+.select2-results__group {
+  padding: 0 !important;
+}
+
+.select2-results__option {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+}
+
+.select2-results {
+  padding: 5px;
+}

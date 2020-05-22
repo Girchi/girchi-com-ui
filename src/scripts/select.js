@@ -125,3 +125,4 @@ $('.form-control select').on('change', (e) => {
     $(e.target).removeClass('selected')
   }
 })
+
