@@ -12,6 +12,7 @@
 
   <body>
     ${require('./partials/header.html')}
+
     <!-- Start jumbotron -->
     <div class="jumbotron bg-gradient-green rounded-none pt-3 pt-md-5">
       <div class="container">
@@ -132,12 +133,16 @@
                       class="table-actions text-center mx-n1 d-flex flex-wrap"
                     >
                       <button
+                        data-toggle="modal"
+                        data-target="#sendEmailModal"
                         class="mx-1 flex-grow-1 my-1 btn btn-warning font-size-1 font-size-md-3 btn-with-icon d-inline-flex align-items-center text-uppercase"
                       >
                         <i class="icon-envelope font-size-4 mr-2 "></i>
                         მეილის გაგზავნა
                       </button>
                       <button
+                        data-toggle="modal"
+                        data-target="#sendSmsModal"
                         class="mx-1 flex-grow-1 my-1 btn btn-warning font-size-1 font-size-md-3 btn-with-icon d-inline-flex align-items-center text-uppercase"
                       >
                         <i class="icon-sms font-size-4 mr-2 "></i>
@@ -2000,7 +2005,7 @@
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- Supporters Modal -->
     <div
       class="modal fade"
       id="supporters"
@@ -2320,6 +2325,251 @@
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Send email Modal -->
+    <div
+      class="modal fade"
+      id="sendEmailModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="sendEmailLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header align-items-center px-3 px-md-4">
+            <h5
+              class="modal-title font-size-3 text-uppercase font-weight-bold d-flex align-items-center"
+              id="sendEmailLabel"
+            >
+              <i class="icon-envelope text-dark-silver font-size-5 mr-2 "></i>
+              მეილის გაგზავნა
+            </h5>
+            <button
+              type="button"
+              class="close ml-2"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i
+                aria-hidden="true"
+                class="icon-close font-size-3 text-dark-silver"
+              ></i>
+            </button>
+          </div>
+          <div class="modal-body px-4">
+            <div class="notification-form-item">
+              <span class="text-grey">To:</span>
+              <div class="notification-form-control">
+                <input
+                  type="text"
+                  data-role="tagsinput"
+                  value="ალექსანდრე გრიგალაშვილი,ნინო ავალიანი,მანანა კვაჭანტირაძე,გიორგი ნაზარაშვილი"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="notification-form-item">
+              <span class="text-grey">Subject:</span>
+              <div class="notification-form-control">
+                <input
+                  type="text"
+                  class="notification-form-input"
+                  value="Covid-19 რეგულაციები"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="notification-form-item">
+              <div class="notification-form-control">
+                <textarea class="notification-form-input" rows="8">
+მოგესალმებით
+
+გთხოვთ გაითვალისწინოთ, რომ რეგისტრაციის დროს მითითებული ელ-ფოსტის შეცვლის შემთხვევაში საჭირო იქნება
+ხელახალი ვერიფიკაცია.
+                
+ასევე გაითვალისწინეთ, რომ რეგისტრაციის დროს შევსებული ველების გარდა, სავალდებულო არც ერთი ველის შევსება არ
+არის.</textarea
+                >
+              </div>
+            </div>
+
+            <!-- Attachments -->
+            <div
+              id="notification-attachment-container"
+              class="notification-attachment-container"
+            ></div>
+          </div>
+          <div
+            class="modal-footer border-0 pt-0 justify-content-start px-4 pb-4"
+          >
+            <button
+              type="button"
+              class="btn order-2 order-sm-0 w-100 w-md-auto mt-3 mt-md-0 btn-lg btn-light-green text-uppercase"
+            >
+              <i class="icon-send"></i> გაგზავნა
+            </button>
+            <div class="notification-tools">
+              <div class="notification-tools-file">
+                <input
+                  type="file"
+                  name="files[]"
+                  id="notification-attachment-file"
+                  class="js-notification-attachment d-none"
+                  multiple
+                  accept="audio/*"
+                />
+
+                <input
+                  type="file"
+                  name="images[]"
+                  id="notification-attachment-media"
+                  class="js-notification-attachment d-none"
+                  multiple
+                  accept="image/*, video/*"
+                />
+
+                <button
+                  class="js-notification-attachment"
+                  data-target="#notification-attachment-file"
+                >
+                  <i class="icon-attach"></i>
+                </button>
+                <button
+                  class="js-notification-attachment"
+                  data-target="#notification-attachment-media"
+                >
+                  <i class="icon-photo"></i>
+                </button>
+              </div>
+              <div class="notification-tools-text">
+                <button>
+                  <i class="icon-bold"></i>
+                </button>
+                <button>
+                  <i class="icon-italic"></i>
+                </button>
+                <button>
+                  <i class="icon-underline"></i>
+                </button>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-icon text-grey ml-auto font-size-5 p-0 line-height-1-0"
+              data-dismiss="modal"
+            >
+              <i class="icon-delete"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Send SMS  Modal -->
+
+    <div
+      class="modal fade"
+      id="sendSmsModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="sendSmsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header align-items-center px-3 px-md-4">
+            <h5
+              class="modal-title font-size-3 text-uppercase font-weight-bold d-flex align-items-center"
+              id="sendSmsLabel"
+            >
+              <i class="icon-sms text-dark-silver font-size-5 mr-2 "></i>
+              SMS-ის გაგზავნა
+            </h5>
+            <button
+              type="button"
+              class="close ml-2"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i
+                aria-hidden="true"
+                class="icon-close font-size-3 text-dark-silver"
+              ></i>
+            </button>
+          </div>
+          <div class="modal-body px-4">
+            <!-- <div class="notification-form-item">
+              <span class="text-grey">To:</span>
+              <div class="notification-form-control">
+                <input
+                  type="text"
+                  data-role="tagsinput"
+                  value="ალექსანდრე გრიგალაშვილი,ნინო ავალიანი,მანანა კვაჭანტირაძე,გიორგი ნაზარაშვილი"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="notification-form-item">
+              <span class="text-grey">Subject:</span>
+              <div class="notification-form-control">
+                <input
+                  type="text"
+                  class="notification-form-input"
+                  value="Covid-19 რეგულაციები"
+                />
+              </div>
+            </div>
+            <hr />
+            <div class="notification-form-item">
+              <div class="notification-form-control">
+                <textarea class="notification-form-input" rows="8">
+მოგესალმებით
+
+გთხოვთ გაითვალისწინოთ, რომ რეგისტრაციის დროს მითითებული ელ-ფოსტის შეცვლის შემთხვევაში საჭირო იქნება
+ხელახალი ვერიფიკაცია.
+              
+ასევე გაითვალისწინეთ, რომ რეგისტრაციის დროს შევსებული ველების გარდა, სავალდებულო არც ერთი ველის შევსება არ
+არის.</textarea
+                >
+              </div>
+            </div> -->
+
+            <div
+              class="d-flex align-items-center justify-content-center flex-column p-10"
+            >
+              <i
+                class="icon-checked text-light-green font-size-8 font-weight-bold mb-3"
+              ></i>
+              <p>მეილი წარმატებით გაიგზავნა</p>
+              <button
+                data-dismiss="modal"
+                class="btn btn-lg border border-dark-silver text-light-green text-uppercase mt-3"
+              >
+                დახურვა
+              </button>
+            </div>
+          </div>
+          <!-- <div
+            class="modal-footer border-0 pt-0 justify-content-start px-4 pb-4"
+          >
+            <button
+              type="button"
+              class="btn order-2 order-sm-0 w-100 w-md-auto mt-3 mt-md-0 btn-lg btn-light-green text-uppercase"
+            >
+              <i class="icon-send"></i> გაგზავნა
+            </button>
+            <button
+              type="button"
+              class="btn btn-icon text-grey ml-auto font-size-5 p-0 line-height-1-0"
+              data-dismiss="modal"
+            >
+              <i class="icon-delete"></i>
+            </button>
+          </div> -->
         </div>
       </div>
     </div>

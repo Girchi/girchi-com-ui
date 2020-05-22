@@ -30,6 +30,24 @@
   margin: 0 -0.5rem;
 }
 
+.icon-send:before {
+  content: "\e92c";
+}
+.icon-underline:before {
+  content: "\e927";
+}
+.icon-italic:before {
+  content: "\e928";
+}
+.icon-bold:before {
+  content: "\e929";
+}
+.icon-photo:before {
+  content: "\e92a";
+}
+.icon-attach:before {
+  content: "\e92b";
+}
 .icon-eye-hide:before {
   content: "\e925";
 }

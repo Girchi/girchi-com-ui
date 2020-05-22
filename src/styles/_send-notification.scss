@@ -1,0 +1,94 @@
+.notification-form-item {
+  display: flex;
+  align-items: flex-start;
+  > span {
+    font-size: 13px;
+    margin-right: 10px;
+    padding: 10px 0;
+  }
+}
+
+.notification-form-control {
+  flex-grow: 1;
+}
+
+.notification-form-input {
+  border: 0;
+  padding: 0;
+  outline: none !important;
+  font-size: 13px;
+  color: $dark-blue;
+  margin: 10px 0;
+  width: 100%;
+  resize: vertical;
+}
+
+.notification-tools {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+
+  button {
+    border: 0;
+    background: transparent;
+    outline: none !important;
+    color: $grey;
+    font-size: 22px;
+  }
+
+  &-file {
+  }
+  &-text {
+    border-radius: 20px;
+    background-color: $dark-white;
+    padding: 5px 15px;
+    margin: 0 10px;
+
+    button {
+      font-size: 18px;
+    }
+  }
+}
+
+.notification-attachment {
+  background: $light-grey;
+  padding: 10px 20px;
+  width: 500px;
+  max-width: 100%;
+  margin: 5px 0;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  span {
+    font-size: 14px;
+    color: $success;
+  }
+
+  small {
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $grey;
+    margin: 0 10px;
+  }
+
+  button {
+    margin-left: auto;
+    border: 0;
+    padding: 0;
+    line-height: 1;
+    outline: none !important;
+    cursor: pointer;
+    color: $dark-silver;
+    font-size: 21px;
+  }
+}
+
+.notification-attachment-container {
+  margin-top: 20px;
+}
