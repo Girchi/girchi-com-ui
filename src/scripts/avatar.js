@@ -29,7 +29,13 @@ const resizeCrop = (src, width, height) => {
   canvas.height = height || Math.round(src.height * scale)
   canvas.getContext('2d').scale(scale, scale)
   // crop it top center
-  canvas.getContext('2d').drawImage(src, ((src.width * scale) - canvas.width) * -0.5, ((src.height * scale) - canvas.height) * -0.5)
+  canvas
+    .getContext('2d')
+    .drawImage(
+      src,
+      (src.width * scale - canvas.width) * -0.5,
+      (src.height * scale - canvas.height) * -0.5
+    )
   return canvas.toDataURL('image/png', 90)
 }
 
@@ -38,7 +44,7 @@ if (avatarTrigger.length) {
     avatarInput.click()
   })
 
-  avatarInput.on('change', e => {
+  avatarInput.on('change', (e) => {
     // eslint-disable-next-line no-undef
     const image = new Image()
     image.src = createObjectURL(e.target.files[0])
