@@ -148,15 +148,6 @@ select.select {
     }
   }
 
-  .dropdown-header {
-    padding: 0 15px;
-    margin: 10px 0;
-  }
-
-  li a.opt {
-    padding-left: 1.25em !important;
-  }
-
   &.show {
     .dropdown-toggle {
       &:after {
@@ -369,4 +360,15 @@ select.select {
 
 .select2-results {
   padding: 5px;
+}
+
+.select:not(.tree-select) {
+  .dropdown-header {
+    padding: 0 15px;
+    margin: 10px 0;
+  }
+
+  li a.opt {
+    padding-left: 1.25em !important;
+  }
 }

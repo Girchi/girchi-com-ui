@@ -1,11 +1,6 @@
 import 'bootstrap-select'
 import 'bootstrap-select/sass/bootstrap-select.scss'
 
-$('.select').selectpicker({
-  showContent: true,
-  dropupAuto: false,
-  size: 5
-})
 function onHeaderClick () {
   const optGroupIndex = $('.dropdown-header')
     .toArray()
@@ -125,4 +120,3 @@ $('.form-control select').on('change', (e) => {
     $(e.target).removeClass('selected')
   }
 })
-
