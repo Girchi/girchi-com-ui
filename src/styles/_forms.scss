@@ -28,7 +28,7 @@
           background: $light-silver;
           border-radius: 1rem;
           top: 50px;
-          left: calc(100% - 35px);
+          left: calc(100% - 40px);
           font-family: icomoon !important;
           speak: none;
           font-style: normal;
@@ -38,7 +38,8 @@
           padding: 0.2rem 0.3rem;
         }
       }
-      .form-control {
+      .form-control,
+      .dropdown-toggle {
         border-color: $danger;
         padding-right: 2.5rem;
         &.form-control-lg {
@@ -50,7 +51,7 @@
             background: $light-silver;
             border-radius: 1rem;
             top: 50px;
-            left: calc(100% - 35px);
+            left: calc(100% - 40px);
             font-family: icomoon !important;
             speak: none;
             font-style: normal;
@@ -76,7 +77,7 @@
             background: $light-silver;
             border-radius: 1rem;
             top: 50px;
-            left: calc(100% - 35px);
+            left: calc(100% - 40px);
             font-family: icomoon !important;
             speak: none;
             font-style: normal;

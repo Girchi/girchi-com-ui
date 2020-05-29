@@ -1,6 +1,18 @@
 select.select {
   display: none;
 }
+
+.bootstrap-select {
+  *:focus {
+    outline: none !important;
+  }
+
+  .dropdown-item {
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+}
+
 .bootstrap-select:not(.form-control) {
   .dropdown-menu {
     transform: initial !important;
@@ -53,6 +65,7 @@ select.select {
   .dropdown-item {
     border-radius: 0;
     padding: 0;
+
     &.active,
     &:active {
       .text {
@@ -129,6 +142,20 @@ select.select {
       padding-top: 2px;
       color: $silver;
     }
+
+    &.btn-lg {
+      padding: 1rem 1.5rem !important;
+      line-height: 1 !important;
+    }
+  }
+
+  .dropdown-header {
+    padding: 0 15px;
+    margin: 10px 0;
+  }
+
+  li a.opt {
+    padding-left: 1.25em !important;
   }
 
   &.show {
@@ -139,6 +166,10 @@ select.select {
         padding-top: 0px;
         padding-bottom: 2px;
       }
+
+      border-radius: 1.5rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
   }
 
@@ -291,4 +322,52 @@ select.select {
 
 .select2-results {
   padding: 5px;
+}
+
+.select.tree-select {
+  & ~ .dropdown-menu {
+    .dropdown-header {
+      cursor: pointer;
+      white-space: initial;
+      position: relative;
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &:before {
+        content: "";
+        border: 1px solid #d4dadf;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin: 0 10px;
+      }
+
+      &:after {
+        content: "\e904";
+        position: absolute;
+        font-family: icomoon !important;
+        speak: none;
+        font-style: normal;
+        font-size: 0.65rem !important;
+        font-weight: 700;
+        font-variant: normal;
+        text-transform: none;
+        display: inline-block;
+        color: $success;
+        -webkit-font-smoothing: antialiased;
+        left: 17px;
+        top: 4px;
+        opacity: 0;
+      }
+
+      &.selected {
+        color: $success;
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
