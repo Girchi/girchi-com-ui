@@ -46,7 +46,7 @@ function syncFiltersAndFiltersBar () {
   const filtersContainer = $('.filter-selected-chips-list')
   filtersContainer.html('')
 
-  $.each($('select.select'), function (index, select) {
+  $.each($('select.user-page-select'), function (index, select) {
     const values = $(select).selectpicker('val')
 
     $.each(values, function (i, value) {
