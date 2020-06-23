@@ -30,6 +30,24 @@
   margin: 0 -0.5rem;
 }
 
+.icon-law:before {
+  content: "\e92f";
+}
+.icon-weed:before {
+  content: "\e930";
+}
+.icon-education:before {
+  content: "\e931";
+}
+.icon-instagram:before {
+  content: "\e922";
+}
+.icon-property:before {
+  content: "\e92d";
+}
+.icon-friend:before {
+  content: "\e92e";
+}
 .icon-send:before {
   content: "\e92c";
 }
@@ -59,9 +77,6 @@
 }
 .icon-sms:before {
   content: "\e924";
-}
-.icon-instagram:before {
-  content: "\e922";
 }
 .icon-linkedin:before {
   content: "\e921";

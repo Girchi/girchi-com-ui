@@ -133,7 +133,8 @@ module.exports = {
         'transactions-history.html',
         'automatic-payments.html',
         'notifications.html',
-        'users.html'
+        'users.html',
+        'election-promo.html'
       ],
       path: './src'
     }),

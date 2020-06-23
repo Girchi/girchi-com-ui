@@ -27,4 +27,26 @@
       align-items: center;
     }
   }
+
+  &-sm {
+    height: 20px;
+    background-color: $silver;
+    border-radius: 50px;
+    overflow: initial;
+
+    .progress-bar {
+      height: 100%;
+      border-radius: 50px;
+    }
+
+    .progress-info {
+      position: absolute;
+      left: 0;
+      bottom: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+  }
 }

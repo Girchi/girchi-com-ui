@@ -1,0 +1,211 @@
+.masonry {
+  // width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-row {
+    display: flex;
+    margin: 0 -15px;
+  }
+
+  &-col {
+    width: 50%;
+    padding: 0 15px;
+  }
+
+  &-item {
+    margin-bottom: 30px;
+
+    @media (max-width: 668px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &-card {
+    background: #ffffff;
+    padding: 25px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+
+    @media (max-width: 668px) {
+      padding: 10px;
+    }
+
+    &-icon {
+      color: $success;
+      text-align: center;
+      font-size: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon-education {
+        font-size: 50px;
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        width: 60px;
+        height: 2px;
+        background: $success;
+        display: inline-block;
+        margin: 0 25px;
+      }
+    }
+    &-title {
+      color: $success;
+      font-size: 20px;
+      @extend .text-uppercase;
+      max-width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+
+    &-panel {
+      background: $dark-white;
+      border-radius: 4px;
+      padding: 20px;
+      margin: 20px 0;
+      margin-bottom: 0;
+
+      @media (max-width: 668px) {
+        margin-top: 10px;
+      }
+
+      > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        font-weight: bold;
+
+        li {
+          margin: 10px 0;
+        }
+      }
+
+      &-footer {
+        border-top: 1px solid #dae4ec;
+        margin: -20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-social {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+
+        a {
+          text-decoration: none;
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+    }
+
+    &-politician {
+      display: flex;
+      align-items: center;
+
+      &-name {
+        margin-right: 15px;
+
+        @media (max-width: 668px) {
+          margin-right: 0px;
+        }
+      }
+
+      &-image {
+        width: 100px;
+        height: 100px;
+        position: relative;
+
+        @media (max-width: 668px) {
+          width: 90px;
+          height: 90px;
+        }
+
+        &-wrapper {
+          overflow: hidden;
+          border-radius: 50px;
+        }
+
+        .number {
+          position: absolute;
+          right: -15px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 18px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #ffffff;
+          background: $yellow;
+          border-radius: 50px;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-info {
+        display: flex;
+        align-items: center;
+        width: calc(100% - 100px);
+        padding-left: 30px;
+
+        .btn {
+          margin-top: 15px;
+          margin-left: initial;
+        }
+
+        @media (min-width: 0px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        @media (min-width: 576px) {
+          flex-direction: row;
+          align-items: center;
+
+          .btn {
+            margin-left: auto;
+          }
+        }
+
+        @media (min-width: 998.1px) {
+          flex-direction: column;
+          align-items: flex-start;
+
+          .btn {
+            margin-top: 15px;
+            margin-left: initial;
+          }
+        }
+
+        @media (min-width: 1200px) {
+          flex-direction: row;
+          align-items: center;
+
+          .btn {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}

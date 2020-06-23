@@ -22,6 +22,7 @@ $light-blue: #1aafe7;
 $black: #000;
 $green-gradient: linear-gradient(42deg, $light-green, $green);
 $warning-gradient: linear-gradient(42deg, #ffae33, #f8a01a);
+$pink: #e1306c;
 
 $colors: () !default;
 $colors: map-merge(
@@ -45,6 +46,7 @@ $colors: map-merge(
     "dark-white": $dark-white,
     "purple": $purple,
     "black": $black,
+    "pink": $pink,
   ),
   $colors
 );
@@ -83,6 +85,7 @@ $theme-colors: map-merge(
     "purple": $purple,
     "light-blue": $light-blue,
     "black": $black,
+    "pink": $pink,
   ),
   $theme-colors
 );
@@ -159,6 +162,7 @@ $fontSizes: (
   7: $font-size-base * 1.625,
   8: $font-size-base * 2.125,
   9: $font-size-base * 3.125,
+  10: $font-size-base * 7.125,
 );
 
 $line-height-base: 1.5 !default;
@@ -177,6 +181,7 @@ $sizes: map-merge(
     30: 30%,
     35: 35%,
     40: 40%,
+    41: 41%,
     45: 45%,
     50: 50%,
     60: 60%,
@@ -187,7 +192,9 @@ $sizes: map-merge(
     100: 100%,
     110: 110%,
     150: 150%,
+    160: 160%,
     180: 180%,
+    170: 170%,
     200: 200%,
     210: 210%,
     220: 220%,

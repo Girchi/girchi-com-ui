@@ -1,6 +1,6 @@
 @import "_fonts";
 @import "_variables";
-@import 'mixins';
+@import "mixins";
 @import "_functions";
 @import "~bootstrap/scss/bootstrap";
 @import "utilities/_text";
@@ -35,3 +35,4 @@
 @import "_user-badge";
 @import "_send-notification";
 @import "_bootstrap-tagsinput";
+@import "_masonry";

@@ -7,6 +7,12 @@
   }
 }
 
+.bg-hover-transparent {
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
 @each $color, $value in $theme-colors {
   @for $i from 0 through 1 {
     @for $d from 0 through 10 {
@@ -24,6 +30,12 @@
   &-warning {
     background-image: $warning-gradient;
   }
+}
+
+.bg-parliament {
+  background: url(../images/parliament.png) no-repeat center bottom,
+    $green-gradient;
+  background-size: cover;
 }
 
 .bg-school {

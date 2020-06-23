@@ -13,6 +13,13 @@
             min-height: 220px;
           }
         }
+        &-md {
+          &:before {
+            content: "";
+            display: block;
+            min-height: 220px;
+          }
+        }
         &-wide {
           &:before {
             content: "";
@@ -35,6 +42,11 @@
     &-donate {
       background-image: url(../images/donate-bg.jpg);
     }
+
+    &-donate-md {
+      background-image: url(../images/donate-md-bg.png), $green-gradient;
+    }
+
     &-defense {
       background: url(../images/defense.png) no-repeat 90% 70%, $green-gradient;
     }
@@ -43,9 +55,11 @@
       background: url(../images/education.png) no-repeat 90% 70%,
         $green-gradient;
     }
+
     &-gradient-green {
       background-image: $green-gradient;
     }
+
     &-defense,
     &-education {
       @media screen and (min-width: map-get($grid-breakpoints, "xs")) {
