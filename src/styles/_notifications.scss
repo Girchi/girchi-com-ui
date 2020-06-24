@@ -11,12 +11,12 @@
   @include mq("large") {
     position: relative;
     top: 5px;
-    right: -70.5%;
+    right: -45.5%;
   }
 
   @include mq("xlarge") {
     top: 0;
-    right: -76%;
+    right: -55.5%;
   }
 
   &__icon {
