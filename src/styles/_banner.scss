@@ -59,7 +59,9 @@
     &-gradient-green {
       background-image: $green-gradient;
     }
-
+    &-raffle {
+      background-image: $red-gradient;
+    }
     &-defense,
     &-education {
       @media screen and (min-width: map-get($grid-breakpoints, "xs")) {
