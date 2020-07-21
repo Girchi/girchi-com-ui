@@ -30,10 +30,24 @@
   margin: 0 -0.5rem;
 }
 
+.icon-bank:before {
+  content: "\e933";
+}
+.icon-freedom:before {
+  content: "\e934";
+}
+.icon-globe:before {
+  content: "\e935";
+}
+.icon-drugs:before {
+  content: "\e936";
+}
+.icon-wallet:before {
+  content: "\e937";
+}
 .icon-tesla:before {
   content: "\e932";
 }
-
 .icon-law:before {
   content: "\e92f";
 }
@@ -200,7 +214,7 @@
   content: "\e91f";
 }
 
-// Badge
+// Badges
 
 .icon-badge {
   width: 29px;
@@ -211,6 +225,7 @@
   margin: 2px;
   line-height: 1;
   cursor: pointer;
+  background-repeat: no-repeat !important;
 
   &-lg {
     width: 50px;
@@ -249,5 +264,11 @@
   }
   &-weed {
     background: url(../images/badge-weed.svg);
+  }
+  &-tesla {
+    background: url(../images/badge-tesla.svg);
+  }
+  &-tesla-disabled {
+    background: url(../images/badge-tesla-disabled.svg);
   }
 }
