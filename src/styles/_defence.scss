@@ -90,16 +90,16 @@ body {
     width: 95%;
 }
 .btn-primary {
-    width: px(150);
-    background-color: #ffa823;
-    border-color: transparent;
-    padding: px(13);
-    font-size: px(16);
+    // width: px(150);
+    // background-color: #ffa823;
+    // border-color: transparent;
+    // padding: px(13);
+    // font-size: px(16);
 }
 .btn:hover {
-    color: #fff;
-    background-color: #fc9800;
-    border-color: #ef9000;
+    // color: #fff;
+    // background-color: #fc9800;
+    // border-color: #ef9000;
 }
 .defence-img {
     img {
@@ -121,16 +121,18 @@ body {
         align-items: center;
         position: relative;
         top: 120px;
+        width: 90%;
+        margin: auto;
     }
-    &__box:nth-child(1) {
+    &-box:nth-child(1) {
         width: 65%;
         padding: px(40);
     }
-    &__num {
+    &-num {
         height: 100px;
         position: relative;
         &::after {
-            content: url("../images/mask-dark.png");
+            // content: url("../images/mask-dark.png");
             position: absolute;
             top: 20%;
             left: 24%;
@@ -140,18 +142,18 @@ body {
             color: #ffa823;
         }
     }
-    &__title {
+    &-title {
         font-size: px(26);
         color: #327f37;
         font-family: FiraGO;
         line-height: px(32);
     }
-    &__img {
+    &-img {
         img {
             height: px(350);
         }
     }
-    &__content {
+    &-content {
         p {
             font-size: px(13);
         }
@@ -175,31 +177,54 @@ body {
 .section:nth-child(even) {
     background: #f7f7f7;
     &::after {
-        content: url("../images/mask-white.png");
+        content: "";
+        width: 30%;
+        height: 61px;
         position: absolute;
-        top: 29%;
-        left: 25.4%;
+        left: 29.8%;
+        top: 30%;
+        background-image: url(../images/mask-white.png);
+        background-repeat: no-repeat;
+        background-size: 94%;
+        border-radius: 50px;
     }
 }
+.section:nth-child(odd) {
+    background: #fff;
+    &::after {
+        content: "";
+        width: 30%;
+        height: 61px;
+        position: absolute;
+        left: 29.8%;
+        top: 30%;
+        background-image: url(../images/mask-dark.png);
+        background-repeat: no-repeat;
+        background-size: 94%;
+        border-radius: 50px;
+    }
+}
+
 /* end sixth*/
 .sponsors {
     background: #f7f7f7;
     height: px(400);
     margin-top: px(60);
-    &__box {
+    &-box {
         width: px(240);
         height: px(170);
         background: #fff;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
         text-align: center;
         padding-top: px(35);
+        border-radius: 10px;
     }
-    &__boxes {
-        width: 75%;
+    &-boxes {
+        width: 90%;
         margin: auto;
         margin-top: px(40);
     }
-    &__title {
+    &-title {
         padding-top: px(70);
     }
 }
@@ -215,9 +240,9 @@ body {
 }
 /* end scroll*/
 /* start video popap*/
-.modal-dialog {
+.modal-w {
     max-width: 800px;
 }
-.modal-title {
-    padding-top: px(6);
-}
+// .modal-title {
+//     padding-top: px(6);
+// }
