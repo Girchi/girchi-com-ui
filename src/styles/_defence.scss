@@ -12,10 +12,6 @@ $rootFornSize: 16px;
     $result: $val/16 + rem;
     @return $result;
 }
-
-body {
-    background-color: #fff;
-}
 .defence {
     height: px(333);
     width: 100%;
