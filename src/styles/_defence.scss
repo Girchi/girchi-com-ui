@@ -148,8 +148,9 @@ $rootFornSize: 16px;
         line-height: px(32);
     }
     &-img {
+        width: px(370);
         img {
-            height: px(350);
+            width: 100%;
         }
     }
     &-content {
@@ -173,8 +174,11 @@ $rootFornSize: 16px;
     display: block;
     text-align: center;
 }
-.section:nth-child(even) {
-    background: #f7f7f7;
+.section:nth-child(odd) {
+    background: #fff;
+}
+
+.section-num:nth-child(even) {
     &::after {
         content: "";
         width: 30%;
@@ -188,15 +192,13 @@ $rootFornSize: 16px;
         border-radius: 50px;
     }
 }
-.section:nth-child(odd) {
-    background: #fff;
+.section-num:nth-child(odd) {
     &::after {
         content: "";
-        width: 30%;
+        width: 88%;
         height: 61px;
         position: absolute;
-        left: 29.8%;
-        top: 30%;
+        right: 0;
         background-image: url(../images/mask-dark.png);
         background-repeat: no-repeat;
         background-size: 94%;
