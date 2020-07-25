@@ -55,11 +55,11 @@
   margin-top: px(30);
 }
 .defence-box:nth-child(1) {
-  margin-left: px(30);
+  // margin-left: px(30);
 }
-.defence-box:nth-child(2) {
-  width: 25%;
-}
+// .defence-box:nth-child(2) {
+//   width: 25%;
+// }
 .btn-radius {
   a {
     img {
@@ -72,7 +72,6 @@
 .defence-boxes {
   display: flex;
   justify-content: space-between;
-  width: 81%;
 }
 .img-first {
   display: none;
@@ -105,12 +104,12 @@
     align-items: center;
     position: relative;
     top: 120px;
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
-  &-box:nth-child(1) {
-    width: 65%;
-  }
+  // &-box:nth-child(1) {
+  //   width: 65%;
+  // }
   &-num {
     position: relative;
     &::after {
