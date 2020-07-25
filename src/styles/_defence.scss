@@ -1,17 +1,4 @@
-$rootFornSize: 16px;
-@function px($val) {
-    $result: $val/16 + rem;
-    @return $result;
-}
-
-@function pxm($val) {
-    $result: $val/30 + rem;
-    @return $result;
-}
-@function px($val) {
-    $result: $val/16 + rem;
-    @return $result;
-}
+@import "_function";
 .defence {
     height: px(333);
     width: 100%;
@@ -24,7 +11,7 @@ $rootFornSize: 16px;
     margin: auto;
     margin-top: px(15);
 }
-.list-group-item {
+.list-second {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid #93e599;
@@ -48,11 +35,11 @@ $rootFornSize: 16px;
         color: #93e599;
     }
 }
-.list-group-horizontal > .list-group-item:first-child {
+.list > .list-second:first-child {
     border-bottom-left-radius: 0rem;
 }
 
-.list-group-horizontal > .list-group-item:last-child {
+.list > .list-second {
     border-bottom-right-radius: 0rem;
 }
 // .list-group-horizontal > .list-group-item.active {
