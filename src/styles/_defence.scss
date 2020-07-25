@@ -132,16 +132,18 @@
     }
     h1 {
       font-size: px(80);
-      color: #ffa823;
+      color: $warning;
+      font-weight: bold;
     }
   }
   &-title {
     font-size: px(26);
-    color: #327f37;
+    color: $green;
     font-family: FiraGO;
     line-height: px(32);
     p {
       width: 86%;
+      font-weight: bold;
     }
   }
   &-img {
@@ -173,7 +175,7 @@
   text-align: center;
 }
 .section:nth-child(odd) {
-  background: #fff;
+  background: $white;
 }
 
 .section-num:nth-child(even) {
@@ -235,7 +237,7 @@
 }
 
 #active {
-  border-bottom: 2px solid #ffa823;
+  border-bottom: 2px solid $warning;
   color: white;
   transition: all 0.3s;
   a {
