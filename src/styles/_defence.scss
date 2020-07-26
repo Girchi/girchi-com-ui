@@ -242,9 +242,64 @@
 // .modal-title {
 //     padding-top: px(6);
 // }
-@media screen and (max-width: 920px) and (min-width: 320px) {
+.defence-share {
+  text-align: center;
+  padding: px(60);
+  &-text {
+    h1 {
+      color: $green;
+      font-size: px(20);
+    }
+  }
+}
+.fb {
+  background: #3b5998;
+  &:hover {
+    background-color: #00339d !important;
+  }
+}
+.twitter {
+  background: #1aafe7;
+  &:hover {
+    background-color: #0081b2 !important;
+  }
+}
+.viber {
+  background: #7d3daf;
+  &:hover {
+    background-color: #4e0c82 !important;
+  }
+}
+.fb-icon,
+.twitter-icon,
+.viber-icon {
+  color: #fff !important;
+}
+.fb-text,
+.tweet-text,
+.viber-text {
+  color: #fff !important;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .defence-list {
+    width: 50%;
+    margin: auto;
+  }
+  .media-mob {
+    width: 45% !important;
+    margin: auto !important;
+  }
+  .section {
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
   .defence-text h1 {
     font-size: px(20) !important;
+  }
+  .iframe-mob {
+    width: 100%;
+    height: 250px;
   }
   .defence-text p {
     color: #ffffffe3 !important;
@@ -276,8 +331,9 @@
     padding-top: 1rem;
   }
   .defence-list {
-    margin: 0;
+    // margin: 0;
   }
+
   .defence {
     height: 29rem;
   }
@@ -346,5 +402,8 @@
   }
   .section-img {
     width: 100%;
+  }
+  .defence-second {
+    height: 14rem;
   }
 }
