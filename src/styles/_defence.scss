@@ -1,3 +1,6 @@
+* {
+  transition: all 0.3s;
+}
 .defence {
   height: px(333);
   width: 100%;
@@ -9,6 +12,7 @@
 .defence-list {
   margin: auto;
   margin-top: px(15);
+  transition: all 0.3s;
 }
 .list-second {
   background-color: transparent;
@@ -18,7 +22,6 @@
   padding: 0;
   font-size: px(22);
   cursor: pointer;
-  transition: all 0.3s;
   &:hover {
     border-bottom: 2px solid #ffa823;
     color: white;
@@ -27,6 +30,7 @@
       text-decoration: none;
       transition: all 0.5s;
       color: white;
+      transition: all 0.3s;
     }
   }
   a {
@@ -54,12 +58,7 @@
   margin: auto;
   margin-top: px(30);
 }
-.defence-box:nth-child(1) {
-  // margin-left: px(30);
-}
-// .defence-box:nth-child(2) {
-//   width: 25%;
-// }
+
 .btn-radius {
   a {
     img {
@@ -189,11 +188,6 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
-}
-
-/* end sixth*/
-.like-minded-carousel {
-  //
 }
 
 .like-minded {
@@ -329,9 +323,6 @@
   }
   .defence-text {
     padding-top: 1rem;
-  }
-  .defence-list {
-    // margin: 0;
   }
 
   .defence {
