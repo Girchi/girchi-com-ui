@@ -14,6 +14,9 @@
   margin-top: px(15);
   transition: all 0.3s;
 }
+.hidden-carousel {
+  display: none;
+}
 .list-second {
   background-color: transparent;
   border: none;
@@ -313,8 +316,21 @@
   .media-mob {
     width: 100% !important;
   }
+  .section-content p {
+    font-size: 0.8125rem;
+    width: 86%;
+  }
+  .hidden-carousel {
+    display: block;
+  }
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
+  .hidden-carousel {
+    display: block;
+  }
+  .show-boxes {
+    display: none;
+  }
   .defence-text h1 {
     font-size: px(20) !important;
   }
