@@ -16,7 +16,6 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -28,6 +27,10 @@
 
 .icon-smartphone:before {
   margin: 0 -0.5rem;
+}
+
+.icon-viber:before {
+  content: "\e938";
 }
 
 .icon-bank:before {
@@ -212,6 +215,31 @@
 }
 .icon-play-button:before {
   content: "\e91f";
+}
+
+.icon-verified {
+  background: $verification-badge-bg;
+  color: $white;
+  width: 14px;
+  height: 14px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  font-size: 7px;
+  transform: translateY(-3px);
+  line-height: 0;
+
+  &.position-absolute {
+    top: 48%;
+    right: -10px;
+    right: -6px;
+    border: 1px solid #fff;
+  }
+
+  &:before {
+    content: "\e904";
+  }
 }
 
 // Badges

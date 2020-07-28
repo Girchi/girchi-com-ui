@@ -33,8 +33,7 @@
 }
 
 .bg-parliament {
-  background: url(../images/parliament.png) no-repeat center bottom,
-    $green-gradient;
+  background: url(../images/parliament.png) no-repeat center bottom, $green-gradient;
   background-size: cover;
 }
 
@@ -53,8 +52,7 @@
       url(../images/school/2.png) calc(-250px / 4) 25% / 250px auto no-repeat,
       url(../images/school/3.png) calc(-250px / 4) 30% / 250px auto no-repeat,
       url(../images/school/4.png) -230px 55% / 500px auto no-repeat,
-      url(../images/school/5.png) calc(100% + 150px) 150px / 300px auto
-        no-repeat,
+      url(../images/school/5.png) calc(100% + 150px) 150px / 300px auto no-repeat,
       url(../images/school/6.png) calc(100% + 100px) 25% / 250px auto no-repeat,
       url(../images/school/7.png) calc(100% + 100px) 30% / 250px auto no-repeat,
       url(../images/school/8.png) calc(100% + 250px) 50% / 500px auto no-repeat;
@@ -81,4 +79,7 @@
 .bg-green-newsfeed {
   background: url(../images/green-newsfeed-bg-1.png) 100% 5% / 150px no-repeat,
     url(../images/green-newsfeed-bg-2.png) 0% 90% / 80px no-repeat;
+}
+.defence {
+  background: url(../images/defence-bg.png) no-repeat bottom, $green-gradient;
 }

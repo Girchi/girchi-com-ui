@@ -1,0 +1,14 @@
+$rootFornSize: 16px;
+@function px($val) {
+    $result: $val/16 + rem;
+    @return $result;
+}
+
+@function pxm($val) {
+    $result: $val/30 + rem;
+    @return $result;
+}
+@function px($val) {
+    $result: $val/16 + rem;
+    @return $result;
+}

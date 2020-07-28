@@ -134,13 +134,14 @@ module.exports = {
         'automatic-payments.html',
         'notifications.html',
         'users.html',
-        'election-promo.html'
+        'election-promo.html',
+        'defence.html'
       ],
       path: './src'
     }),
     new PreloadWebpackPlugin({
       rel: 'preload',
-      as (entry) {
+      as(entry) {
         if (/\.(woff|woff2|ttf|otf)$/.test(entry)) return 'font'
       },
       fileWhitelist: [/\.(woff|woff2|ttf|otf)$/],
