@@ -137,4 +137,35 @@ $(document).ready(function () {
   $('.related-news-carousel-prev').on('click', () => {
     relatedNewsCarousel.trigger('prev.owl.carousel')
   })
+
+  // Like-minded carousel
+  const likeMindedCarousel = $('.like-minded-carousel').owlCarousel({
+    margin: 20,
+    items: 4,
+    dots: false,
+    touchDrag: true,
+    mouseDrag: true,
+    loop: true,
+    autoplay: true,
+    autoWidth: true,
+    responsive: {
+      // breakpoint from 0 up
+      0: {
+        items: 1,
+        margin: 15
+      },
+      // breakpoint from 480 up
+      480: {
+        items: 1
+      },
+      // breakpoint from 768 up
+      768: {
+        items: 2,
+        margin: 20
+      },
+      960: {
+        items: 4
+      }
+    }
+  })
 })
