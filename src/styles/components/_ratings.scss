@@ -1,0 +1,133 @@
+.ratings-table {
+  position: relative;
+  width: max-content;
+  overflow: clip;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    left: -20px;
+  }
+
+  &::after {
+    right: -20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__img {
+    margin-inline: auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 40px;
+    overflow: clip;
+    border: 1px solid #32394d;
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 40px;
+      object-fit: cover;
+    }
+  }
+
+  &__weight {
+    font-family: var(--ff-main);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-feature-settings: 'case' on;
+    color: #ffa823;
+  }
+
+  thead {
+    background-color: #32394d;
+
+    th {
+      padding-block: 17px;
+      font-family: var(--ff-main);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16.2435px;
+      line-height: 20px;
+      font-feature-settings: 'case' on;
+      color: #ffffff;
+
+      &:first-child {
+        padding-inline-start: 24px;
+      }
+      &:last-child {
+        padding-inline-end: 24px;
+      }
+
+      &:nth-child(2) {
+        padding-inline: 30px;
+
+        @media screen and (max-width: 768px) {
+          padding-inline: 10px;
+        }
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:first-child {
+        td {
+          padding-top: 24px;
+        }
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid hsla(224, 21%, 25%, 0.32);
+      }
+    }
+
+    td {
+      padding-block: 24px;
+      font-family: var(--ff-main);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      font-feature-settings: 'case' on;
+      color: #32394d;
+
+      &:first-child {
+        padding-inline-start: 24px;
+      }
+      &:last-child {
+        padding-inline-end: 24px;
+      }
+      &:nth-child(2) {
+        padding-inline: 30px;
+
+        @media screen and (max-width: 768px) {
+          padding-inline: 10px;
+        }
+      }
+    }
+  }
+}

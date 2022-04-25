@@ -1,0 +1,47 @@
+.btn {
+  display: grid;
+  place-content: center;
+  height: 46px;
+
+  font-family: var(--ff-main);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  font-feature-settings: 'case' on;
+  text-decoration: none;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &--block {
+    color: #fff;
+    background-color: var(--clr-brand);
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: var(--clr-brand-hover);
+    }
+  }
+
+  &--blue {
+    color: #fff;
+    background-color: var(--clr-blue);
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: var(--clr-blue-hover);
+    }
+  }
+
+  &--outline {
+    color: #32394d;
+    border: 1px solid hsla(224, 21%, 25%, 0.6);
+    transition: border-color 150ms ease-in-out;
+
+    &:hover {
+      border-color: hsl(224, 21%, 25%);
+    }
+  }
+}

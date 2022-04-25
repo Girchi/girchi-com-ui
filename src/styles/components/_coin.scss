@@ -1,0 +1,150 @@
+@property --p {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+.pie {
+  --p: 70;
+  --b: 22px;
+  --c: #2fa837;
+  --w: 174px;
+
+  width: var(--w);
+  height: var(--w);
+  position: relative;
+  display: grid;
+  margin-inline: auto;
+  place-content: center;
+
+  &__bg {
+    position: absolute;
+    width: var(--w);
+    height: var(--w);
+    border: 22px solid #ffa823;
+    border-radius: 100%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--ff-main);
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #32394d;
+    position: relative;
+    z-index: 100;
+
+    span {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 12.7628px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      font-feature-settings: 'case' on;
+      color: #32394d;
+    }
+  }
+}
+.pie:before,
+.pie:after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 100;
+}
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, #0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p) * 1%), #0000 0);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, #0000 calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+
+.animate {
+  animation: p 1s 0.5s both;
+}
+@keyframes p {
+  from {
+    --p: 0;
+  }
+}
+
+.pie-legend {
+  margin-block: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  &__given,
+  &__available {
+    padding-inline-start: 21px;
+    position: relative;
+    font-family: var(--ff-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-feature-settings: 'case' on;
+    color: #3e4259;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 100%;
+    }
+  }
+
+  &__given {
+    &::before {
+      background-color: #2fa837;
+    }
+  }
+  &__available {
+    &::before {
+      background-color: #ffa823;
+    }
+  }
+}
+
+.coin-stats {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.total-coin {
+  padding-bottom: 25px;
+  font-family: var(--ff-main);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(62, 66, 89, 0.9);
+
+  span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: #2fa837;
+  }
+}

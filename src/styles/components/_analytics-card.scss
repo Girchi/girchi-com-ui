@@ -1,0 +1,131 @@
+.analytics-card {
+  padding: 16px 28px;
+  border-radius: 12px;
+
+  &--green {
+    background-color: #dfffe4;
+  }
+  &--blue {
+    background-color: #e2eeff;
+  }
+  &--orange {
+    background-color: #ffeee6;
+  }
+
+  &__heading {
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--ff-main);
+    font-weight: 500;
+    font-size: 18px;
+    font-feature-settings: 'case' on;
+    color: #32394d;
+
+    small {
+      font-size: 13px;
+    }
+  }
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    border-radius: 6px;
+  }
+
+  &__overall {
+    padding-bottom: 9px;
+    margin-bottom: 14px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 256.42px;
+      height: 2.32px;
+      background-color: #32394d;
+    }
+
+    strong {
+      font-family: var(--ff-main);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 33px;
+      letter-spacing: 0.045em;
+      color: #32394d;
+    }
+
+    p {
+      font-family: var(--ff-main);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      font-feature-settings: 'case' on;
+      color: #32394d;
+    }
+  }
+
+  &__latest {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-family: var(--ff-main);
+    font-weight: 300;
+    font-size: 16px;
+    font-feature-settings: 'case' on;
+    color: #32394d;
+  }
+
+  &__change {
+    display: flex;
+    align-items: flex-end;
+
+    &[data-type='positive'] {
+      --state: var(--clr-brand);
+    }
+    &[data-type='negative'] {
+      --state: var(--clr-red);
+    }
+
+    span {
+      font-family: var(--ff-main);
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: var(--state);
+    }
+
+    img {
+      display: block;
+      width: 20px;
+    }
+  }
+}

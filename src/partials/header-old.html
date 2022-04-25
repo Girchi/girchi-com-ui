@@ -1,0 +1,443 @@
+<!-- Start of GeD Progress -->
+<div class="progress ged-progress d-none d-lg-flex">
+  <div
+    class="progress-bar"
+    role="progressbar"
+    style="width: 0%;"
+    aria-valuenow="60"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-used="500000"
+  >
+    <span class="progress-bar-label">
+      უკვე გაცემულია
+      <span class="progress-bar-value d-inline-flex align-items-center">
+        <i class="icon-ged"></i>0</span
+      >
+    </span>
+  </div>
+  <div class="progress-bar-total">
+    <span class="progress-bar-label">
+      განკუთვნილია
+      <span class="progress-bar-value d-inline-flex align-items-center">
+        <i class="icon-ged"></i>5 000 000 000</span
+      >
+    </span>
+  </div>
+</div>
+<!-- End of GeD Progress -->
+<!-- Start of header -->
+<header class="bg-white">
+  <div class="container">
+    <!-- Start of nav -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light border-bottom border-bottom-0 border-bottom-lg-1 p-0 py-lg-4"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="icon-menu-three-horizontal-lines-symbol"></i>
+      </button>
+      <a
+        class="navbar-brand d-flex align-items-center line-height-1-2 my-2 my-lg-0"
+        href="index.html"
+      >
+        <i class="icon-girchi-logo navbar-brand-lg mr-lg-4"></i>
+        <span
+          class="navbar-text text-success text-uppercase font-weight-bold d-none d-lg-inline"
+          >გირჩი</span
+        >
+      </a>
+
+      <a
+        href="/election-promo.html"
+        class="btn ml-4 px-3 d-none d-lg-inline-flex btn-warning btn-with-icon  align-items-center text-uppercase"
+      >
+        <i class="icon-girchi-logo font-size-5 mr-2"></i>
+        <span class="font-size-4">არჩევნები 2020</span>
+      </a>
+      <a
+        href="/election-promo.html"
+        class="btn  ml-3 line-height-1-7 px-3 d-none d-lg-inline-flex btn-success btn-with-icon  align-items-center text-uppercase"
+      >
+        <i class="icon-tesla font-size-5 mr-2"></i>
+        <span>მოიგე ტესლა</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarAuth"
+        aria-controls="navbarAuth"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="icon-user auth-toggler-icon"></span>
+      </button>
+      <!-- notifications -->
+      <nav class="notifications">
+        <div class="notifications__icon">
+          <img src="../images/Bell.svg" alt="" />
+          <span>3</span>
+        </div>
+        <div class="notifications__notifi-box" style="display:none;">
+          <div class="notifications__notifi-box__triangle"></div>
+
+          <div class="notifications__notifi-box__item">
+            <a href="">
+              <div class="notifications__notifi-box__item__img">
+                <img src="../images/z.japaridze.jpg" alt="" />
+              </div>
+              <div class="notifications__notifi-box__item__text">
+                <h4>დაფინანსება</h4>
+                <p>ზურაბ გირჩი დაგაფინანსათ 15 ლარით</p>
+                <span class="notify-time">1 წუთის წინ</span>
+              </div>
+              <div class="notifications__notifi-box__item__corner-circle">
+                <div></div>
+              </div>
+            </a>
+          </div>
+
+          <div class="notifications__notifi-box__item">
+            <p
+              class="d-flex justify-content-center align-items-center notifications__notifi-box__item__empty-notification-bar mb-0"
+            >
+              თქვენ არ გაქვთ შეტყობინება
+            </p>
+          </div>
+
+          <div class="notifications__notifi-box__item">
+            <a
+              class="d-flex justify-content-center align-items-center notifications__notifi-box__item__text"
+              href="#"
+            >
+              მეტის ნახვა <span><i class="ml-3 icon-arrow-right2"></i></span
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <!-- notifications -->
+      <div class="collapse navbar-collapse" id="navbarAuth">
+        <!-- <div
+          class="ml-auto py-3 py-lg-0 border-top border-top-lg-0 text-center"
+        >
+          <a
+            href="login.html"
+            class="btn btn-success mr-md-2 text-uppercase btn-block d-md-inline-block  w-100 max-w-md-210 w-lg-auto"
+          >
+            შესვლა
+          </a>
+          <a
+            href="register.html"
+            class="btn btn-warning text-uppercase btn-block d-md-inline-block w-100 max-w-md-210 w-lg-auto mt-md-0"
+          >
+            რეგისტრაცია
+          </a>
+        </div> -->
+        <!-- Start of logged in user -->
+
+        <div
+          class="d-flex align-items-center ml-auto py-3 py-lg-0 border-top-1 border-top-lg-0"
+        >
+          <a href="#" class="rounded-circle overflow-hidden d-inline-block">
+            <img src="../images/i.metreveli.jpg" class="rounded" alt="..." />
+          </a>
+          <h6
+            class="text-uppercase line-height-1-2 font-size-3 font-size-xl-base mb-0 ml-2 ml-xl-3 mr-sm-4"
+          >
+            <a
+              href="#"
+              class="text-decoration-none d-inline-block text-hover-success"
+            >
+              ირაკლი
+              <span class="font-weight-bold">მეტრეველი</span>
+              <span class="d-flex align-items-center font-size-3 text-success"
+                ><i class="icon-ged line-height-1-1"></i>
+                <span class="font-weight-bold line-height-0-7 ml-1"
+                  >3 200</span
+                ></span
+              >
+            </a>
+          </h6>
+
+          <a
+            href="#"
+            class="btn ml-auto ml-lg-4 btn-outline-light-silver btn-lg text-dark-silver font-size-5 rounded-circle line-height-0-2 px-2 line-height-md-0-6 px-md-3"
+          >
+            <i class="icon-logout mx-1"></i>
+          </a>
+        </div>
+        <!-- End of logged in user -->
+      </div>
+    </nav>
+    <!-- End of nav -->
+  </div>
+  <div class="sticky-navbar-wrapper">
+    <div class="sticky-navbar bg-white">
+      <div class="container">
+        <!-- Start of nav -->
+        <nav class="navbar navbar-expand-lg navbar-light mx-n2 p-0">
+          <div
+            class="collapse navbar-collapse text-center text-lg-left"
+            id="navbarMenu"
+          >
+            <a class="navbar-brand d-none line-height-1-2" href="index.html">
+              <i
+                class="icon-girchi-logo navbar-brand-lg ml-3 mr-4 font-size-8"
+              ></i>
+            </a>
+            <!-- Start of menu -->
+            <ul
+              class="navbar-nav text-uppercase border-top border-bottom border-top-lg-0 border-bottom-lg-0 mx-2 py-2 py-lg-0 m-lg-0 text-center text-lg-left"
+            >
+              <li class="nav-item active">
+                <a class="nav-link py-3 py-lg-4 font-weight-bold" href="#"
+                  >მთავარი <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item is-dropdown">
+                <a
+                  class="nav-link py-3 py-lg-4 font-weight-bold"
+                  href="news.html"
+                  >სიახლეები
+                  <i
+                    class="icon-arrow-down-sign-to-navigate font-size-1 text-dark-silver mx-2"
+                  ></i>
+                </a>
+                <ul class="nav-dropdown py-2">
+                  <li class="nav-dropdown-item active">
+                    <a
+                      class="nav-dropdown-link py-2 px-4 font-weight-bold"
+                      href="news.html"
+                      >ეკონომიკა
+                    </a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a
+                      class="nav-dropdown-link py-2 px-4 font-weight-bold"
+                      href="news.html"
+                      >კულტურა
+                    </a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a
+                      class="nav-dropdown-link py-2 px-4 font-weight-bold"
+                      href="news.html"
+                      >სიახლეები</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item is-dropdown">
+                <a class="nav-link py-3 py-lg-4 font-weight-bold" href="#"
+                  >დააფინანსე
+                  <i
+                    class="icon-arrow-down-sign-to-navigate font-size-1 text-dark-silver mx-2"
+                  ></i>
+                </a>
+                <ul class="nav-dropdown py-2">
+                  <li class="nav-dropdown-item active">
+                    <a
+                      class="nav-dropdown-link py-2 px-4 font-weight-bold"
+                      href="news.html"
+                      >ეკონომიკა
+                    </a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a
+                      class="nav-dropdown-link py-2 px-4 font-weight-bold"
+                      href="news.html"
+                      >კულტურა
+                    </a>
+                  </li>
+                  <li class="nav-dropdown-item">
+                    <a
+                      class="nav-dropdown-link py-2 px-4 font-weight-bold"
+                      href="news.html"
+                      >სიახლეები</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 py-lg-4 font-weight-bold" href="#"
+                  >პროექტები</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 py-lg-4 font-weight-bold" href="#"
+                  >ჩვენს შესახებ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-3 py-lg-4 font-weight-bold" href="#"
+                  >კონტაქტი</a
+                >
+              </li>
+            </ul>
+            <!-- End of menu -->
+            <!-- Start of aut -->
+            <!-- <div class="auth d-none ml-auto text-center">
+              <a
+                href="login.html"
+                class="btn btn-success mr-md-2 text-uppercase"
+              >
+                შესვლა
+              </a>
+              <a href="register.html" class="btn btn-warning text-uppercase">
+                რეგისტრაცია
+              </a>
+            </div> -->
+            <!-- End of auth -->
+            <!-- Start of logged in user -->
+            <div class="user-panel d-none align-items-center ml-auto">
+              <a href="#" class="rounded-circle overflow-hidden d-inline-block">
+                <img
+                  src="../images/i.metreveli.jpg"
+                  class="rounded"
+                  alt="..."
+                />
+              </a>
+              <h6
+                class="text-uppercase line-height-1-2 font-size-3 font-size-xl-base mb-0 mx-2 mx-xl-3"
+              >
+                <a
+                  href="#"
+                  class="text-decoration-none d-inline-block text-hover-success"
+                >
+                  ირაკლი
+                  <span class="font-weight-bold">მეტრეველი</span>
+                  <span
+                    class="d-flex align-items-center font-size-3 text-success"
+                    ><i class="icon-ged line-height-1-1"></i>
+                    <span class="font-weight-bold line-height-0-7 ml-1"
+                      >3 200</span
+                    ></span
+                  >
+                </a>
+              </h6>
+              <!-- notifications -->
+              <nav class="notifications">
+                <div class="notifications__icon">
+                  <img src="../images/Bell.svg" alt="" />
+                  <span>3</span>
+                </div>
+                <div class="notifications__notifi-box" style="display:none;">
+                  <div class="notifications__notifi-box__triangle"></div>
+
+                  <div class="notifications__notifi-box__item">
+                    <a href="">
+                      <div class="notifications__notifi-box__item__img">
+                        <img src="../images/z.japaridze.jpg" alt="" />
+                      </div>
+                      <div class="notifications__notifi-box__item__text">
+                        <h4>დაფინანსება</h4>
+                        <p>ზურაბ გირჩი დაგაფინანსათ 15 ლარით</p>
+                        <span class="notify-time">1 წუთის წინ</span>
+                      </div>
+                      <div
+                        class="notifications__notifi-box__item__corner-circle"
+                      >
+                        <div></div>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="notifications__notifi-box__item">
+                    <a
+                      class="d-flex justify-content-center align-items-center notifications__notifi-box__item__text"
+                      href="#"
+                    >
+                      მეტის ნახვა
+                      <span><i class="ml-3 icon-arrow-right2"></i></span
+                    ></a>
+                  </div>
+                </div>
+              </nav>
+              <!-- notifications -->
+              <a
+                href="#"
+                class="btn btn-outline-light-silver btn-lg text-dark-silver font-size-5 rounded-circle line-height-0-6 px-3 ml-2"
+              >
+                <i class="icon-logout mx-1"></i>
+              </a>
+            </div>
+            <!-- End of logged in user -->
+            <!-- Start of search -->
+            <form
+              class="navbar-search mt-3 mt-lg-0  ml-auto mr-2 text-right border-bottom border-bottom-lg-0 pb-3 pb-lg-0"
+              action=""
+            >
+              <div
+                class="navbar-search-input bg-white rounded-oval pr-4 border-secondary border overflow-hidden w-100 w-lg-200 max-w-lg-200"
+              >
+                <input
+                  type="text"
+                  name="q"
+                  placeholder="ძებნა..."
+                  class="border-0 py-1 m-1 px-3 outline-none font-size-3 text-success w-100"
+                />
+              </div>
+              <button
+                class="navbar-search-btn border-0 p-0 outline-none bg-transparent line-height-0-9 m-2 p-1 text-dark-silver"
+              >
+                <i class="icon-search"></i>
+              </button>
+            </form>
+            <!-- End of search -->
+            <!-- Start of language switcher -->
+            <div class="dropdown mr-2 d-inline-block my-3 my-lg-0">
+              <button
+                class="btn btn-outline-secondary dropdown-toggle p-1 d-flex align-items-center text-grey bg-transparent shadow-none"
+                type="button"
+                id="languageSwitcher"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="../images/georgia.svg"
+                  width="28"
+                  class="mr-2"
+                  alt=""
+                />
+                ქარ
+                <i class="icon-arrow-down-sign-to-navigate mr-1 ml-3 caret"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="languageSwitcher">
+                <a class="dropdown-item text-grey" href="#"
+                  ><img
+                    src="../images/united-kingdom.svg"
+                    width="28"
+                    class="mr-2"
+                    alt=""
+                  />
+                  Eng</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End of language switcher -->
+        </nav>
+        <!-- End of nav -->
+      </div>
+    </div>
+  </div>
+</header>
+<!-- End of header -->
+
+<a
+  href="/election-promo.html"
+  class="d-lg-none text-decoration-none py-2 bg-warning text-uppercase text-white font-weight-bold d-flex justify-content-center align-items-center"
+>
+  <i class="icon-girchi-logo navbar-brand-lg mr-3 font-size-8"></i>
+  <span class="font-size-4">არჩევნები 2020</span>
+</a>
