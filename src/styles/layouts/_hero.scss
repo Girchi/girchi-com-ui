@@ -1,0 +1,24 @@
+.hero {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 400px;
+  gap: 20px;
+
+  @media screen and (max-width: 1360px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__col {
+    &:last-child {
+      @media screen and (max-width: 1360px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+
+      @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  // width: min(100% - 2rem, 1296px);
+  // width: min(100% - 2rem, 1400px);
+  max-width: 1400px;
+  width: calc(100% - 2rem);
+  margin-inline: auto;
+}
+
+p {
+  font-family: var(--ff-main);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 163.2%;
+  letter-spacing: -0.01em;
+  color: #32394d;
+}

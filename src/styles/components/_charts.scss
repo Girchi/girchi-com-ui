@@ -1,0 +1,50 @@
+#lineChart {
+  height: 350px !important;
+  width: 100% !important;
+
+  @media screen and (max-width: 1360px) {
+    height: unset !important;
+  }
+}
+
+.chart {
+  &__controls {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+
+    @media screen and (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+}
+
+.chart-filter {
+  height: 38px;
+  padding-inline: 18px;
+  font-family: var(--ff-main);
+  font-weight: 500;
+  font-size: 16px;
+  font-feature-settings: 'case' on;
+  color: #32394d;
+  background: #ffffff;
+  border: 1px solid #32394d;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+
+  &.active,
+  &:hover {
+    color: #ffffff;
+    background-color: #32394d;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding-inline: 10px;
+  }
+}

@@ -1,0 +1,21 @@
+.petition-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 34px;
+
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  button {
+    grid-column: span 2;
+    justify-self: center;
+    width: 320px;
+
+    @media (max-width: 780px) {
+      grid-column: span 1;
+    }
+  }
+}

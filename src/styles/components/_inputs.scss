@@ -1,0 +1,50 @@
+.form-input {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: -7px;
+    left: 19px;
+    padding-inline: 4px;
+    background-color: #f8f8f8;
+    font-family: var(--ff-main);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 144.2%;
+    letter-spacing: 0.01em;
+    font-feature-settings: 'case' on;
+    color: #32394d;
+  }
+
+  input {
+    height: 48px;
+    width: 100%;
+    padding-inline: 10px;
+
+    font-family: var(--ff-main);
+    font-size: 16px;
+    color: #32394d;
+
+    background-color: #f8f8f8;
+    border: 1px solid #32394d;
+    border-radius: 9px;
+  }
+}
+
+.form-checkbox {
+  label {
+    font-family: var(--ff-main);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.01em;
+    color: #32394d;
+  }
+
+  input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #32394d;
+    border-radius: 4px;
+    transform: translateY(4px);
+  }
+}
