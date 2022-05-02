@@ -79,10 +79,15 @@
     border-radius: 10px;
     transition: background-color 150ms ease-in-out;
 
+    &:hover {
+      text-decoration: none;
+    }
+
     &--brand {
       background-color: var(--clr-brand);
 
       &:hover {
+        color: var(--clr-neutral-100);
         background-color: var(--clr-brand-hover);
       }
     }
@@ -91,6 +96,7 @@
       background-color: var(--clr-accent);
 
       &:hover {
+        color: var(--clr-neutral-100);
         background-color: var(--clr-accent-hover);
       }
     }
@@ -196,6 +202,13 @@
     font-feature-settings: 'case' on;
     color: #ffffff;
     text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: var(--clr-blue-hover);
+      text-decoration: none;
+    }
 
     @media screen and (max-width: 1360px) {
       align-self: flex-start;

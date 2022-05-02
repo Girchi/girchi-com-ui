@@ -1,7 +1,8 @@
-.btn {
+.button {
   display: grid;
   place-content: center;
   height: 46px;
+  padding-inline: 1rem;
 
   font-family: var(--ff-main);
   font-weight: 500;
@@ -15,12 +16,17 @@
   border-radius: 4px;
   cursor: pointer;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   &--block {
     color: #fff;
     background-color: var(--clr-brand);
     transition: all 150ms ease-in-out;
 
     &:hover {
+      color: #fff;
       background-color: var(--clr-brand-hover);
     }
   }
@@ -32,6 +38,7 @@
 
     &:hover {
       background-color: var(--clr-blue-hover);
+      color: #fff;
     }
   }
 
