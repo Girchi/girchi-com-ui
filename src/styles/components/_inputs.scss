@@ -32,12 +32,16 @@
 }
 
 .form-checkbox {
+  gap: 10px;
+
   label {
     font-family: var(--ff-main);
     font-weight: 400;
     font-size: 13px;
     letter-spacing: -0.01em;
     color: #32394d;
+    margin: 0;
+    padding: 0;
   }
 
   input[type='checkbox'] {
@@ -45,6 +49,5 @@
     height: 24px;
     border: 1px solid #32394d;
     border-radius: 4px;
-    transform: translateY(4px);
   }
 }
