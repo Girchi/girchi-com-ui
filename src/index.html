@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -426,8 +426,8 @@
               </div>
 
               <div class="project-card__ctas">
-                <a class="project-card__cta project-card__cta--block" href="#">ხელისმოწერა</a>
-                <a class="project-card__cta project-card__cta--outline" href="#">დეტალები</a>
+                <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                <a class="button button--outline" href="#">დეტალები</a>
               </div>
 
               <div class="project-card__rating rating">
@@ -483,8 +483,8 @@
               </div>
 
               <div class="project-card__ctas">
-                <a class="project-card__cta project-card__cta--block" href="#">ხელისმოწერა</a>
-                <a class="project-card__cta project-card__cta--outline" href="#">დეტალები</a>
+                <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                <a class="button button--outline" href="#">დეტალები</a>
               </div>
 
               <div class="project-card__rating rating">
@@ -540,8 +540,8 @@
               </div>
 
               <div class="project-card__ctas">
-                <a class="project-card__cta project-card__cta--block" href="#">ხელისმოწერა</a>
-                <a class="project-card__cta project-card__cta--outline" href="#">დეტალები</a>
+                <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                <a class="button button--outline" href="#">დეტალები</a>
               </div>
 
               <div class="project-card__rating rating">
@@ -559,6 +559,79 @@
 
     ${require('./partials/footer.html')}
 
+    <div class="popup" data-petition>
+      <div class="popup__backdrop"></div>
+      <div class="popup__content">
+        <button class="popup__close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <header class="popup__heading">
+          <h2>პეტიციის შევსება</h2>
+          <p>შეავსე პეტიციის მარტივი ფორმა და გახდი პროექტის მომხრე ან დაფინანსების შემთხვევაში - თანადამფინანსებელი</p>
+        </header>
+
+        <form action="#" class="petition-form">
+          <div class="form-input">
+            <label for="name">სახელი</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+
+          <div class="form-input">
+            <label for="lastname">გვარი</label>
+            <input type="text" name="lastname" id="lastname" required />
+          </div>
+
+          <div class="form-input">
+            <label for="privateID">პირადი ნომერი</label>
+            <input type="text" name="privateID" id="privateID" required />
+          </div>
+
+          <div class="form-input">
+            <label for="tel">ტელეფონის ნომერი</label>
+            <input type="tel" name="tel" id="tel" required />
+          </div>
+
+          <div class="form-input">
+            <label for="email">ელ-ფოსტა</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div>
+            <p>გსურს მიიღო შეტყობინება სიახლეებზე?</p>
+            <div class="form-checkbox">
+              <label for="subscribe">გამოიწერე სიახლეები</label>
+              <input type="checkbox" name="subscribe" id="subscribe" />
+            </div>
+          </div>
+
+          <button class="btn btn--block" type="submit">ხელისმოწერა</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" data-petition-success>
+      <div class="popup__backdrop"></div>
+      <div class="popup__content">
+        <button class="popup__close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <header class="popup__heading">
+          <h2>ხელმოწერა მიღებულია</h2>
+          <p>მადლობა პროექტის მხარდაჭერისთვის. ახლა შეგიძლია სხვა პროექტებსაც გაეცნო, ან შენს მიერ ხელმოწერილი პროექტი დაააფინანსო.</p>
+        </header>
+
+        <div class="popup-success">
+          <div class="popup__ctas">
+            <a href="projects.html" class="btn btn--outline">პროექტები</a>
+            <span>ან</span>
+            <a href="projects.html" class="btn btn--blue">დაგვაფინანსე</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       const ctx = document.getElementById('lineChart').getContext('2d')
 
@@ -575,9 +648,9 @@
             borderColor: '#32394D',
             fill: false,
             cubicInterpolationMode: 'monotone',
-            tension: 0.5,
-          },
-        ],
+            tension: 0.5
+          }
+        ]
       }
 
       const config = {
@@ -587,30 +660,30 @@
           responsive: true,
           plugins: {
             title: {
-              display: false,
+              display: false
             },
             legend: {
-              display: false,
-            },
+              display: false
+            }
           },
           interaction: {
-            intersect: false,
+            intersect: false
           },
           scales: {
             x: {
               display: true,
               title: {
-                display: true,
-              },
+                display: true
+              }
             },
             y: {
               display: true,
 
               suggestedMin: 0.05,
-              suggestedMax: 0.45,
-            },
-          },
-        },
+              suggestedMax: 0.45
+            }
+          }
+        }
       }
       const myChart = new Chart(ctx, config)
     </script>

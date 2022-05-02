@@ -130,6 +130,7 @@ module.exports = {
         'girchi-party-list.html',
         'politicians-page.html',
         'politicians-bio.html',
+        'projects-details.html',
         'projects.html',
         'transactions-history.html',
         'automatic-payments.html',

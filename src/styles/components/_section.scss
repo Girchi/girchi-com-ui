@@ -28,6 +28,27 @@
     }
   }
 
+  &__heading-alt {
+    margin-bottom: 17px;
+    padding-block: 10px;
+    padding-inline: 8px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: #32394d;
+    border-radius: 0 5px 5px 0px;
+    // transform: translateX(-20px);
+
+    span {
+      font-family: var(--ff-main);
+      font-size: 1rem;
+      color: #fff;
+      font-feature-settings: 'case' on;
+    }
+  }
+
   &__title {
     display: flex;
     align-items: center;
