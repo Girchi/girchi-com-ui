@@ -59,3 +59,14 @@
     font-size: 11px;
   }
 }
+
+.swiper {
+  z-index: 1;
+
+  .button {
+    z-index: 10000;
+  }
+}
+.swiper-wrapper {
+  z-index: 3;
+}

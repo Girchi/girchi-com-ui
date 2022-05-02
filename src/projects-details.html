@@ -62,7 +62,7 @@
                     />
                   </figure>
                   <div class="article__actions">
-                    <button class="button button--block">ხელმოწერა</button>
+                    <button class="button button--block" data-open-popup>ხელმოწერა</button>
                     <a class="button button--blue" href="#">დაგვაფინანსე</a>
                   </div>
                 </div>
@@ -143,7 +143,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <button type="" class="button button--block" data-open-popup>ხელისმოწერა</button>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -169,7 +169,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <a class="button button--block" data-open-popup>ხელისმოწერა</a>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -195,7 +195,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <a class="button button--block" data-open-popup>ხელისმოწერა</a>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -221,7 +221,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <a class="button button--block" data-open-popup>ხელისმოწერა</a>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -247,7 +247,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <a class="button button--block" data-open-popup>ხელისმოწერა</a>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -273,7 +273,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <a class="button button--block" data-open-popup>ხელისმოწერა</a>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -299,7 +299,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <a class="button button--block" data-open-popup>ხელისმოწერა</a>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -325,7 +325,7 @@
                     </div>
 
                     <footer class="project-inner-card__ctas">
-                      <button class="button button--block" data-open-popup>ხელისმოწერა</button>
+                      <a class="button button--block" data-open-popup>ხელისმოწერა</a>
                       <button class="button button--outline">დეტალები</button>
                     </footer>
                   </article>
@@ -419,9 +419,8 @@
         spaceBetween: 22,
         initialSlide: 1,
         loop: true,
-        // slideToClickedSlide: false,
-        sliderDrag: false,
-        // allowTouchMove: false,
+        preventClicksPropagation: false,
+        preventClicks: false,
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-next',

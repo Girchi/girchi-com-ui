@@ -1,11 +1,11 @@
 // Dropdown
-function dropdown () {
+function dropdown() {
   if (!document.querySelector('[data-dropdown]')) return
 
   const dropdowns = document.querySelectorAll('[data-dropdown]')
 
   dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener('click', function () {
+    dropdown.addEventListener('click', function() {
       if (this.classList.contains('active')) {
         closeDropdown(dropdown)
       } else {
@@ -16,13 +16,13 @@ function dropdown () {
   })
 }
 
-function openDropdown (dropdown) {
+function openDropdown(dropdown) {
   const icon = dropdown.querySelector('.fa-solid')
   dropdown.classList.add('active')
   icon.classList.add('fa-angle-up')
   icon.classList.remove('fa-angle-down')
 }
-function closeDropdown (dropdown) {
+function closeDropdown(dropdown) {
   const icon = dropdown.querySelector('.fa-solid')
   dropdown.classList.remove('active')
   icon.classList.add('fa-angle-down')
@@ -30,7 +30,7 @@ function closeDropdown (dropdown) {
 }
 
 // Navigation
-function toggleNavigation () {
+function toggleNavigation() {
   if (!document.querySelector('.nav') || !document.querySelector('.open-nav')) return
 
   const nav = document.querySelector('.nav')
@@ -42,7 +42,7 @@ function toggleNavigation () {
 }
 
 // Popup
-function popup () {
+function popup() {
   if (!document.querySelector('.popup')) return
 
   const petitionPopup = document.querySelector('[data-petition]')
@@ -56,7 +56,8 @@ function popup () {
 
   // Open Petition popup when button is clicked
   openPopupBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault()
       petitionPopup.classList.add('active')
     })
   })
@@ -124,7 +125,7 @@ const runRemoveAnimation = (popup, ctas) => {
   }, 4500)
 }
 
-function createSuccessImage () {
+function createSuccessImage() {
   const successAnimation = document.createElement('div')
   successAnimation.classList.add('animation')
   const successAnimationImg = document.createElement('img')
@@ -133,7 +134,7 @@ function createSuccessImage () {
   return successAnimation
 }
 
-function removeSuccessAnimation (parent) {
+function removeSuccessAnimation(parent) {
   if (!document.querySelector('.animation')) return
 
   const animation = parent.querySelector('.animation')
