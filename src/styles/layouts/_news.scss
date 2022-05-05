@@ -8,4 +8,39 @@
       grid-template-columns: 1fr;
     }
   }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    column-gap: 24px;
+  }
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  @media screen and (max-width: 1280px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 880px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.news-details {
+  &__petition {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid hsla(224, 21%, 25%, 0.1);
+
+    // hide initially
+    display: none;
+
+    &.shown {
+      display: block;
+    }
+  }
 }

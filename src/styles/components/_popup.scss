@@ -1,17 +1,16 @@
 .popup {
   position: fixed;
   inset: 0;
-  z-index: 10000000000;
 
   display: none;
   place-content: center;
+  z-index: 10000000000;
 
   &.active {
     display: grid;
   }
 
   &[data-petition] {
-    --popup-bg: #f8f8f8;
     --popup-max-w: 695px;
     --popup-padding-inline: 74px;
 
@@ -21,7 +20,6 @@
   }
 
   &[data-petition-success] {
-    --popup-bg: var(--clr-neutral-100);
     --popup-max-w: 505px;
     --popup-padding-inline: 42px;
     --pupup-border-radius: 8px;
@@ -48,7 +46,7 @@
     position: relative;
     width: 95vw;
     max-width: var(--popup-max-w, 695px);
-    background-color: var(--popup-bg, #f8f8f8);
+    background-color: var(--popup-bg, #fff);
     border-radius: var(--pupup-border-radius, 6px);
     padding-block: 24px 38px;
     padding-inline: var(--popup-padding-inline, 20px);
@@ -82,31 +80,6 @@
     }
   }
 
-  &__heading {
-    margin-bottom: 34px;
-    text-align: center;
-
-    h2 {
-      margin-bottom: 8px;
-
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 27px;
-
-      letter-spacing: -0.005em;
-      font-feature-settings: 'case' on;
-      color: var(--clr-blue);
-    }
-
-    p {
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 150.2%;
-      letter-spacing: -0.01em;
-      color: var(--clr-blue);
-    }
-  }
-
   &__ctas {
     display: flex;
     flex-direction: column;
@@ -120,7 +93,7 @@
       font-size: 14px;
       line-height: 14px;
       font-feature-settings: 'case' on;
-      color: var(--clr-blue);
+      color: #32394d;
     }
 
     a,
@@ -130,7 +103,7 @@
   }
 }
 
-.popup-success {
+.petition__success__container {
   display: grid;
 
   .animation {

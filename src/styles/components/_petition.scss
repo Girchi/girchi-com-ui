@@ -1,0 +1,36 @@
+.petition {
+  font-family: var(--ff-main);
+  max-width: 543px;
+  margin-inline: auto;
+  width: 100%;
+
+  &__heading {
+    margin-bottom: 33px;
+    text-align: center;
+
+    h2,
+    h3 {
+      font-weight: 500;
+      font-size: var(--title-fz, 18px);
+      font-feature-settings: 'case' on;
+      color: #32394d;
+      text-align: center;
+    }
+
+    p {
+      margin-top: 8px;
+      font-size: 15px;
+      line-height: 150.2%;
+      letter-spacing: -0.01em;
+      color: #32394d;
+    }
+  }
+}
+
+[data-petition-success] {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

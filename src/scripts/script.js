@@ -1,3 +1,21 @@
+// initialize filter
+filter()
+
+// submit petition
+submitPetition()
+
+// initialize popups
+popup()
+
+// initialize navigation toggle
+toggleNavigation()
+
+// initialize dropdowns
+dropdown()
+
+// initialize aside navigation accordion
+asideNavAccordion()
+
 // Dropdown
 function dropdown () {
   if (!document.querySelector('[data-dropdown]')) return
@@ -14,6 +32,19 @@ function dropdown () {
       }
     })
   })
+
+  // close dropdown on outside click
+  window.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('dropdown-nav') &&
+        !e.target.classList.contains('nav__btn')
+    ) {
+      dropdowns.forEach(dropdown => {
+        if (dropdown.classList.contains('active')) {
+          closeDropdown(dropdown)
+        }
+      })
+    }
+  })
 }
 
 function openDropdown (dropdown) {
@@ -22,6 +53,7 @@ function openDropdown (dropdown) {
   icon.classList.add('fa-angle-up')
   icon.classList.remove('fa-angle-down')
 }
+
 function closeDropdown (dropdown) {
   const icon = dropdown.querySelector('.fa-solid')
   dropdown.classList.remove('active')
@@ -47,17 +79,21 @@ function popup () {
 
   const petitionPopup = document.querySelector('[data-petition]')
   const petitionBackdrop = petitionPopup.querySelector('.popup__backdrop')
-  const petitionSuccessPopup = document.querySelector('[data-petition-success]')
-  const successBackdrop = petitionSuccessPopup.querySelector('.popup__backdrop')
   const openPopupBtns = document.querySelectorAll('[data-open-popup]')
-  const petitionForm = document.querySelector('.petition-form')
+  const petitionCards = document.querySelectorAll('.project-inner-card')
+  const popupCtas = document.querySelector('.popup__ctas')
 
-  const popupCtas = petitionSuccessPopup.querySelector('.popup__ctas')
+  petitionCards.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      if (e.target.classList.contains('btn--block')) {
+        petitionPopup.classList.add('active')
+      }
+    })
+  })
 
   // Open Petition popup when button is clicked
   openPopupBtns.forEach((btn) => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault()
+    btn.addEventListener('click', () => {
       petitionPopup.classList.add('active')
     })
   })
@@ -67,28 +103,21 @@ function popup () {
   petitionPopup.addEventListener('click', (e) => {
     if (e.target.classList.contains('popup__close')) {
       petitionPopup.classList.remove('active')
+      popupCtas.classList.remove('shown')
+      resetPetition()
     }
   })
 
   petitionBackdrop.addEventListener('click', () => {
     petitionPopup.classList.remove('active')
-  })
-
-  // close success message popup
-  petitionSuccessPopup.addEventListener('click', (e) => {
-    if (e.target.classList.contains('popup__close')) {
-      petitionSuccessPopup.classList.remove('active')
-      removeSuccessAnimation(petitionSuccessPopup)
-      popupCtas.classList.remove('shown')
-    }
-  })
-
-  successBackdrop.addEventListener('click', () => {
-    petitionSuccessPopup.classList.remove('active')
-
-    removeSuccessAnimation(petitionSuccessPopup)
     popupCtas.classList.remove('shown')
+    resetPetition()
   })
+}
+
+function submitPetition () {
+  if (!document.querySelector('.petition-form')) return
+  const petitionForm = document.querySelector('.petition-form')
 
   // Show success message popup
   petitionForm.addEventListener('submit', (e) => {
@@ -106,18 +135,37 @@ function popup () {
     // reset form after submit
     petitionForm.reset()
 
-    // close stuff
-    petitionPopup.classList.remove('active')
-    petitionSuccessPopup.classList.add('active')
-    const successAnimation = createSuccessImage()
-    petitionSuccessPopup.querySelector('.popup-success').appendChild(successAnimation)
-    clearTimeout(removeAnimation)
-    runRemoveAnimation(petitionSuccessPopup, popupCtas)
+    // Show success message
+    showPetitionSuccess()
   })
 }
 
-let removeAnimation
+function showPetitionSuccess () {
+  const petitionSuccessPopup = document.querySelector('[data-petition-success]')
+  const popupCtas = petitionSuccessPopup.querySelector('.popup__ctas')
+  const animationContainer = petitionSuccessPopup.querySelector('.petition__success__container')
 
+  document.querySelector('[data-petition-form]').style.display = 'none'
+  document.querySelector('[data-petition-success]').classList.add('active')
+
+  // create & append success animation
+  const successAnimation = createSuccessImage()
+  animationContainer.appendChild(successAnimation)
+
+  // make sure animation restarts on every submit
+  clearTimeout(removeAnimation)
+  runRemoveAnimation(petitionSuccessPopup, popupCtas)
+}
+
+function resetPetition () {
+  const form = document.querySelector('[data-petition-form]')
+  const success = document.querySelector('[data-petition-success]')
+
+  form.style.display = 'block'
+  success.classList.remove('active')
+}
+
+let removeAnimation
 const runRemoveAnimation = (popup, ctas) => {
   removeAnimation = window.setTimeout(() => {
     removeSuccessAnimation(popup)
@@ -129,7 +177,7 @@ function createSuccessImage () {
   const successAnimation = document.createElement('div')
   successAnimation.classList.add('animation')
   const successAnimationImg = document.createElement('img')
-  successAnimationImg.src = './src/images/Gif-Completed.gif'
+  successAnimationImg.src = './images/Gif-Completed.gif'
   successAnimation.appendChild(successAnimationImg)
   return successAnimation
 }
@@ -143,6 +191,62 @@ function removeSuccessAnimation (parent) {
   animation.remove()
 }
 
-popup()
-toggleNavigation()
-dropdown()
+function filter () {
+  if (!document.querySelector('.filter')) return
+
+  const filters = document.querySelectorAll('.filter')
+
+  filters.forEach((filter) => {
+    const filterBtn = filter.querySelector('.filter__btn')
+    const filterActive = filter.querySelector('.filter__active')
+    const filterOptions = filter.querySelectorAll('.filter__option')
+
+    filterBtn.addEventListener('click', () => {
+      // open filter
+      filter.classList.toggle('open')
+    })
+
+    // choose option
+    filterOptions.forEach((option) => {
+      option.addEventListener('click', () => {
+        filterActive.textContent = option.textContent
+        filterActive.dataset.value = option.dataset.value
+
+        filter.classList.remove('open')
+      })
+    })
+  })
+
+  window.addEventListener('click', (e) => {
+    if (!e.target.classList.contains('filter__btn') && !e.target.classList.contains('filter__options')) {
+      document.querySelector('.filter').classList.remove('open')
+    }
+  })
+}
+
+function asideNavAccordion () {
+  if (!document.querySelector('.aside-nav__dropdown')) return
+
+  const asideNavDropdowns = document.querySelectorAll('.aside-nav__dropdown')
+
+  asideNavDropdowns.forEach(dropdown => {
+    const btn = dropdown.querySelector('button')
+
+    btn.addEventListener('click', () => {
+      dropdown.classList.toggle('active')
+    })
+  })
+
+  window.addEventListener('click', (e) => {
+    console.log(e.target)
+    if (!e.target.classList.contains('aside-nav__dropdown') &&
+        !e.target.classList.contains('aside-nav__btn')
+    ) {
+      asideNavDropdowns.forEach(dropdown => {
+        if (dropdown.classList.contains('active')) {
+          dropdown.classList.remove('active')
+        }
+      })
+    }
+  })
+}

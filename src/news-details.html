@@ -1,992 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Girchi.com - სიახლეები</title>
-  </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>გირჩი</title>
 
+    <meta name="description" content="გირჩის საიტი" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
   <body>
     ${require('./partials/header.html')}
+
     <div class="container">
-      <div class="my-3 my-sm-4">
-        <div class="row flex-column-reverse flex-lg-row">
-          <div class="col-md-12 col-lg-3">
-            <!-- Start of card -->
-            <div class="card overflow-hidden d-none d-lg-block d-print-none">
-              <div class="card-header d-flex px-3 px-xl-4">
-                <span
-                  class="d-none d-md-block font-size-2 text-uppercase font-weight-bold text-grey"
-                  >კატეგორიები</span
-                >
-                <button
-                  class="navbar-toggler d-flex d-md-none"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#categories"
-                  aria-controls="categories"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span
-                    class="font-size-2 text-uppercase font-weight-bold text-grey"
-                    >კატეგორიები</span
-                  >
-                  <i
-                    class="icon-menu-three-horizontal-lines-symbol font-size-4 text-success"
-                  ></i>
-                </button>
-              </div>
-              <div class="card-body p-0">
-                <nav class="navbar navbar-expand-lg p-0 d-block">
-                  <div class="collapse navbar-collapse" id="categories">
-                    <ul
-                      class="nav-vertical list-group list-group-flush font-weight-bold w-100"
-                    >
-                      <!-- Start of list group item -->
-                      <li class="list-group-item p-0">
-                        <a
-                          class="py-3 px-3 px-md-4 d-block list-group-item-action text-uppercase font-size-3"
-                          data-toggle="collapse"
-                          href="#nav-item-1"
-                          role="button"
-                          aria-expanded="true"
-                          aria-controls="nav-item-1"
-                        >
-                          ეკონომიკა
-                        </a>
-                        <div class="collapse show" id="nav-item-1">
-                          <ul
-                            class="list-group list-group-flush  list-unstyled pl-3 pl-md-4 mb-3 mb-md-4 d-inline-block"
-                          >
-                            <li class="active py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                                >საშინაო ეკონომიკა</a
-                              >
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                საგარეო ეკონომიკა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ჩვენი ხედვა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ეკონომიკის კატეგორია
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- End of list group item -->
-                      <!-- Start of list group item -->
-                      <li class="list-group-item p-0">
-                        <a
-                          class="py-3 px-3 px-md-4 d-block list-group-item-action text-uppercase font-size-3"
-                          data-toggle="collapse"
-                          href="#nav-item-2"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="nav-item-2"
-                        >
-                          საზოგადოება
-                        </a>
-                        <div class="collapse" id="nav-item-2">
-                          <ul
-                            class="list-group list-group-flush  list-unstyled pl-3 pl-md-4 mb-3 mb-md-4 d-inline-block"
-                          >
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                                >საშინაო ეკონომიკა</a
-                              >
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                საგარეო ეკონომიკა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ჩვენი ხედვა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ეკონომიკის კატეგორია
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- End of list group item -->
-                      <!-- Start of list group item -->
-                      <li class="list-group-item p-0">
-                        <a
-                          class="py-3 px-3 px-md-4 d-block list-group-item-action text-uppercase font-size-3"
-                          data-toggle="collapse"
-                          href="#nav-item-3"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="nav-item-3"
-                        >
-                          კულტურა
-                        </a>
-                        <div class="collapse" id="nav-item-3">
-                          <ul
-                            class="list-group list-group-flush  list-unstyled pl-3 pl-md-4 mb-3 mb-md-4 d-inline-block"
-                          >
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                                >საშინაო ეკონომიკა</a
-                              >
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                საგარეო ეკონომიკა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ჩვენი ხედვა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ეკონომიკის კატეგორია
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- End of list group item -->
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <!-- End of card -->
+      <div class="section" style="background-color: #fff">
+        <div class="section__heading">
+          <h2 class="section__title">
+            <img src="images/news-heading.svg" alt="" />
+            <span>სიახლეები</span>
+          </h2>
+        </div>
 
-            <!-- Start of card -->
-            <div class="card overflow-hidden mt-3 mt-xl-4 d-print-none">
-              <div
-                class="card-header font-size-2 text-uppercase d-flex px-3 px-xl-4 font-weight-bold text-grey"
-              >
-                ტეგები
-              </div>
-              <div class="card-body p-3 p-xl-4">
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >ჯაფარა</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >გირჩის სკოლა</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >არჩევნები</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >რეგიონი</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >ყრილობა</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >რეგიონი</a
-                >
+        <div class="news__wrapper">
+          <aside>
+            <nav class="aside-nav">
+              <ul>
+                <li class="aside-nav__item">
+                  <a href="#">ჩვენს შესახებ</a>
+                </li>
 
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >ყრილობა</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >ჯაფარა</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >2019</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >2017</a
-                >
-                <a
-                  href="#"
-                  class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                  >2018</a
-                >
-              </div>
-            </div>
-            <!-- End of card -->
-            <!-- Start of card -->
-            <div class="card mt-3 mt-xl-4 d-print-none">
-              <div
-                class="card-header font-size-2 text-uppercase d-flex px-3 px-xl-4 font-weight-bold text-grey"
-              >
-                მიმდინარე პროექტები
-              </div>
-              <div class="card-body p-0">
-                <div class="owl-carousel owl-theme projects-carousel p-0">
-                  <!-- Start of banner -->
-                  <div
-                    class="position-relative banner banner-bg-center banner-bg-gradient"
-                  >
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-center p-4"
-                    >
-                      <h5
-                        class="font-size-5 line-height-1-2 text-white text-uppercase font-weight-bold text-center"
-                      >
-                        თავისუფალი განათლება
-                      </h5>
-                      <p class="text-white font-size-2 text-center mb-3">
-                        რა არ მოგვწონს, რა გვინდა, რას ვაკეთებთ
-                      </p>
-                      <a
-                        href="#"
-                        class="btn btn-warning  btn-lg text-uppercase"
-                      >
-                        გაიგე მეტი
-                      </a>
-                    </div>
+                <li class="aside-nav__dropdown">
+                  <div class="aside-nav__item">
+                    <a href="#">თარგმანები</a>
+                    <button class="aside-nav__btn">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </button>
                   </div>
-                  <!-- End of banner -->
-                  <!-- Start of banner -->
-                  <div
-                    class="position-relative banner banner-bg-center banner-bg-gradient"
-                  >
-                    <div
-                      class="d-flex flex-column justify-content-center align-items-center p-4"
-                    >
-                      <h5
-                        class="font-size-5 line-height-1-2 text-white text-uppercase font-weight-bold text-center"
-                      >
-                        ნამდვილი თავდაცვა
-                      </h5>
-                      <p class="text-white font-size-2 text-center mb-3">
-                        ქვეყნის უსაფრთხოება
-                      </p>
-                      <a
-                        href="#"
-                        class="btn btn-warning  btn-lg text-uppercase"
-                      >
-                        გაიგე მეტი
-                      </a>
-                    </div>
-                  </div>
-                  <!-- End of banner -->
-                </div>
-              </div>
-              <!-- Start of carousel controls -->
-              <div
-                class="card-footer border-top p-0 d-flex justify-content-between"
-              >
-                <button
-                  class="projects-carousel-prev btn py-3 shadow-none rounded-0 text-dark-silver border-right"
-                >
-                  <i class="icon-angle-pointing-to-left"></i>
-                </button>
-                <div
-                  class="projects-carousel-dots owl-dots d-flex align-items-center"
-                ></div>
-                <button
-                  class="projects-carousel-next btn py-3 shadow-none rounded-0 text-dark-silver border-left"
-                >
-                  <i class="icon-angle-arrow-pointing-to-right"></i>
-                </button>
-              </div>
-              <!-- End of carousel controls -->
-            </div>
-            <!-- End of card -->
-          </div>
-          <div class="col-md-12 col-lg-9">
-            <!-- Start of card -->
-            <div class="card overflow-hidden d-block d-lg-none d-print-none">
-              <div class="card-header d-flex px-3 px-xl-4">
-                <span
-                  class="d-none d-lg-block font-size-2 text-uppercase font-weight-bold text-grey"
-                  >კატეგორიები</span
-                >
-                <button
-                  class="navbar-toggler d-flex d-lg-none"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#categories"
-                  aria-controls="categories"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span
-                    class="font-size-2 text-uppercase font-weight-bold text-grey"
-                    >კატეგორიები</span
-                  >
-                  <i
-                    class="icon-menu-three-horizontal-lines-symbol font-size-4 text-success"
-                  ></i>
-                </button>
-              </div>
-              <div class="card-body p-0">
-                <nav class="navbar navbar-expand-lg p-0 d-block">
-                  <div class="collapse navbar-collapse" id="categories">
-                    <ul
-                      class="nav-vertical list-group list-group-flush font-weight-bold w-100"
-                    >
-                      <!-- Start of list group item -->
-                      <li class="list-group-item p-0">
-                        <a
-                          class="py-3 px-3 px-md-4 d-block list-group-item-action text-uppercase font-size-3"
-                          data-toggle="collapse"
-                          href="#nav-item-1-2"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="nav-item-1-2"
-                        >
-                          ეკონომიკა
-                        </a>
-                        <div class="collapse" id="nav-item-1-2">
-                          <ul
-                            class="list-group list-group-flush  list-unstyled pl-3 pl-md-4 mb-3 mb-md-4 d-inline-block"
-                          >
-                            <li class="active py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                                >საშინაო ეკონომიკა</a
-                              >
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                საგარეო ეკონომიკა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ჩვენი ხედვა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ეკონომიკის კატეგორია
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- End of list group item -->
-                      <!-- Start of list group item -->
-                      <li class="list-group-item p-0">
-                        <a
-                          class="py-3 px-3 px-md-4 d-block list-group-item-action text-uppercase font-size-3"
-                          data-toggle="collapse"
-                          href="#nav-item-2-2"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="nav-item-2-2"
-                        >
-                          საზოგადოება
-                        </a>
-                        <div class="collapse" id="nav-item-2-2">
-                          <ul
-                            class="list-group list-group-flush  list-unstyled pl-3 pl-md-4 mb-3 mb-md-4 d-inline-block"
-                          >
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                                >საშინაო ეკონომიკა</a
-                              >
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                საგარეო ეკონომიკა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ჩვენი ხედვა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ეკონომიკის კატეგორია
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- End of list group item -->
-                      <!-- Start of list group item -->
-                      <li class="list-group-item p-0">
-                        <a
-                          class="py-3 px-3 px-md-4 d-block list-group-item-action text-uppercase font-size-3"
-                          data-toggle="collapse"
-                          href="#nav-item-3-2"
-                          role="button"
-                          aria-expanded="false"
-                          aria-controls="nav-item-3-2"
-                        >
-                          კულტურა
-                        </a>
-                        <div class="collapse" id="nav-item-3-2">
-                          <ul
-                            class="list-group list-group-flush  list-unstyled pl-3 pl-md-4 mb-3 mb-md-4 d-inline-block"
-                          >
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                                >საშინაო ეკონომიკა</a
-                              >
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                საგარეო ეკონომიკა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ჩვენი ხედვა
-                              </a>
-                            </li>
-                            <li class="py-2 px-3 font-size-2">
-                              <a
-                                href="#"
-                                class=" text-decoration-none text-hover-light-green"
-                              >
-                                ეკონომიკის კატეგორია
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <!-- End of list group item -->
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <!-- End of card -->
 
-            <!-- Start of card -->
-            <div class="card mt-3 mt-lg-0 mb-2 mb-lg-3 font-size-3">
-              <div class="card-body p-0">
+                  <ul>
+                    <li>
+                      <a href="#">ლინკი</a>
+                    </li>
+                    <li>
+                      <a href="#">ლინკი</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="aside-nav__item">
+                  <a href="#">სიახლეები</a>
+                </li>
+
+                <li class="aside-nav__dropdown">
+                  <div class="aside-nav__item">
+                    <a href="#">ეთერები</a>
+                    <button class="aside-nav__btn">
+                      <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                  </div>
+
+                  <ul>
+                    <li>
+                      <a href="#">ლინკი</a>
+                    </li>
+                    <li>
+                      <a href="#">ლინკი</a>
+                    </li>
+                    <li>
+                      <a href="#">ლინკი</a>
+                    </li>
+                    <li>
+                      <a href="#">ლინკი</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="aside-nav__item">
+                  <a href="#">ტკივილი</a>
+                </li>
+
+                <li class="aside-nav__item">
+                  <a href="#">პროექტები</a>
+                </li>
+
+                <li class="aside-nav__item">
+                  <a href="#">ციტატები</a>
+                </li>
+
+                <li class="aside-nav__item">
+                  <a href="#">ბლოგი</a>
+                </li>
+
+                <li class="aside-nav__item">
+                  <a href="#">გირჩი</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="aside-tags">
+              <h2>ტეგები</h2>
+
+              <ul class="tags">
+                <li>
+                  <a href="#" class="tag"># პროცესი</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># თავისუფალი ბაზარი</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># გირჩის სკოლა</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># თარგმანები</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># გირჩის ბლოგი</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># მეტი თავისუფლება</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># პირადი ცხოვრება</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># გამოხატვის თავისუფლება</a>
+                </li>
+                <li>
+                  <a href="#" class="tag"># საკონსტიტუციო სამართალი</a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <main>
+            <article class="news-item">
+              <figure class="news-item__main-image">
                 <img
-                  src="./images/news-details-thumb.jpg"
-                  class="w-100"
+                  src="https://images.pexels.com/photos/3810753/pexels-photo-3810753.jpeg?cs=srgb&dl=pexels-rfstudio-3810753.jpg&fm=jpg"
                   alt=""
                 />
-                <div class="p-3 p-lg-4">
-                  <div class="mb-3 mb-lg-4">
-                    <span
-                      class="text-grey font-size-1 d-inline-flex align-items-center"
-                    >
-                      <i
-                        class="icon-clock-circular-outline mr-1
-                            "
-                      ></i>
-                      12 მარტი 2019</span
-                    >
-                    <a
-                      href="#"
-                      class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                      >სამართალი</a
-                    >
-                  </div>
-                  <h4
-                    class="font-size-5 font-size-lg-7 font-weight-bold line-height-1-2"
-                  >
-                    ზურაბ ჯაფარიძე - ინტერნეტში საჯაროდ განთავსებული ინფორმაციის
-                    თუ ფაილის მოპოვება ან გავრცელება, არ უნდა იყოს დასჯადი
-                  </h4>
-                  <div class="my-3 my-lg-4 text-with-permalink">
-                    <p>
-                      „როგორც იცით, <a href="#">16 ადამიანს</a> ემუქრება 4- დან
-                      8 წლამდე პატიმრობა იმის გამო, რომ მათ ინტერნეტში საჯაროდ
-                      განთავსებული ერთ-ერთი ფარული ჩანაწერი შეინახეს, ჩაიწერეს
-                      ან მეგობარს გადაუგზავნეს. ეს არის სრული სიგიჟე. არ
-                      შეიძლება ადამიანს ასე სჯიდეს სახელმწიფო. ვფიქრობთ, რომ
-                      ინტერნეტში გავრცელებული ინფორმაციის თუ ფაილის, რომელიც
-                      საჯაროდ არის უკვე განთავსებული, მოპოვება თუ გავრცელება, არ
-                      უნდა იყოს დასჯადი“, - განაცხადა ჯაფარიძემ.
-                      <q>
-                        ეს არის სრული სიგიჟე. არ შეიძლება ადამიანს ასე სჯიდეს
-                        სახელმწიფო.
-                      </q>
-                    </p>
-                    <p>
-                      „როგორც იცით, 16 ადამიანს ემუქრება 4- დან 8 წლამდე
-                      პატიმრობა იმის გამო, რომ მათ ინტერნეტში საჯაროდ
-                      განთავსებული ერთ-ერთი ფარული ჩანაწერი შეინახეს, ჩაიწერეს
-                      ან მეგობარს გადაუგზავნეს. ეს არის სრული სიგიჟე. არ
-                      შეიძლება ადამიანს ასე სჯიდეს სახელმწიფო. ვფიქრობთ, რომ
-                      ინტერნეტში გავრცელებული ინფორმაციის თუ ფაილის, რომელიც
-                      საჯაროდ არის უკვე განთავსებული, მოპოვება თუ გავრცელება, არ
-                      უნდა იყოს დასჯადი“, - განაცხადა ჯაფარიძემ.
-                    </p>
-                  </div>
-                  <!-- Start of tags -->
-                  <div class="d-print-none">
-                    <a
-                      href="#"
-                      class="btn border-secondary btn-outline-grey bg-transparent d-inline-block mr-1 btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                      >ჯაფარა</a
-                    >
-                    <a
-                      href="#"
-                      class="btn border-secondary btn-outline-grey bg-transparent d-inline-block mr-1 btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                      >გირჩის სკოლა</a
-                    >
-                    <a
-                      href="#"
-                      class="btn border-secondary btn-outline-grey bg-transparent d-inline-block mr-1 btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                      >არჩევნები</a
-                    >
-                    <a
-                      href="#"
-                      class="btn border-secondary btn-outline-grey bg-transparent d-inline-block btn-sm mb-2 text-hover-light-green border-hover-light-green"
-                      >რეგიონი</a
-                    >
-                  </div>
-                  <!-- End of tags -->
-                  <hr class="d-print-none" />
-                  <div class="pt-1 d-print-none">
-                    <a
-                      href="#"
-                      class="btn btn-outline-secondary bg-hover-dark-white d-flex d-lg-inline-flex mb-2 mb-lg-0  text-uppercase align-items-center btn-with-icon px-3 mr-0 mr-lg-2 share facebook justify-content-center justify-content-lg-start"
-                      ><i
-                        class="icon-social-facebook-circular-button font-size-6 mr-2 line-height-1-3 ml-n1 text-purple"
-                      ></i>
+              </figure>
 
-                      <span class="text-grey text-uppercase ">გაზიარება</span>
-                    </a>
-                    <a
-                      href="#"
-                      class="btn btn-outline-secondary bg-hover-dark-white d-flex d-lg-inline-flex mb-2 mb-lg-0  align-items-center mr-0 mr-lg-2 btn-with-icon px-3 share twitter justify-content-center justify-content-lg-start"
-                      ><i
-                        class="icon-social-twitter-circular-button font-size-6 mr-2 line-height-1-3 text-light-blue ml-n1"
-                      ></i>
-                      <span class="text-grey text-uppercase ">tweet</span>
-                    </a>
-                    <a
-                      href="#"
-                      onclick="window.print();return false;"
-                      class="btn btn-outline-secondary bg-hover-dark-white d-flex d-lg-inline-flex mb-2 mb-lg-0  align-items-center btn-with-icon px-3 justify-content-center justify-content-lg-start"
-                    >
-                      <i
-                        class="icon-print font-size-6 mr-2 line-height-1-3 text-grey ml-n1"
-                      ></i>
-                      <span class="text-grey text-uppercase ">ამობეჭდვა</span>
-                    </a>
+              <header class="news-item__header">
+                <!-- article meta information -->
+                <div class="news-item__meta">
+                  <div class="news-card__meta">
+                    <i class="fa-regular fa-clock"></i>
+                    <time>2 მარტი 2022</time>
                   </div>
-                  <hr class="d-print-none" />
-                  <div
-                    class="fb-comments"
-                    data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
-                    data-width="100%"
-                    data-numposts="5"
-                  ></div>
+
+                  <div>315 views</div>
+
+                  <div>ბლოგი</div>
+
+                  <div>მეტი თავისუფლება</div>
+                </div>
+                <!-- end article meta information -->
+
+                <!-- article title -->
+                <h1 class="news-item__title">გირჩი პარლამენტში შედის</h1>
+              </header>
+
+              <div class="news-item__body">
+                <p>
+                  ქუთაისში დროშის აღმართვა ხუთჯერ სცადეს უშედეგოდ. მეექვსე ცდაზე დაკიდეს, რაც გადასახადის გადამხდელებს 50000 ლარი დაგვიჯდა.
+                  დღეს კი ეს 50000 ლარიანი დროშა ქარმა წაიღო. ზუსტად ასევე "ეფექტურად" ზრუნავს მთავრობა ნებისმიერ რამეზე.
+                </p>
+                <p>
+                  ამის მიზეზი მარტივია: ხარჯვა ყველაზე ეფექტურია, როდესაც საკუთარ ფულს, საკუთარი მიზნებისთვის ხარჯავ, ნაკლებად ეფექტურია,
+                  როცა საკუთარ ფულს, სხვისი საჭიროებისთვის ხარჯავ და ყველაზე არაეფექტურია, როდესაც სხვის ფულს, სხვის საჭიროებებზე ხარჯავ.
+                </p>
+                <p>
+                  ვისაც ჰგონია, რომ გერმანული, სკანდინავიური ან ნებისმიერი სხვა ქვეყნის ბიუროკრატია, უფრო ეფექტურია, ცდება. ამ მცდარ
+                  წარმოდგენას ქმნის ის ფაქტი, რომ ის ქვეყნები, სადაც ბიუროკრატია უფრო ეფექტური გვეჩვენება, 10-ჯერ და 15-ჯერ უფრო მდიდრები
+                  არიან, <u>ვიდრე ჩვენ ვართ და იქ ამ არაეფექტურობის</u> მაჩვენებელი, ნაკლებად დამანგრეველი ჩანს. არსებითად, ნებისმიერ რამეს,
+                  რასაც ბიუროკრატია აკეთებს, ორჯერ უფრო იაფად და ხარისხიანად გააკეთებს კერძო კომპანია, თუკი მას თავად გადამხდელი დაუკვეთავს.
+                </p>
+                <p>
+                  ზუსტად ამიტომაა მნიშვნელოვანი ბიუროკრატიის ზომა მაქსიმალურად შევამციროთ და რაც შეიძლება ნაკლები მივცეთ დასახარჯად და რაც
+                  შეიძლება ნაკლები სივრცე დავუტოვოთ სამოქმედოდ.
+                </p>
+                <p>
+                  ყოველივე ზემოთქმულიდან გამომდინარე, <a href="#">გონივრულია არჩევნებზე ხმა მისცეთ</a> ისეთ პარტიებს, რომლებიც
+                  გადასახადებისა და ბიუროკრატიის შემცირებას გპირდებიან და ამბობენ, რომ თქვენი გადასაწყვეტი იქნება საერთოდ დახარჯავთ თუ არა
+                  ფულს დროშის აღმართვაში, თუ ამჯობინებთ ამ ფულით ერთით მეტი გზა გააკეთოთ, ან სხვა პრობლემა მოაგვაროთ და თავადვე აკონტროლოთ
+                  ფასის და ხარისხის შესაბამისობა, ხოლო არაგონივრულია დაუჯეროთ პარტიებს, რომლებიც გპირდებიან, რომ დროშას ისინი უფრო იაფად
+                  აღმართავენ და იმ დროშას ქარი არ წაიღებს.
+                </p>
+                <p>
+                  გონივრულია დაუჯეროთ პარტიებს, რომლებიც გეუბნებიან, რომ თქვენი გადასაწყვეტი იქნება, თქვენი ქალაქი ღვინის დედაქალაქი იქნება
+                  თუ ფესტივალების, საგანმანათლებლო ცენტრი იქნება თუ ინდუსტრიული, ხოლო არაგონივრულია დაუჯეროთ ხალხს, რომლებსაც ერთი დღე არ
+                  უცხოვრია თქვენ გვერდით, სამაგიეროდ თბილისში საკუთარ კაბინეტში, კაცმა არ იცის ვისი რჩევით გადაგიწყვიტათ რა იქნება თქვენთვის
+                  უკეთესი.
+                </p>
+                <figure class="news-item__image-w-quote">
+                  <img src="https://images.pexels.com/photos/8872205/pexels-photo-8872205.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+                  <figcaption>
+                    <p>
+                      “ გონივრულია დაუჯეროთ პარტიებს, რომლებიც გეუბნებიან, რომ თქვენი გადასაწყვეტი იქნება, თქვენი ქალაქი ღვინის დედაქალაქი
+                      იქნება თუ ფესტივალების, საგანმანათლებლო ცენტრი იქნება თუ ინდუსტრიული, ხოლო არაგონივრულია დაუჯეროთ ხალხს, რომლებსაც
+                      ერთი დღე არ უცხოვრია თქვენ გვერდით, სამაგიეროდ თბილისში საკუთარ კაბინეტში, კაცმა არ იცის ვისი რჩევით გადაგიწყვიტათ რა
+                      იქნება თქვენთვის უკეთესი.”
+                    </p>
+                  </figcaption>
+                </figure>
+                <p>
+                  და ა.შ. და ა.შ. მოკლედ, პოლიტიკოსების საქმე არაა მზრუნველობა, ეს მათ მხოლოდ ჩვენ ხარჯზე გამდიდრების საშუალებას აძლევს და
+                  კიდევ უფრო გვაღარიბებს. დაე, პოლიტიკოსებმა მიხედონ ეროვნულ უსაფრთხოებას, მსხვილ ინფრასტრუქტურულ გლობალური მნიშვნელობის
+                  გადაწყვეტილებებს, უზრუნველყონ სამართლიანი სასამართლო და მართლმსაჯულების სისტემა და მეტი დრო დახარჯონ საინვესტიციო გარემოს
+                  გაუმჯობესებასა და ქვეყნის დეოკუპაციაზე, ჩვენ კი მოგვცენ საშუალება თავად გადავწყვიტოთ ჩვენ ფულს დროშის დაკიდებაში
+                  დავხარჯავთ, ფესტივალის მოწყობაში, გზის გაყვანაში, სარწყავი სისტემის რეაბილიტაციაში თუ სპორტული ინფრასტრუქტურის მოწყობაში
+                  საკუთარი შვილებისთვის.
+                </p>
+                <p>
+                  მოკლედ პოლიტიკოსები უნდა ვაიძულოთ აკეთონ თავიანთი საქმე და ჩვენ ძარცვას შეეშვან. მით უმეტეს ამ ძარცვას არ დაარქვან ზრუნვა.
+                  ყელამდე ვართ ამ დედამო**ნულების ზრუნვით ჯერ კიდევ საბჭოთა კავშირიდან მოყოლებული.
+                </p>
+                <div class="news-item__gallery">
+                  <figure>
+                    <img src="https://images.pexels.com/photos/5940836/pexels-photo-5940836.jpeg" alt="" />
+                    <figcaption>
+                      <p>სურათი N1</p>
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img src="https://bposeats.com/info/wp-content/uploads/2021/02/pexels-daria-shevtsova-1560932-scaled.jpg" alt="" />
+                    <figcaption>
+                      <p>სურათი N2</p>
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      src="https://images.pexels.com/photos/3153208/pexels-photo-3153208.jpeg?cs=srgb&dl=pexels-canva-studio-3153208.jpg&fm=jpg"
+                      alt=""
+                    />
+                    <figcaption>
+                      <p>სურათი N3</p>
+                    </figcaption>
+                  </figure>
+                </div>
+                <p>
+                  და ბოლოს, ვიცი ფიქრობთ აბა იმათზე ვინ იზრუნებს, ვისაც ყველაზე მეტად უჭირსო. სინამდვილეში თუ გინდათ გაიგოთ ამ ნაწილში
+                  რამდენად ეფექტურია ბიუროკრატია, გეტყვით, რომ სხვადასხვა ტიპის სოციალური პროექტებიდან, რომლებსაც მთავრობა
+                  გაჭირვებულებისთვის უნდა აფინანსებდეს, ყველაზე დიდი ნაწილი მაღალი და საშუალო შემოსავლების მქონე ოჯახებში მიდის და ამ
+                  ბიუჯეტის მხოლოდ 10% ხმარდება ღარიბებს და კიდევ 10% სიღარიბის ზღვარს ქვემოთ მყოფებს. დასკვნა თქვენ თვითონ გამოიტანეთ.
+                  მთავრობა თქვენს მიერ გამომუშავებული 100 ლარიდან ჯამში 35 ლარს გართმევთ, პირდაპირი და არაპირდაპირი გადასახადების სახით. ამ
+                  თანხის მხოლოდ უმცირეს ნაწილს ხარჯავს ის ყველაზე გაჭირვებულების დასახმარებლად. დანარჩენს კი ან თავად მოიხმარს, ან ორჯერ და
+                  მეტად არაეფექტურად ხარჯავს და შედეგად თქვენზე ყიდის ძვირ და უხარისხო სერვისებს, რომლებსაც გაწვდიან გათავხედებული საჯარო
+                  მოხელეები, რომლებსაც თავი თქვენი უფროსები ჰგონიათ. სინამდვილეში მზრუნველი მთავრობა თქვენი სიღატაკისა და მონობის ბორკილებს
+                  თქვენგანვე წართმეული ფულით ჭედავს.
+                </p>
+                <div class="news-item__video">
+                  <iframe
+                    src="https://www.youtube.com/embed/BCvoTL0EPoc"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  და ბოლოს, ვიცი ფიქრობთ აბა იმათზე ვინ იზრუნებს, ვისაც ყველაზე მეტად უჭირსო. სინამდვილეში თუ გინდათ გაიგოთ ამ ნაწილში
+                  რამდენად ეფექტურია ბიუროკრატია, გეტყვით, რომ სხვადასხვა ტიპის სოციალური პროექტებიდან, რომლებსაც მთავრობა
+                  გაჭირვებულებისთვის უნდა აფინანსებდეს, ყველაზე დიდი ნაწილი მაღალი და საშუალო შემოსავლების მქონე ოჯახებში მიდის და ამ
+                  ბიუჯეტის მხოლოდ 10% ხმარდება ღარიბებს და კიდევ 10% სიღარიბის ზღვარს ქვემოთ მყოფებს. დასკვნა თქვენ თვითონ გამოიტანეთ.
+                  მთავრობა თქვენს მიერ გამომუშავებული 100 ლარიდან ჯამში 35 ლარს გართმევთ, პირდაპირი და არაპირდაპირი გადასახადების სახით. ამ
+                  თანხის მხოლოდ უმცირეს ნაწილს ხარჯავს ის ყველაზე გაჭირვებულების დასახმარებლად. დანარჩენს კი ან თავად მოიხმარს, ან ორჯერ და
+                  მეტად არაეფექტურად ხარჯავს და შედეგად თქვენზე ყიდის ძვირ და უხარისხო სერვისებს, რომლებსაც გაწვდიან გათავხედებული საჯარო
+                  მოხელეები, რომლებსაც თავი თქვენი უფროსები ჰგონიათ. სინამდვილეში მზრუნველი მთავრობა თქვენი სიღატაკისა და მონობის ბორკილებს
+                  თქვენგანვე წართმეული ფულით ჭედავს.
+                </p>
+                <blockquote>
+                  <p>
+                    “ გონივრულია დაუჯეროთ პარტიებს, რომლებიც გეუბნებიან, რომ თქვენი გადასაწყვეტი იქნება, თქვენი ქალაქი ღვინის დედაქალაქი
+                    იქნება თუ ფესტივალების, საგანმანათლებლო ცენტრი იქნება თუ ინდუსტრიული, ხოლო არაგონივრულია დაუჯეროთ ხალხს, რომლებსაც ერთი
+                    დღე არ უცხოვრია თქვენ გვერდით, სამაგიეროდ თბილისში საკუთარ კაბინეტში, კაცმა არ იცის ვისი რჩევით გადაგიწყვიტათ რა იქნება
+                    თქვენთვის უკეთესი.”
+                  </p>
+                </blockquote>
+                <p>
+                  ამ ქვეყანაში სიღარიბე არასოდეს დაიძლევა, სანამ მზრუნველი მთავრობა გვეყოლება. ამიტომ უბრალოდ ერთი მზრუნველი მთავრობა
+                  მეორეთი კი არ უნდა შევცვალოთ, არამედ საერთოდ აღარ უნდა ავირჩიოთ ხალხი, რომელიც ჩვენ მოტყუებას ცდილობს და გაძარცვას
+                  გვპირდება, ოღონდ სიტყვა ძარცვის ნაცვლად, ზრუნვას იყენებს.
+                </p>
+
+                <p class="news-item__author">ავტორი: <span>ტორესა მოსი</span></p>
+              </div>
+
+              <div class="news-item__tags">
+                <a href="#">#ბლოგი</a>
+                <a href="#">#ტორესა მოსი</a>
+                <a href="#">#ბიუროკრატია</a>
+                <a href="#">#2020 არჩევნები</a>
+              </div>
+            </article>
+
+            <!-- add class .shown to show petition -->
+            <div class="news-details__petition">
+              <div class="petition">
+                <div class="petition__wrapper" data-petition-form>
+                  <header class="petition__heading">
+                    <h2>პეტიიციის ფორმა</h2>
+                  </header>
+
+                  <form action="#" class="petition-form">
+                    <div class="form-input">
+                      <label for="name">სახელი</label>
+                      <input type="text" name="name" id="name" required />
+                    </div>
+
+                    <div class="form-input">
+                      <label for="lastname">გვარი</label>
+                      <input type="text" name="lastname" id="lastname" required />
+                    </div>
+
+                    <div class="form-input">
+                      <label for="privateID">პირადი ნომერი</label>
+                      <input type="text" name="privateID" id="privateID" required />
+                    </div>
+
+                    <div class="form-input">
+                      <label for="tel">ტელეფონის ნომერი</label>
+                      <input type="tel" name="tel" id="tel" required />
+                    </div>
+
+                    <div class="form-input">
+                      <label for="email">ელ-ფოსტა</label>
+                      <input type="email" name="email" id="email" required />
+                    </div>
+
+                    <div>
+                      <p>გსურს მიიღო შეტყობინება სიახლეებზე?</p>
+                      <div class="form-checkbox">
+                        <label for="subscribe">გამოიწერე სიახლეები</label>
+                        <input type="checkbox" name="subscribe" id="subscribe" />
+                      </div>
+                    </div>
+
+                    <button class="button button--block" type="submit">ხელისმოწერა</button>
+                  </form>
+                </div>
+
+                <div class="petition__success" data-petition-success>
+                  <header class="petition__heading">
+                    <h2>ხელმოწერა მიღებულია</h2>
+                    <p>
+                      მადლობა პროექტის მხარდაჭერისთვის. ახლა შეგიძლია სხვა პროექტებსაც გაეცნო, ან შენს მიერ ხელმოწერილი პროექტი დაააფინანსო.
+                    </p>
+                  </header>
+
+                  <div class="petition__success__container">
+                    <div class="popup__ctas">
+                      <a href="projects.html" class="button button--outline">პროექტები</a>
+                      <span>ან</span>
+                      <a href="projects.html" class="button button--blue">დაგვაფინანსე</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- End of card -->
-            <!-- Start of card -->
-            <div class="card mt-3 mb-lg-4 font-size-3 d-print-none">
-              <div
-                class="card-header font-size2 text-uppercase text-grey font-weight-bold d-flex px-3 px-lg-4"
-              >
-                მსგავსი სიახლეები
-              </div>
-              <div class="card-body p-0 p-lg-4">
-                <div
-                  class="owl-carousel owl-theme related-news-carousel p-3 p-lg-0"
-                >
-                  <!-- Start of media -->
-                  <div class="media media-column">
-                    <div class="media-thumb w-100 rounded overflow-hidden">
-                      <a href="#" class="media-thumb-link">
-                        <i class="icon-play-button media-play"></i>
-                        <img
-                          src="./images/video-blog.jpg"
-                          class="w-100"
-                          alt="..."
-                        />
-                      </a>
-                      <span class="media-date font-size-1">2:41</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-2 font-size-2 line-height-1-3">
-                        <a
-                          href="#"
-                          class="text-decoration-none d-block font-weight-bold font-size-base"
-                        >
-                          Scoot Scoot-ის საჩუქარი ზურაბ ჯაფარიძეს
-                        </a>
-                      </h6>
-                      <span
-                        class="text-grey font-size-1 d-inline-flex align-items-center"
-                      >
-                        <i
-                          class="icon-clock-circular-outline mr-1
-                      "
-                        ></i>
-                        12 მარტი 2019</span
-                      >
-                      <a
-                        href="#"
-                        class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                        >სამართალი</a
-                      >
-                    </div>
+
+            <div class="comments">
+              <header class="comments__header">
+                <div>
+                  <h2 class="comments__title">კომენტარები</h2>
+
+                  <!-- filter comments -->
+                  <div class="comments__filter filter">
+                    <button class="filter__btn">
+                      <span class="filter__active" data-value="oldest">ყველაზე ძველი</span>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </button>
+
+                    <ul class="filter__options">
+                      <li class="filter__option" data-value="newest">ყველაზე ახალი</li>
+                      <li class="filter__option" data-value="oldest">ყველაზე ძველი</li>
+                    </ul>
                   </div>
-                  <!-- End of media -->
-                  <!-- Start of media -->
-                  <div class="media media-column">
-                    <div class="media-thumb w-100 rounded overflow-hidden">
-                      <a href="#" class="media-thumb-link">
-                        <i class="icon-play-button media-play"></i>
-                        <img
-                          src="./images/video-blog.jpg"
-                          class="w-100"
-                          alt="..."
-                        />
-                      </a>
-                      <span class="media-date font-size-1">2:41</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-2 font-size-2 line-height-1-3">
-                        <a
-                          href="#"
-                          class="text-decoration-none d-block font-weight-bold font-size-base"
-                        >
-                          Scoot Scoot-ის საჩუქარი ზურაბ ჯაფარიძეს
-                        </a>
-                      </h6>
-                      <span
-                        class="text-grey font-size-1 d-inline-flex align-items-center"
-                      >
-                        <i
-                          class="icon-clock-circular-outline mr-1
-                        "
-                        ></i>
-                        12 მარტი 2019</span
-                      >
-                      <a
-                        href="#"
-                        class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                        >სამართალი</a
-                      >
-                    </div>
-                  </div>
-                  <!-- End of media -->
-                  <!-- Start of media -->
-                  <div class="media media-column">
-                    <div class="media-thumb w-100 rounded overflow-hidden">
-                      <a href="#" class="media-thumb-link">
-                        <i class="icon-play-button media-play"></i>
-                        <img
-                          src="./images/video-blog.jpg"
-                          class="w-100"
-                          alt="..."
-                        />
-                      </a>
-                      <span class="media-date font-size-1">2:41</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-2 font-size-2 line-height-1-3">
-                        <a
-                          href="#"
-                          class="text-decoration-none d-block font-weight-bold font-size-base"
-                        >
-                          Scoot Scoot-ის საჩუქარი ზურაბ ჯაფარიძეს
-                        </a>
-                      </h6>
-                      <span
-                        class="text-grey font-size-1 d-inline-flex align-items-center"
-                      >
-                        <i
-                          class="icon-clock-circular-outline mr-1
-                        "
-                        ></i>
-                        12 მარტი 2019</span
-                      >
-                      <a
-                        href="#"
-                        class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                        >სამართალი</a
-                      >
-                    </div>
-                  </div>
-                  <!-- End of media -->
-                  <!-- Start of media -->
-                  <div class="media media-column">
-                    <div class="media-thumb w-100 rounded overflow-hidden">
-                      <a href="#" class="media-thumb-link">
-                        <i class="icon-play-button media-play"></i>
-                        <img
-                          src="./images/video-blog.jpg"
-                          class="w-100"
-                          alt="..."
-                        />
-                      </a>
-                      <span class="media-date font-size-1">2:41</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-2 font-size-2 line-height-1-3">
-                        <a
-                          href="#"
-                          class="text-decoration-none d-block font-weight-bold font-size-base"
-                        >
-                          Scoot Scoot-ის საჩუქარი ზურაბ ჯაფარიძეს
-                        </a>
-                      </h6>
-                      <span
-                        class="text-grey font-size-1 d-inline-flex align-items-center"
-                      >
-                        <i
-                          class="icon-clock-circular-outline mr-1
-                        "
-                        ></i>
-                        12 მარტი 2019</span
-                      >
-                      <a
-                        href="#"
-                        class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                        >სამართალი</a
-                      >
-                    </div>
-                  </div>
-                  <!-- End of media -->
-                  <!-- Start of media -->
-                  <div class="media media-column">
-                    <div class="media-thumb w-100 rounded overflow-hidden">
-                      <a href="#" class="media-thumb-link">
-                        <i class="icon-play-button media-play"></i>
-                        <img
-                          src="./images/video-blog.jpg"
-                          class="w-100"
-                          alt="..."
-                        />
-                      </a>
-                      <span class="media-date font-size-1">2:41</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-2 font-size-2 line-height-1-3">
-                        <a
-                          href="#"
-                          class="text-decoration-none d-block font-weight-bold font-size-base"
-                        >
-                          Scoot Scoot-ის საჩუქარი ზურაბ ჯაფარიძეს
-                        </a>
-                      </h6>
-                      <span
-                        class="text-grey font-size-1 d-inline-flex align-items-center"
-                      >
-                        <i
-                          class="icon-clock-circular-outline mr-1
-                        "
-                        ></i>
-                        12 მარტი 2019</span
-                      >
-                      <a
-                        href="#"
-                        class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                        >სამართალი</a
-                      >
-                    </div>
-                  </div>
-                  <!-- End of media -->
-                  <!-- Start of media -->
-                  <div class="media media-column">
-                    <div class="media-thumb w-100 rounded overflow-hidden">
-                      <a href="#" class="media-thumb-link">
-                        <i class="icon-play-button media-play"></i>
-                        <img
-                          src="./images/video-blog.jpg"
-                          class="w-100"
-                          alt="..."
-                        />
-                      </a>
-                      <span class="media-date font-size-1">2:41</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-2 font-size-2 line-height-1-3">
-                        <a
-                          href="#"
-                          class="text-decoration-none d-block font-weight-bold font-size-base"
-                        >
-                          Scoot Scoot-ის საჩუქარი ზურაბ ჯაფარიძეს
-                        </a>
-                      </h6>
-                      <span
-                        class="text-grey font-size-1 d-inline-flex align-items-center"
-                      >
-                        <i
-                          class="icon-clock-circular-outline mr-1
-                          "
-                        ></i>
-                        12 მარტი 2019</span
-                      >
-                      <a
-                        href="#"
-                        class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                        >სამართალი</a
-                      >
-                    </div>
-                  </div>
-                  <!-- End of media -->
-                  <!-- Start of media -->
-                  <div class="media media-column">
-                    <div class="media-thumb w-100 rounded overflow-hidden">
-                      <a href="#" class="media-thumb-link">
-                        <i class="icon-play-button media-play"></i>
-                        <img
-                          src="./images/video-blog.jpg"
-                          class="w-100"
-                          alt="..."
-                        />
-                      </a>
-                      <span class="media-date font-size-1">2:41</span>
-                    </div>
-                    <div class="media-body">
-                      <h6 class="mt-2 font-size-2 line-height-1-3">
-                        <a
-                          href="#"
-                          class="text-decoration-none d-block font-weight-bold font-size-base"
-                        >
-                          Scoot Scoot-ის საჩუქარი ზურაბ ჯაფარიძეს
-                        </a>
-                      </h6>
-                      <span
-                        class="text-grey font-size-1 d-inline-flex align-items-center"
-                      >
-                        <i
-                          class="icon-clock-circular-outline mr-1
-                          "
-                        ></i>
-                        12 მარტი 2019</span
-                      >
-                      <a
-                        href="#"
-                        class="font-size-1 text-grey font-weight-bold border-dark-silver pl-2 ml-1 border-left"
-                        >სამართალი</a
-                      >
-                    </div>
-                  </div>
-                  <!-- End of media -->
+
+                  <div class="comments__count">0 კომენტარი</div>
                 </div>
+
+                <ul class="comments__share">
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Feed</a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Tweet</a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Viber</a>
+                  </li>
+                </ul>
+              </header>
+
+              <div class="comments__leave-comment">
+                <figure class="comments__user-avatar">
+                  <img
+                    src="https://images.pexels.com/photos/11293709/pexels-photo-11293709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt=""
+                  />
+                </figure>
+
+                <form action="#" class="comments__form">
+                  <textarea name="comment" id="comment" placeholder="დაამატეთ კომენტარი..."></textarea>
+                </form>
               </div>
-              <!-- Start of carousel controls -->
-              <div
-                class="card-footer border-top p-0 d-flex justify-content-between"
-              >
-                <button
-                  class="related-news-carousel-prev btn py-3 shadow-none rounded-0 text-dark-silver border-right"
-                >
-                  <i class="icon-angle-pointing-to-left"></i>
-                </button>
-                <div
-                  class="related-news-carousel-dots owl-dots d-flex align-items-center"
-                ></div>
-                <button
-                  class="related-news-carousel-next btn py-3 shadow-none rounded-0 text-dark-silver border-left"
-                >
-                  <i class="icon-angle-arrow-pointing-to-right"></i>
-                </button>
-              </div>
-              <!-- End of carousel controls -->
             </div>
-            <!-- End of card -->
-          </div>
+          </main>
         </div>
       </div>
     </div>
+
     ${require('./partials/footer.html')}
-    <div id="fb-root"></div>
-    <script
-      async
-      defer
-      crossorigin="anonymous"
-      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=149514119251612&autoLogAppEvents=1"
-    ></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
 [data-dropdown-content] {
   position: absolute;
-  top: 100%;
+  top: 140%;
   width: fit-content;
+  min-width: 100%;
   opacity: 0;
   transform: scaleY(0);
   max-height: 0;
@@ -14,8 +15,6 @@
 [data-dropdown] {
   position: relative;
 
-  // &:hover,
-  // &:focus-within,
   &.active {
     [data-dropdown-content] {
       opacity: 1;
