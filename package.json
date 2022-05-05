@@ -51,7 +51,7 @@
     "jquery-socialshare": "^1.0.3",
     "masonry-layout": "^4.2.2",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "offline-plugin": "^5.0.6",
     "owl.carousel2": "^2.2.1",
     "popper.js": "^1.15.0",
