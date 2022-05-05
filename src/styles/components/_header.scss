@@ -127,6 +127,8 @@
     transform-origin: top;
     transition: all 200ms ease-in-out;
 
+    flex-direction: column;
+
     &.active {
       transform: scaleY(1);
       opacity: 1;
@@ -175,6 +177,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
 
     span {
       pointer-events: none;

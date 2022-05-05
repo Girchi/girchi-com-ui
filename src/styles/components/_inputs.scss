@@ -1,12 +1,14 @@
 .form-input {
   position: relative;
 
+  --bg: #fff;
+
   label {
     position: absolute;
     top: -7px;
     left: 19px;
     padding-inline: 4px;
-    background-color: #f8f8f8;
+    background-color: var(--bg);
     font-family: var(--ff-main);
     font-weight: 400;
     font-size: 12px;
@@ -25,7 +27,7 @@
     font-size: 16px;
     color: #32394d;
 
-    background-color: #f8f8f8;
+    background-color: var(--bg);
     border: 1px solid #32394d;
     border-radius: 9px;
   }

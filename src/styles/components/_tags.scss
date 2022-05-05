@@ -1,0 +1,21 @@
+.tags {
+  margin: 0;
+  padding-inline: 13px;
+  padding-block: 16px 10px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tag {
+  font-family: var(--ff-main);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #317e38;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
