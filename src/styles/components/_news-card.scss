@@ -37,12 +37,24 @@
   &__title {
     margin-bottom: 16px;
     font-family: var(--ff-main);
-    font-style: normal;
     font-weight: 500;
     font-size: 21px;
-    line-height: 25px;
     letter-spacing: -0.01em;
     color: #32394d;
+
+    & > a {
+      font-weight: 500;
+      font-size: inherit;
+      letter-spacing: -0.01em;
+      color: inherit;
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+
+      &:hover,
+      &:active {
+        color: #2fa837;
+      }
+    }
   }
 
   &__footer {
@@ -137,6 +149,8 @@
     font-size: 26px;
     font-feature-settings: 'case' on;
     color: #32394d;
+
+
 
     @media (max-width: 760px) {
       font-size: 20px;
