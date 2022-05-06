@@ -47,11 +47,32 @@
       border: 1px solid rgba(50, 57, 77, 0.1);
       border-radius: 11px;
 
-      font-size: 14.5px;
-      letter-spacing: 0.01em;
-      font-feature-settings: 'case' on;
-      color: rgba(50, 57, 77, 0.9);
       text-decoration: none;
+
+      &:hover,
+      &:focus {
+        --clr-stroke: #2fa837;
+        --clr-text: #2fa837;
+      }
+
+      span {
+        font-size: 14.5px;
+        letter-spacing: 0.01em;
+        font-feature-settings: 'case' on;
+        color: var(--clr-text, rgba(50, 57, 77, 0.9));
+        line-height: 1;
+        transition: color 200ms ease-in-out;
+      }
+    }
+
+    svg {
+      width: 25px;
+      height: 25px;
+      stroke: var(--clr-stroke, #32394d);
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke 200ms ease-in-out;
     }
   }
 
