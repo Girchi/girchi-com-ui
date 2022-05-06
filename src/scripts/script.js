@@ -1,3 +1,5 @@
+import successImg from '../images/Gif-Completed.gif'
+
 // initialize filter
 filter()
 
@@ -84,7 +86,6 @@ function popup () {
   const petitionBackdrop = petitionPopup.querySelector('.popup__backdrop')
   const openPopupBtns = document.querySelectorAll('[data-open-popup]')
   const petitionCards = document.querySelectorAll('.project-inner-card')
-  const popupCtas = document.querySelector('.popup__ctas')
 
   petitionCards.forEach((card) => {
     card.addEventListener('click', (e) => {
@@ -102,18 +103,15 @@ function popup () {
   })
 
   // Close popups
-  // close petition popup
   petitionPopup.addEventListener('click', (e) => {
     if (e.target.classList.contains('popup__close')) {
       petitionPopup.classList.remove('active')
-      popupCtas.classList.remove('shown')
       resetPetition()
     }
   })
 
   petitionBackdrop.addEventListener('click', () => {
     petitionPopup.classList.remove('active')
-    popupCtas.classList.remove('shown')
     resetPetition()
   })
 }
@@ -145,7 +143,6 @@ function submitPetition () {
 
 function showPetitionSuccess () {
   const petitionSuccessPopup = document.querySelector('[data-petition-success]')
-  const popupCtas = petitionSuccessPopup.querySelector('.popup__ctas')
   const animationContainer = petitionSuccessPopup.querySelector('.petition__success__container')
 
   document.querySelector('[data-petition-form]').style.display = 'none'
@@ -157,7 +154,7 @@ function showPetitionSuccess () {
 
   // make sure animation restarts on every submit
   clearTimeout(removeAnimation)
-  runRemoveAnimation(petitionSuccessPopup, popupCtas)
+  runRemoveAnimation(petitionSuccessPopup)
 }
 
 function resetPetition () {
@@ -169,10 +166,9 @@ function resetPetition () {
 }
 
 let removeAnimation
-const runRemoveAnimation = (popup, ctas) => {
+const runRemoveAnimation = (popup) => {
   removeAnimation = window.setTimeout(() => {
     removeSuccessAnimation(popup)
-    ctas.classList.add('shown')
   }, 4500)
 }
 
@@ -180,7 +176,7 @@ function createSuccessImage () {
   const successAnimation = document.createElement('div')
   successAnimation.classList.add('animation')
   const successAnimationImg = document.createElement('img')
-  successAnimationImg.src = './images/Gif-Completed.gif'
+  successAnimationImg.src = successImg
   successAnimation.appendChild(successAnimationImg)
   return successAnimation
 }
