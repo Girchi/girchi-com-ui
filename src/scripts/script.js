@@ -16,6 +16,9 @@ dropdown()
 // initialize aside navigation accordion
 asideNavAccordion()
 
+// initialize aside toggle
+toggleAside()
+
 // Dropdown
 function dropdown () {
   if (!document.querySelector('[data-dropdown]')) return
@@ -238,7 +241,6 @@ function asideNavAccordion () {
   })
 
   window.addEventListener('click', (e) => {
-    console.log(e.target)
     if (!e.target.classList.contains('aside-nav__dropdown') &&
         !e.target.classList.contains('aside-nav__btn')
     ) {
@@ -248,5 +250,16 @@ function asideNavAccordion () {
         }
       })
     }
+  })
+}
+
+function toggleAside () {
+  if (!document.querySelector('.aside')) return
+
+  const aside = document.querySelector('.aside')
+  const toggleBtn = document.querySelector('.toggle-aside-btn')
+
+  toggleBtn.addEventListener('click', () => {
+    aside.classList.toggle('active')
   })
 }

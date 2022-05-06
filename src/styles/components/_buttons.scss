@@ -6,8 +6,8 @@
 
   font-family: var(--ff-main);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: var(--fz, 14px);
+  line-height: 1;
   font-feature-settings: 'case' on;
   text-decoration: none;
 

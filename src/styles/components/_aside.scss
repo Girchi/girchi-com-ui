@@ -1,6 +1,25 @@
 .aside {
   @media (max-width: 1180px) {
-    display: none;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    max-height: 0;
+    overflow: clip;
+
+    transition: all 300ms ease-in-out;
+
+    &.active {
+      transform: scaleY(1);
+      opacity: 1;
+      max-height: 9000px;
+    }
+  }
+}
+
+.toggle-aside-btn {
+  display: none;
+  @media (max-width: 1180px) {
+    display: block;
   }
 }
 
