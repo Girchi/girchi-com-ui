@@ -1,8 +1,12 @@
 .section {
   margin-bottom: 24px;
   padding: 36px 20px;
-  background: #f8f8f8;
+  background: var(--bg, #f8f8f8);
   border-radius: 11px;
+
+  @media (max-width: 860px) {
+    padding: 16px 10px;
+  }
 
   &.chart,
   &.ratings {
@@ -23,7 +27,7 @@
     align-items: center;
     gap: 2rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 860px) {
       margin-bottom: 10px;
     }
   }
