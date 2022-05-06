@@ -46,6 +46,20 @@
     font-feature-settings: 'case' on;
     color: #32394d;
 
+    a {
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+      font-feature-settings: 'case' on;
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+
+      &:hover,
+      &:active {
+        color: #2fa837;
+      }
+    }
+
     @media screen and (max-width: 1360px) {
       text-align: center;
     }
@@ -270,6 +284,20 @@
     font-feature-settings: 'case' on;
     color: #22283a;
     text-align: center;
+
+    a {
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+      font-feature-settings: 'case' on;
+      text-decoration: none;
+      transition: color 200ms ease-in-out;
+
+      &:hover,
+      &:active {
+        color: #2fa837;
+      }
+    }
   }
 
   &__info {
