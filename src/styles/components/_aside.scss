@@ -1,3 +1,9 @@
+.aside {
+  @media (max-width: 1180px) {
+    display: none;
+  }
+}
+
 .aside-nav {
   background: rgba(247, 247, 247, 0.7);
   border-radius: 12px;

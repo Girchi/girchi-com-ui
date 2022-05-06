@@ -13,6 +13,11 @@
     display: grid;
     grid-template-columns: 180px 1fr;
     column-gap: 24px;
+
+    @media (max-width: 1180px) {
+      grid-template-columns: 1fr;
+      row-gap: 32px;
+    }
   }
 }
 

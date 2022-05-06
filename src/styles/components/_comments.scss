@@ -10,10 +10,23 @@
     justify-content: space-between;
     gap: 16px;
 
+    @media (max-width: 760px) {
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 880px) {
+      flex-direction: column;
+    }
+
     & > div {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 16px;
+
+      @media (max-width: 760px) {
+        gap: 8px;
+      }
     }
   }
 
@@ -36,6 +49,7 @@
     padding: 0;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
 
     a {
@@ -62,6 +76,10 @@
         color: var(--clr-text, rgba(50, 57, 77, 0.9));
         line-height: 1;
         transition: color 200ms ease-in-out;
+
+        @media (max-width: 760px) {
+          display: none;
+        }
       }
     }
 
@@ -79,6 +97,10 @@
   &__leave-comment {
     display: flex;
     gap: 8px;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+    }
   }
 
   &__user-avatar {
@@ -86,6 +108,11 @@
     height: 80px;
     border-radius: 8px;
     overflow: clip;
+
+    @media (max-width: 760px) {
+      width: 40px;
+      height: 40px;
+    }
 
     img {
       width: 100%;
@@ -96,6 +123,9 @@
 
   &__form {
     flex-grow: 1;
+    @media (max-width: 760px) {
+      flex-grow: unset;
+    }
     textarea {
       padding: 12px;
       display: block;

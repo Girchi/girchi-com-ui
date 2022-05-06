@@ -108,6 +108,7 @@
     margin-bottom: 24px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     & > * {
       height: 21px;
@@ -136,6 +137,10 @@
     font-size: 26px;
     font-feature-settings: 'case' on;
     color: #32394d;
+
+    @media (max-width: 760px) {
+      font-size: 20px;
+    }
   }
 
   &__body {
@@ -154,6 +159,7 @@
 
     a {
       color: #2fa837;
+      text-decoration: underline;
       transition: color 200ms ease-in-out;
 
       &:hover,
@@ -170,6 +176,10 @@
     background: #f7f7f7;
     border-radius: 17px;
     padding: 12px;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+    }
 
     img {
       width: 332px;
@@ -195,10 +205,18 @@
     padding-inline: 12px;
     padding-block: 16px 20px;
 
+    @media (max-width: 760px) {
+      flex-direction: column;
+    }
+
     figure {
       flex-grow: 1;
       flex-basis: 0;
       overflow: clip;
+
+      @media (max-width: 760px) {
+        flex-basis: 100%;
+      }
 
       img {
         width: 100%;
@@ -221,7 +239,8 @@
 
   &__video {
     padding: 12px;
-    width: 646px;
+    max-width: 646px;
+    width: 100%;
     height: 386px;
     background: #f7f7f7;
     border-radius: 17px;
@@ -239,6 +258,11 @@
     padding-inline: 72px;
     background: #f7f7f7;
     border-radius: 17px;
+
+    @media (max-width: 1080px) {
+      padding-block: 15px;
+      padding-inline: 20px;
+    }
 
     p {
       font-size: 16px;
@@ -261,6 +285,7 @@
     margin-top: 38px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
 
     a {
