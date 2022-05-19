@@ -7,7 +7,7 @@
   transform: scaleY(0);
   max-height: 0;
   transform-origin: top;
-  overflow: clip;
+  overflow: hidden;
   transition: all 200ms ease-in-out;
   z-index: 100;
 }
