@@ -106,7 +106,7 @@
       margin-inline: unset;
     }
 
-    & > .button {
+    & > .button-v2 {
       width: 246px;
       height: 56px;
 
@@ -333,11 +333,11 @@
     display: flex;
     gap: 8px;
 
-    .button--block {
+    .button-v2--block {
       width: 60%;
     }
 
-    .button--outline {
+    .button-v2--outline {
       width: 40%;
     }
   }
