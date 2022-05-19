@@ -14,7 +14,7 @@
     height: 240px;
     flex: 0 0 296px;
     border-radius: 11px;
-    overflow: clip;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -249,7 +249,7 @@
     box-shadow: 0px 15px 10px -14px hsla(0, 0%, 7%, 0.6);
 
     @supports (overflow: clip) {
-      overflow: clip;
+      overflow: hidden;
     }
 
     img {

@@ -74,7 +74,7 @@
   &__image {
     margin-bottom: 18px;
     border-radius: 14px;
-    overflow: clip;
+    overflow: hidden;
     height: 266px;
 
     img {
@@ -172,7 +172,7 @@
       width: 140px;
       aspect-ratio: 1;
       border-radius: 50%;
-      overflow: clip;
+      overflow: hidden;
 
       img {
         width: 100%;
