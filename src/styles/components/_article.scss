@@ -114,10 +114,19 @@
       font-family: inherit;
       font-weight: 400;
       font-size: 15px;
-      line-height: 150.2%;
-      letter-spacing: 0.01em;
       color: #32394d;
       opacity: 0.8;
+    }
+
+    a {
+      color: #708dfc;
+      text-decoration: underline;
+      transition: color 150ms ease-in-out;
+
+      &:hover,
+      &:active {
+        color: #278b2d;
+      }
     }
   }
 
