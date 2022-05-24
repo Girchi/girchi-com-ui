@@ -119,13 +119,13 @@
     }
 
     a {
-      color: #708dfc;
+      color: #2fa837;
       text-decoration: underline;
-      transition: color 150ms ease-in-out;
+      transition: color 200ms ease-in-out;
 
       &:hover,
-      &:active {
-        color: #278b2d;
+      &:focus {
+        color: #206e25;
       }
     }
   }
