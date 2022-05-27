@@ -1,7 +1,7 @@
 .ratings-table {
   position: relative;
   width: max-content;
-  overflow: clip;
+  overflow: hidden;
   width: 100%;
 
   &::before,
@@ -33,7 +33,7 @@
     width: 64px;
     height: 64px;
     border-radius: 40px;
-    overflow: clip;
+    overflow: hidden;
     border: 1px solid #32394d;
     padding: 1px;
     display: flex;

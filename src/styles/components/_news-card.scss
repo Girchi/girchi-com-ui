@@ -25,7 +25,7 @@
     flex: 0 0 288px;
     box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    overflow: clip;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -103,7 +103,7 @@
     width: 100%;
     max-height: 477px;
     border-radius: 12px;
-    overflow: clip;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -149,8 +149,6 @@
     font-size: 26px;
     font-feature-settings: 'case' on;
     color: #32394d;
-
-
 
     @media (max-width: 760px) {
       font-size: 20px;
@@ -226,7 +224,7 @@
     figure {
       flex-grow: 1;
       flex-basis: 0;
-      overflow: clip;
+      overflow: hidden;
 
       @media (max-width: 760px) {
         flex-basis: 100%;

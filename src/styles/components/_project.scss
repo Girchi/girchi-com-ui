@@ -14,7 +14,7 @@
     height: 240px;
     flex: 0 0 296px;
     border-radius: 11px;
-    overflow: clip;
+    overflow: hidden;
 
     img {
       width: 100%;
@@ -106,7 +106,7 @@
       margin-inline: unset;
     }
 
-    & > .button {
+    & > .button-v2 {
       width: 246px;
       height: 56px;
 
@@ -249,7 +249,7 @@
     box-shadow: 0px 15px 10px -14px hsla(0, 0%, 7%, 0.6);
 
     @supports (overflow: clip) {
-      overflow: clip;
+      overflow: hidden;
     }
 
     img {
@@ -333,11 +333,11 @@
     display: flex;
     gap: 8px;
 
-    .button--block {
+    .button-v2--block {
       width: 60%;
     }
 
-    .button--outline {
+    .button-v2--outline {
       width: 40%;
     }
   }
