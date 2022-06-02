@@ -181,7 +181,7 @@
     }
   }
 
-  &__image-w-quote {
+  .w-image {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -191,6 +191,10 @@
 
     @media (max-width: 760px) {
       flex-direction: column;
+    }
+
+    figure {
+      flex-shrink: 0;
     }
 
     img {
@@ -209,7 +213,7 @@
     }
   }
 
-  &__gallery {
+  .cke-ig {
     display: flex;
     gap: 25px;
     background: #f7f7f7;
@@ -239,9 +243,6 @@
 
       figcaption {
         margin-top: 12px;
-      }
-
-      p {
         font-size: 12px;
         letter-spacing: 0.01em;
         color: rgba(50, 57, 77, 0.9);
