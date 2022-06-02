@@ -21,6 +21,9 @@ asideNavAccordion()
 // initialize aside toggle
 toggleAside()
 
+// Swap gallery images in news-details page to display image alts
+swapGalleryImages()
+
 // Dropdown
 function dropdown () {
   if (!document.querySelector('[data-dropdown]')) return
@@ -258,4 +261,33 @@ function toggleAside () {
   toggleBtn.addEventListener('click', () => {
     aside.classList.toggle('active')
   })
+}
+
+function swapGalleryImages () {
+  if (!document.querySelector('.cke-ig')) return
+
+  const galleries = document.querySelectorAll('.cke-ig')
+
+  galleries.forEach(gallery => {
+    const images = gallery.querySelectorAll('img')
+    gallery.innerHTML = ''
+    images.forEach(image => {
+      gallery.appendChild(createFigure(image))
+    })
+  })
+}
+
+function createFigure (image) {
+  const figure = document.createElement('figure')
+  const caption = document.createElement('figcaption')
+  const newImage = document.createElement('img')
+
+  newImage.src = image.src
+  newImage.alt = image.alt
+  caption.textContent = image.title
+
+  figure.appendChild(newImage)
+  figure.appendChild(caption)
+
+  return figure
 }
