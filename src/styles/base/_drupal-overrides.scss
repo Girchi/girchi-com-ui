@@ -1,5 +1,14 @@
-.video-embed-field-responsive-video:after {
-    // iframe-ის კონტეინერის :after ფსევდო ელემენტს
-    // ემატება პადინგი, რაც სიმაღლეს უზრდის
+.video-embed-field-provider-youtube,
+.video-embed-field-responsive-video {
+  all: unset;
+
+  iframe {
+    all: unset;
+  }
+}
+
+.video-embed-field-responsive-video {
+  &:after {
     padding-bottom: 0 !important;
+  }
 }
