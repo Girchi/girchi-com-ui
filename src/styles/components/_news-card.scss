@@ -251,7 +251,6 @@
   }
 
   &__video {
-    padding: 12px;
     max-width: 646px;
     width: 100%;
     height: 386px;
@@ -262,7 +261,11 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 17px;
+      
+      // trying to fix ios bug 
+      padding: 12px;
+      max-width: 646px;
+      border-radius: 30px;
     }
   }
 
