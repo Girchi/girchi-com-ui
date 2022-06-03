@@ -1,0 +1,5 @@
+.video-embed-field-responsive-video:after {
+    // iframe-ის კონტეინერის :after ფსევდო ელემენტს
+    // ემატება პადინგი, რაც სიმაღლეს უზრდის
+    padding-bottom: 0 !important;
+}
