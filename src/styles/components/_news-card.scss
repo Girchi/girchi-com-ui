@@ -211,6 +211,12 @@
       font-feature-settings: 'case' on;
       color: rgba(50, 57, 77, 0.9);
     }
+
+    &::before,
+    &::after {
+      // სურათიან ციტატას ბრჭყალები მოვაშორე
+      display: none;
+    }
   }
 
   .cke-ig {
