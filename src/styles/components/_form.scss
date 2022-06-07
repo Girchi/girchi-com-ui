@@ -12,7 +12,8 @@
   button {
     grid-column: span 2;
     justify-self: center;
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
 
     @media (max-width: 780px) {
       grid-column: span 1;

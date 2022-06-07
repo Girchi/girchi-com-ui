@@ -30,6 +30,16 @@
     @media screen and (max-width: 860px) {
       margin-bottom: 10px;
     }
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+
+      & > *:last-child {
+        align-self: flex-end;
+      }
+    }
   }
 
   &__heading-alt {
@@ -55,7 +65,10 @@
 
   &__title {
     display: flex;
-    align-items: center;
+    // დიდი ზომის სათაურის შემთხვევაში
+    // ზემო ხაზზე გასწორება უფრო კარგად ჩანს
+    align-items: flex-start;
+    // align-items: center;
     gap: 12px;
 
     span {
