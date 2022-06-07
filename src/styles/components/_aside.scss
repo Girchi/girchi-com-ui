@@ -19,8 +19,20 @@
 
 .toggle-aside-btn {
   display: none;
+
+  &:focus,
+  &:hover {
+    color: #327f37;
+    outline-color: #327f37;
+  }
+
   @media (max-width: 1180px) {
     display: block;
+  }
+
+  @media (max-width: 560px) {
+    // align-self: flex-end;
+    height: auto;
   }
 }
 
