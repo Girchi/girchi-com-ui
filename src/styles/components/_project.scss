@@ -343,6 +343,15 @@
     display: flex;
     gap: 8px;
 
+    @media (max-width: 460px) {
+      flex-direction: column;
+
+      .button-v2--block,
+      .button-v2--outline {
+        width: 100% !important;
+      }
+    }
+
     .button-v2--block {
       width: 60%;
     }
