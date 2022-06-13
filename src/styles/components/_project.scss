@@ -2,9 +2,28 @@
   padding: 16px 18px;
   display: flex;
   align-items: center;
-  gap: 15px;
+
   background-color: var(--clr-neutral-100);
   border-radius: 13px;
+
+  // garbage safari 15.4 support
+  & > *:not(:last-child) {
+    margin-right: 15px;
+
+    @media screen and (max-width: 1360px) {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  @supports (gap: 16px) {
+    gap: 15px;
+
+    & > *:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
 
   @media screen and (max-width: 1360px) {
     flex-direction: column;
@@ -29,7 +48,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+
+    // garbage safari 15.4 support
+    & > *:not(:last-child) {
+      margin-right: 16px;
+
+      @media screen and (max-width: 1360px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+
+    @supports (gap: 16px) {
+      gap: 16px;
+
+      & > *:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
 
     @media screen and (max-width: 1360px) {
       flex-direction: column;
@@ -83,8 +120,29 @@
     margin-top: 24px;
     padding-top: 15px;
     display: flex;
-    gap: 1rem;
     border-top: 1px solid hsla(224, 21%, 25%, 0.32);
+
+    // garbage safari 15.4 support
+    & > *:not(:last-child) {
+      margin-right: 16px;
+
+      @media screen and (max-width: 480px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+
+    @supports (gap: 16px) {
+      gap: 16px;
+
+      & > *:not(:last-child) {
+        margin-right: 0;
+
+        @media screen and (max-width: 480px) {
+          margin-bottom: 0;
+        }
+      }
+    }
 
     @media screen and (max-width: 480px) {
       flex-direction: column;
@@ -94,11 +152,37 @@
   &__ctas {
     display: flex;
     flex-direction: column;
-    gap: 26px;
+
+    // garbage safari 15.4 support
+    & > *:not(:last-child) {
+      margin-right: 26px;
+
+      @media screen and (max-width: 500px) {
+        margin-right: 0;
+        margin-bottom: 16px;
+      }
+    }
+
+    @supports (gap: 26px) {
+      gap: 26px;
+
+      @media screen and (max-width: 500px) {
+        gap: 16px;
+      }
+
+      & > *:not(:last-child) {
+        margin-right: 0;
+
+        @media screen and (max-width: 500px) {
+          margin-bottom: 0;
+        }
+      }
+    }
 
     @media screen and (max-width: 1360px) {
       align-self: flex-start;
       flex-direction: row;
+      margin-bottom: 0;
     }
 
     @media screen and (max-width: 500px) {
@@ -189,7 +273,6 @@
 .rating {
   display: flex;
   align-items: center;
-  gap: 6px;
 
   @media screen and (max-width: 1360px) {
     position: absolute;
@@ -208,6 +291,7 @@
   &__indicator {
     font-size: 28px;
     color: #32394d;
+    margin-inline-end: 6px;
 
     &--down {
       color: #ff0000;
