@@ -1,7 +1,8 @@
 .ratings-table {
   position: relative;
   width: max-content;
-  overflow-x: auto;
+  // overflow-x: auto;
+  overflow: hidden;
   width: 100%;
 
   &::before,
