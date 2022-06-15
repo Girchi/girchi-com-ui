@@ -22,7 +22,6 @@
   height: 46px;
   width: 50px;
   padding: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -33,7 +32,7 @@
   }
 
   @media (max-width: 1180px) {
-    display: block;
+    display: flex;
   }
   @media (max-width: 560px) {
     // პატარა ეკრანზე ეტევა სათაურის გვერდით
