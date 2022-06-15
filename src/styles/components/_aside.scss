@@ -35,10 +35,9 @@
   @media (max-width: 1180px) {
     display: block;
   }
-
   @media (max-width: 560px) {
-    // align-self: flex-end;
-    height: auto;
+    // პატარა ეკრანზე ეტევა სათაურის გვერდით
+    margin-top: -36px !important;
   }
 }
 
