@@ -34,8 +34,6 @@
 }
 
 .form-checkbox {
-  gap: 10px;
-
   label {
     font-family: var(--ff-main);
     font-weight: 400;
@@ -44,6 +42,7 @@
     color: #32394d;
     margin: 0;
     padding: 0;
+    margin-right: 10px;
   }
 
   input[type='checkbox'] {

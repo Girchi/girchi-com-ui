@@ -3,7 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+
+  & > *:not(:last-child) {
+    margin-right: 4px;
+  }
 
   a {
     display: block;

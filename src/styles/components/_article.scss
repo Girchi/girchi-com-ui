@@ -87,7 +87,15 @@
   &__actions {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+
+    & > *:not(:last-child) {
+      margin-right: 14px;
+
+      @media (max-width: 580px) {
+        margin-right: 0;
+        margin-bottom: 14px;
+      }
+    }
 
     @media (max-width: 1200px) {
       align-items: center;
@@ -151,7 +159,10 @@
       padding: 0;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+
+      & > *:not(:last-child) {
+        margin-bottom: 12px;
+      }
     }
 
     li {

@@ -1,7 +1,7 @@
 .ratings-table {
   position: relative;
   width: max-content;
-  overflow: hidden;
+  overflow-x: auto;
   width: 100%;
 
   &::before,
@@ -40,11 +40,21 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 480px) {
+      width: 44px;
+      height: 44px;
+    }
+
     img {
       width: 60px;
       height: 60px;
       border-radius: 40px;
       object-fit: cover;
+
+      @media (max-width: 480px) {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -59,6 +69,10 @@
     align-items: center;
     font-feature-settings: 'case' on;
     color: #ffa823;
+
+    @media screen and (max-width: 480px) {
+      font-size: 16px;
+    }
   }
 
   thead {
@@ -115,11 +129,23 @@
       font-feature-settings: 'case' on;
       color: #32394d;
 
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
+
       &:first-child {
         padding-inline-start: 24px;
+
+        @media screen and (max-width: 480px) {
+          padding-inline-start: 10px;
+        }
       }
       &:last-child {
         padding-inline-end: 24px;
+
+        @media screen and (max-width: 480px) {
+          padding-inline-end: 10px;
+        }
       }
       &:nth-child(2) {
         padding-inline: 30px;

@@ -9,7 +9,8 @@
   }
 
   &__col {
-    &:last-child {
+    // &:last-child, // მარქაფში ამ სელექტორით მუშაობს
+    .block-region-analytics-right {
       @media screen and (max-width: 1360px) {
         display: grid;
         grid-template-columns: 1fr 1fr;

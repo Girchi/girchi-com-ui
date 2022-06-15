@@ -5,7 +5,10 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
+  & > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .tag {

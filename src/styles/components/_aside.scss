@@ -19,6 +19,12 @@
 
 .toggle-aside-btn {
   display: none;
+  height: 46px;
+  width: 50px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:focus,
   &:hover {

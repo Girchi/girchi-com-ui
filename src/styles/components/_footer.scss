@@ -33,17 +33,9 @@
       margin-bottom: 10px;
     }
 
-    // garbage safari 15.4 support
+    // safari 14.4 support
     & > *:not(:last-child) {
       margin-right: 12px;
-    }
-
-    @supports (gap: 16px) {
-      gap: 12px;
-
-      & > *:not(:last-child) {
-        margin-right: 0;
-      }
     }
 
     span {
@@ -97,29 +89,13 @@
     justify-content: space-between;
     align-items: center;
 
-    // garbage safari 15.4 support
+    // safari 14.4 support
     & > *:not(:last-child) {
       margin-right: 40px;
 
       @media screen and (max-width: 1100px) {
         margin-right: 0;
         margin-bottom: 10px;
-      }
-    }
-
-    @supports (gap: 16px) {
-      gap: 40px;
-
-      @media screen and (max-width: 1100px) {
-        gap: 10px;
-      }
-
-      & > *:not(:last-child) {
-        margin-right: 0;
-
-        @media screen and (max-width: 1100px) {
-          margin-bottom: 0;
-        }
       }
     }
 
@@ -154,17 +130,9 @@
   display: flex;
   align-items: center;
 
-  // garbage safari 15.4 support
+  // safari 14.4 support
   & > *:not(:last-child) {
     margin-right: 16px;
-  }
-
-  @supports (gap: 16px) {
-    gap: 16px;
-
-    & > *:not(:last-child) {
-      margin-right: 0;
-    }
   }
 
   &__link {

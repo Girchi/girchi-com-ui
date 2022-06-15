@@ -85,7 +85,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 
   &__given,
   &__available {
@@ -111,6 +110,8 @@
   }
 
   &__given {
+    margin-right: 16px;
+
     &::before {
       background-color: #2fa837;
     }
@@ -143,8 +144,11 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     font-weight: 500;
     color: #2fa837;
+
+    svg {
+      margin-left: 10px;
+    }
   }
 }

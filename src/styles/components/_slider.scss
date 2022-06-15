@@ -1,7 +1,10 @@
 .slider-arrows {
   display: flex;
   justify-content: flex-end;
-  gap: 12px;
+
+  & > *:not(:last-child) {
+    margin-right: 12px;
+  }
 
   button {
     position: relative;
@@ -79,5 +82,5 @@
 }
 
 .swiper-slide {
-  height: auto;
+  height: auto !important;
 }

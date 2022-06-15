@@ -22,10 +22,13 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 16px;
 
-      @media (max-width: 760px) {
-        gap: 8px;
+      & > *:not(:last-child) {
+        margin-right: 16px;
+
+        @media (max-width: 760px) {
+          margin-right: 8px;
+        }
       }
     }
   }
@@ -50,18 +53,24 @@
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+
+    & > *:not(:last-child) {
+      margin-right: 16px;
+    }
 
     a {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 8px;
       padding: 10px 16px;
       border: 1px solid rgba(50, 57, 77, 0.1);
       border-radius: 11px;
 
       text-decoration: none;
+
+      & > *:not(:last-child) {
+        margin-right: 8px;
+      }
 
       &:hover,
       &:focus {
@@ -96,7 +105,15 @@
 
   &__leave-comment {
     display: flex;
-    gap: 8px;
+
+    & > *:not(:last-child) {
+      margin-right: 8px;
+
+      @media (max-width: 760px) {
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
 
     @media (max-width: 760px) {
       flex-direction: column;
