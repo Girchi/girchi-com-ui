@@ -25,7 +25,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
 
     @media screen and (max-width: 860px) {
       margin-bottom: 10px;
@@ -33,10 +32,10 @@
 
     @media screen and (max-width: 560px) {
       flex-direction: column;
-      gap: 0.5rem;
       align-items: flex-start;
 
       a {
+        margin-top: 8px;
         align-self: flex-end;
       }
     }
@@ -49,13 +48,12 @@
     width: max-content;
     display: flex;
     align-items: center;
-    gap: 8px;
 
     background: #32394d;
     border-radius: 0 5px 5px 0px;
-    // transform: translateX(-20px);
 
     span {
+      margin-left: 8px;
       font-family: var(--ff-main);
       font-size: 1rem;
       color: #fff;
@@ -69,7 +67,10 @@
     // ზემო ხაზზე გასწორება უფრო კარგად ჩანს
     align-items: flex-start;
     // align-items: center;
-    gap: 12px;
+
+    img {
+      margin-right: 12px;
+    }
 
     span {
       font-family: var(--ff-main);

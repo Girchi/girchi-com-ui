@@ -21,7 +21,6 @@
     a {
       display: flex;
       align-items: center;
-      gap: 12px;
       text-decoration: none;
     }
 
@@ -40,6 +39,8 @@
     }
 
     img {
+      margin-right: 12px;
+
       @media screen and (max-width: 768px) {
         width: 24px;
         height: auto;
@@ -50,7 +51,10 @@
   &__ctas {
     display: flex;
     align-items: center;
-    gap: 5px;
+
+    & > *:not(:last-child) {
+      margin-right: 5px;
+    }
 
     @media screen and (max-width: 768px) {
       display: none;
@@ -141,14 +145,20 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 24px;
+
+    & > *:not(:last-child) {
+      margin-right: 24px;
+
+      @media screen and (max-width: 1360px) {
+        margin-right: 10px;
+      }
+    }
 
     @media screen and (max-width: 1360px) {
       height: 100%;
       flex-direction: column;
       justify-content: center;
       align-items: stretch;
-      gap: 10px;
     }
   }
 
@@ -167,7 +177,6 @@
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 8px;
     font-family: var(--ff-main);
     font-size: 16px;
     font-weight: 500;
@@ -183,6 +192,7 @@
     }
 
     span {
+      margin-right: 8px;
       pointer-events: none;
     }
 
@@ -302,11 +312,16 @@
   margin-left: auto;
   width: 48px;
   height: 48px;
+  padding: 0;
   background-color: transparent;
   border: none;
   font-size: 24px;
   color: var(--clr-brand);
   cursor: pointer;
+
+  &:focus {
+    outline-color: var(--clr-brand);
+  }
 
   @media screen and (max-width: 1360px) {
     display: block;
@@ -317,6 +332,7 @@
   display: none;
   width: 48px;
   height: 48px;
+  padding: 0;
   background-color: transparent;
   border: none;
   font-size: 24px;
