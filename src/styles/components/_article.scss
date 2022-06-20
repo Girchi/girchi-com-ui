@@ -89,7 +89,12 @@
     flex-direction: column;
 
     & > *:not(:last-child) {
-      margin-right: 14px;
+      margin-bottom: 14px;
+
+      @media (max-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 14px;
+      }
 
       @media (max-width: 580px) {
         margin-right: 0;
